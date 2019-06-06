@@ -26,11 +26,11 @@
 // @import 'vf-font-plex-mono/vf-font-plex-mono.scss';
 @import 'vf-font-plex-sans/vf-font-plex-sans.scss';
 
-// html, button {
-//   @if $use-global-typography == true {
-//     font-family: $vf-font-family-sans-serif;
-//   }
-// }
+html, button {
+  @if $use-global-typography == true {
+    font-family: $vf-font-family-sans-serif;
+  }
+}
 
 /* Visual Framework content compatibility
  * We put this first so it will have the least specificity

@@ -846,6 +846,10 @@
     "@types/unist" "*"
     "@types/vfile-message" "*"
 
+"@visual-framework/embl-grid@^0.0.31":
+  version "0.0.31"
+  resolved "https://registry.yarnpkg.com/@visual-framework/embl-grid/-/embl-grid-0.0.31.tgz#b2620f87d76a5a181c4e8ffcbf609f6c8b7b41f0"
+
 "@visual-framework/vf-badge@^0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-badge/-/vf-badge-0.0.29.tgz#11d5b49bc77485aa0279980e565c10a04ff42687"
@@ -859,6 +863,49 @@
   dependencies:
     "@visual-framework/vf-badge" "^0.0.29"
     "@visual-framework/vf-sass-config" "^0.0.26"
+
+"@visual-framework/vf-blockquote@^0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-blockquote/-/vf-blockquote-0.0.29.tgz#8ec663d244e7053c65650a4a2db5421f9fd5790b"
+  dependencies:
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    node-normalize-scss "^8.0.0"
+
+"@visual-framework/vf-box@^0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-box/-/vf-box-0.0.29.tgz#d28e8bc100c86b26721088a2213e476014a32731"
+  dependencies:
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    node-normalize-scss "^8.0.0"
+
+"@visual-framework/vf-button@^0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-button/-/vf-button-0.0.29.tgz#ffbb29129baf87fc0c8ffb6c263007a733b7f03e"
+  dependencies:
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    node-normalize-scss "^8.0.0"
+
+"@visual-framework/vf-code-example@^0.0.30":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-code-example/-/vf-code-example-0.0.30.tgz#cdd4db1e99995f046f686f78948cf114d8752319"
+
+"@visual-framework/vf-content@^0.0.30":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-content/-/vf-content-0.0.30.tgz#0dcdda9cbf1b96901ef44330b391dc489b0fadd9"
+  dependencies:
+    "@visual-framework/vf-badge" "^0.0.29"
+    "@visual-framework/vf-blockquote" "^0.0.29"
+    "@visual-framework/vf-box" "^0.0.29"
+    "@visual-framework/vf-button" "^0.0.29"
+    "@visual-framework/vf-divider" "^0.0.29"
+    "@visual-framework/vf-figure" "^0.0.29"
+    "@visual-framework/vf-form__core" "^0.0.30"
+    "@visual-framework/vf-heading" "^0.0.29"
+    "@visual-framework/vf-link" "^0.0.29"
+    "@visual-framework/vf-list" "^0.0.29"
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    "@visual-framework/vf-text" "^0.0.29"
+    node-normalize-scss "^8.0.0"
 
 "@visual-framework/vf-core@^2.0.0-alpha.5":
   version "2.0.0-alpha.5"
@@ -879,13 +926,96 @@
     yeoman-generator "^3.2.0"
     yosay "^2.0.2"
 
-"@visual-framework/vf-divider@0.0.30":
+"@visual-framework/vf-divider@^0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-divider/-/vf-divider-0.0.29.tgz#c4f45dace4653333028cf994a849a9e0c1799574"
+  dependencies:
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    node-normalize-scss "^8.0.0"
+
+"@visual-framework/vf-divider@^0.0.30":
   version "0.0.30"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-divider/-/vf-divider-0.0.30.tgz#179021bff4c7cb4bba2447dc29c05ea348bf877a"
 
 "@visual-framework/vf-favicon@0.0.30":
   version "0.0.30"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-favicon/-/vf-favicon-0.0.30.tgz#d820976bbbce43667ae5e95971cd9b4d052b206d"
+
+"@visual-framework/vf-figure@^0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-figure/-/vf-figure-0.0.29.tgz#eaab925c7925620a80048d45b8a26cc7e1693ec6"
+  dependencies:
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    node-normalize-scss "^8.0.0"
+
+"@visual-framework/vf-font-plex-sans@^0.0.27":
+  version "0.0.27"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-font-plex-sans/-/vf-font-plex-sans-0.0.27.tgz#e8c0606a166542da033a8c7a0d6e0fd6472c2553"
+
+"@visual-framework/vf-form__checkbox@^0.0.30":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__checkbox/-/vf-form__checkbox-0.0.30.tgz#eb54d1e0028c0db6886ae4e0be1b0051bc3e13cd"
+  dependencies:
+    "@visual-framework/vf-form__item" "^0.0.30"
+    "@visual-framework/vf-form__label" "^0.0.26"
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    node-normalize-scss "^8.0.0"
+
+"@visual-framework/vf-form__core@^0.0.30":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__core/-/vf-form__core-0.0.30.tgz#db9f68df67855fb44597a46e5071ea5c1e151a2c"
+  dependencies:
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    node-normalize-scss "^8.0.0"
+
+"@visual-framework/vf-form__core@^0.0.31":
+  version "0.0.31"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__core/-/vf-form__core-0.0.31.tgz#d6f7c4bba82e683c937c4216c1b5521ba011b00c"
+
+"@visual-framework/vf-form__helper@^0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__helper/-/vf-form__helper-0.0.29.tgz#c26a302ade1e42241a89ae7e43f5554f3df9aca5"
+  dependencies:
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    node-normalize-scss "^8.0.0"
+
+"@visual-framework/vf-form__helper@^0.0.30":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__helper/-/vf-form__helper-0.0.30.tgz#2ce4982dc7ef7e74042ffbb83b11e19b1caa4f47"
+
+"@visual-framework/vf-form__input@^0.0.30":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__input/-/vf-form__input-0.0.30.tgz#92b4ea8f873a5e0f7ed36e16d49e82ed60541304"
+  dependencies:
+    "@visual-framework/vf-form__item" "^0.0.30"
+    "@visual-framework/vf-form__label" "^0.0.26"
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    node-normalize-scss "^8.0.0"
+
+"@visual-framework/vf-form__item@^0.0.30":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__item/-/vf-form__item-0.0.30.tgz#59c31279f050b6e57b5be367e3490b329dd48e94"
+  dependencies:
+    "@visual-framework/vf-form__helper" "^0.0.29"
+    "@visual-framework/vf-form__label" "^0.0.26"
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    node-normalize-scss "^8.0.0"
+
+"@visual-framework/vf-form__label@^0.0.26":
+  version "0.0.26"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__label/-/vf-form__label-0.0.26.tgz#bb8a24d537b368d7d7524c475f9d498e5163ecbe"
+
+"@visual-framework/vf-form__radio@^0.0.27":
+  version "0.0.27"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__radio/-/vf-form__radio-0.0.27.tgz#5d7db4a753353e029ef294499830c7e81b36b27a"
+
+"@visual-framework/vf-form__select@^0.0.27":
+  version "0.0.27"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__select/-/vf-form__select-0.0.27.tgz#3f700cc4f266f977f88297572fe0c72701283343"
+
+"@visual-framework/vf-form__textarea@^0.0.27":
+  version "0.0.27"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__textarea/-/vf-form__textarea-0.0.27.tgz#be2ecf529b2648790fd610c73631d757054ad5cf"
 
 "@visual-framework/vf-global-header@0.0.31":
   version "0.0.31"
@@ -894,9 +1024,53 @@
     "@visual-framework/vf-logo" "^0.0.28"
     "@visual-framework/vf-navigation" "^0.0.31"
 
-"@visual-framework/vf-heading@0.0.30":
+"@visual-framework/vf-grid-page@^0.0.31":
+  version "0.0.31"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-grid-page/-/vf-grid-page-0.0.31.tgz#ea5abd15bc43ccb943b2e08d6514e854e2fa4e50"
+
+"@visual-framework/vf-grid@^0.0.31":
+  version "0.0.31"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-grid/-/vf-grid-0.0.31.tgz#4bc1ea04a8a139529c7eee75259846ed9ed310b5"
+
+"@visual-framework/vf-heading@^0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-heading/-/vf-heading-0.0.29.tgz#199610840c78bf671b683ae19395cfe569a7d3d4"
+  dependencies:
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    node-normalize-scss "^8.0.0"
+
+"@visual-framework/vf-heading@^0.0.30":
   version "0.0.30"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-heading/-/vf-heading-0.0.30.tgz#6ca7d2c0c575f57043128eb0f2875e694c38b336"
+
+"@visual-framework/vf-intro@^0.0.30":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-intro/-/vf-intro-0.0.30.tgz#6afcd1753afa30ad6a5cde8b8cfb571cb5dbf1ca"
+  dependencies:
+    "@visual-framework/vf-heading" "^0.0.29"
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    "@visual-framework/vf-text" "^0.0.29"
+    node-normalize-scss "^8.0.0"
+
+"@visual-framework/vf-lede@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-lede/-/vf-lede-0.0.6.tgz#386fddd26ec1fd1089660f01198f2be8d1e4116e"
+  dependencies:
+    "@visual-framework/vf-sass-config" "^0.0.12"
+
+"@visual-framework/vf-link@^0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-link/-/vf-link-0.0.29.tgz#09bcfc56e480b4727e8af2910435c87b664f8e66"
+  dependencies:
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    node-normalize-scss "^8.0.0"
+
+"@visual-framework/vf-list@^0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-list/-/vf-list-0.0.29.tgz#3eb5fc24299bbe37fcfe4fa1dd996e3ba8c4bfe9"
+  dependencies:
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    node-normalize-scss "^8.0.0"
 
 "@visual-framework/vf-list@^0.0.30":
   version "0.0.30"
@@ -923,6 +1097,12 @@
   version "0.0.17"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-no-js/-/vf-no-js-0.0.17.tgz#2d2df78c85a4222aa692a604792e6db3a0e0dd8f"
 
+"@visual-framework/vf-sass-config@^0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-sass-config/-/vf-sass-config-0.0.12.tgz#75a9a4819e7821bd54b5d0bdd16fa70d2b6eaf57"
+  dependencies:
+    node-normalize-scss "^8.0.0"
+
 "@visual-framework/vf-sass-config@^0.0.25":
   version "0.0.25"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-sass-config/-/vf-sass-config-0.0.25.tgz#f54c59a82883827674d9618cefb273b6e44f6733"
@@ -934,6 +1114,17 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-sass-config/-/vf-sass-config-0.0.26.tgz#bb008ad51486621609ecc99ccdcd72ea174e6f2d"
   dependencies:
     node-normalize-scss "^8.0.0"
+
+"@visual-framework/vf-text@^0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-text/-/vf-text-0.0.29.tgz#76786376a1052da5038fb6059a33a853641a54f0"
+  dependencies:
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    node-normalize-scss "^8.0.0"
+
+"@visual-framework/vf-text@^0.0.30":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-text/-/vf-text-0.0.30.tgz#43178065f9a62df40dc2204c259446a24091aee5"
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
