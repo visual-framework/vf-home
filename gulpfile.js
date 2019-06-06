@@ -50,7 +50,7 @@ gulp.task('elventy-set-to-build', function(done) {
 // Run eleventy, but only after we wait for fractal to bootstrap
 // @todo: consider if this could/should be two parallel gulp tasks
 gulp.task('eleventy', function(done) {
-  global.vfBuilderPath   = __dirname + '/build/vf-components';
+  global.vfBuilderPath   = __dirname + '/build/vf-core-components';
   global.vfComponentPath = __dirname + '/src/components'; // where our VF components live
   global.vfDocsPath      = __dirname + '/src/fractal/docs';
   global.vfOpenBrowser   = false; // if you want to open a browser tab for the component library
@@ -65,7 +65,7 @@ gulp.task('eleventy', function(done) {
 
 // Let's build this sucker.
 gulp.task('build', gulp.series(
-  gulp.parallel('css','js'),
+  gulp.parallel('css','js','vf-css'),
   'elventy-set-to-build',
   'eleventy'
 ));
@@ -73,7 +73,7 @@ gulp.task('build', gulp.series(
 // Build and watch things during dev
 gulp.task('dev', gulp.series(
   // 'vf-css',
-  gulp.parallel('css','js'),
+  gulp.parallel('css','js','vf-css'),
   'elventy-set-to-serve',
   'eleventy',
   'watch'
