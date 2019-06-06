@@ -13,7 +13,7 @@ const config = JSON.parse(fs.readFileSync('./package.json'));
 global.vfName = config.vfConfig.vfName;
 global.vfNamespace = config.vfConfig.vfNamespace;
 global.vfComponentPath = './src/components';
-global.vfThemePath = '../node_modules/\@visual-framework/vf-core/tools/vf-frctl-theme';
+// global.vfThemePath = './tools/vf-frctl-theme';
 
 // -----------------------------------------------------------------------------
 // Dependencies
