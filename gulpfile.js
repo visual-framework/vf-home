@@ -3,7 +3,7 @@ const rename = require('gulp-rename');
 
 let fractalBuildMode = 'build';
 
-// Gulp tasks live in their own files, for the sake of clarity.
+// Some Gulp tasks live in their own files, for the sake of clarity.
 require('require-dir')('./gulp-tasks');
 
 // Eleventy config
@@ -19,16 +19,16 @@ gulp.task('watch', function() {
 // we'll also need to rewrite some contents
 // - frctl you do `{{> '@vf-lede' vf-lede-text=vf-intro_lede}}`
 // - 11ty: `{{> vf-lede vf-lede-text=vf-intro_lede}}` (edited)
-gulp.task('vf-components', () => {
-  return gulp
-    .src(['node_modules/@visual-framework/**/*.njk'])
-      .pipe(rename(function(path) {
-        // remove the subdirectory
-        // vf-heading/vf-heading.hbs => vf-heading.hbs
-        path.dirname = path.dirname.replace(/vf-.*/g, '');
-      }))
-      .pipe(gulp.dest('./src/site/_includes/components'));
-});
+// gulp.task('vf-components', () => {
+//   return gulp
+//     .src(['node_modules/@visual-framework/**/*.njk'])
+//       .pipe(rename(function(path) {
+//         // remove the subdirectory
+//         // vf-heading/vf-heading.hbs => vf-heading.hbs
+//         path.dirname = path.dirname.replace(/vf-.*/g, '');
+//       }))
+//       .pipe(gulp.dest('./src/site/_includes/components'));
+// });
 
 gulp.task('elventy-set-to-serve', function(done) {
   // Since we're not using the 11ty command line directly, we need to set the
@@ -72,6 +72,7 @@ gulp.task('build', gulp.series(
 
 // Build and watch things during dev
 gulp.task('dev', gulp.series(
+  // 'vf-css',
   gulp.parallel('css','js'),
   'elventy-set-to-serve',
   'eleventy',
