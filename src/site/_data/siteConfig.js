@@ -1,9 +1,9 @@
 // Some various reusable configuration
 module.exports = {
   siteInformation: {
-    title: "Eleventy for Visual Framework 2.0 components",
-    short_description: 'This allows using the <a class="vf-link" href="https://www.11ty.io">11ty</a> static site generator with direct access to <a class="vf-link" href="https://github.com/visual-framework/vf-core">Visual Framework 2.0</a> components.',
-    url: "https://visual-framework.github.io/vf-eleventy/",
+    title: "The Visual Framework 2.0",
+    short_description: 'A front-end toolkit to quickly build better life science websites',
+    url: "https://visual-framework.github.io/vf-welcome/",
     author: "Visual Framework system",
     email: "ken.hawkins@embl.de",
   }

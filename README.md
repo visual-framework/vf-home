@@ -1,17 +1,15 @@
 # Eleventy boilerplate for Visual Framework 2.0
 
-This allows you to use the [11ty](https://www.11ty.io) static site generator
-with direct access to Visual Framework 2.0 components.
+The homepage, welcome and onboarding site for the Visual Framework 2.0.
 
-## Cloning this repo
+## What's the Visual Framework?
 
-You can clone the files to your project by:
+[Head to the webpage!](https://visual-framework.github.io/vf-welcome)
 
-- `yarn pack @visual-framework/vf-boilerplate-eleventy`
-- `tar -xzf visual-framework-vf-boilerplate-eleventy-0.0.1.tgz`
-- `cd package`
-- `mv * ..`
-- `cd ..`
+## About this site
+
+It was built using the [Visual Framework Eleventy boilerplate](https://github.com/visual-framework/vf-eleventy),
+allowing direct usage of VF components.
 
 ## Local development
 
