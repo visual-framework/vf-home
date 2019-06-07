@@ -3,11 +3,6 @@
   "version": "0.0.1",
   "description": "Build a site with Visual Framework components using the the Eleventy templating engine.",
   "main": "gulpfile.js",
-  "vfConfig": {
-    "vfNamespace": "vf-",
-    "vfName": "Visual Framework 2.0",
-    "vfHomepage": "https://visual-framework.github.io/vf-core"
-  },
   "scripts": {
     "start": "npm run dev",
     "dev": "gulp dev",

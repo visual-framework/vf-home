@@ -6,12 +6,14 @@ const fs = require('fs');
 // Configuration
 // -----------------------------------------------------------------------------
 
-const autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
+// Pull in some optional configuration from the package.json file
 const config = JSON.parse(fs.readFileSync('./package.json'));
-global.vfName = config.vfConfig.vfName;
-global.vfNamespace = config.vfConfig.vfNamespace;
+config.vfConfig = config.vfConfig || [];
+global.vfName = config.vfConfig.vfName || "Visual Framework 2.0";
+global.vfNamespace = config.vfConfig.vfNamespace || "vf-";
 global.vfComponentPath = '../src/components';
 global.vfThemePath = './tools/vf-frctl-theme';
+const autoprefixerOptions = { overrideBrowserslist: ['last 2 versions', '> 5%', 'Firefox ESR'] };
 const path = require('path');
 const componentPath = path.resolve('.', 'src/components' );
 const SassInput = componentPath + '/vf-componenet-rollup/index.scss';
