@@ -72,7 +72,7 @@ gulp.task('build', gulp.series(
 
 // Build and watch things during dev
 gulp.task('dev', gulp.series(
-  // 'vf-css',
+  'vf-clean',
   gulp.parallel('css','js','vf-css','vf-component-assets'),
   'elventy-set-to-serve',
   'eleventy',
