@@ -64,6 +64,7 @@
     "@visual-framework/vf-lede": "^0.0.6",
     "@visual-framework/vf-text": "^0.0.30",
     "backstopjs": "^4.0.6",
+    "del": "^4.1.1",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
     "gulp-better-rollup": "^4.0.1",
