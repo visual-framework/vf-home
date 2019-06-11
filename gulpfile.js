@@ -65,6 +65,7 @@ gulp.task('eleventy', function(done) {
 
 // Let's build this sucker.
 gulp.task('build', gulp.series(
+  'vf-clean',
   gulp.parallel('css','js','vf-css','vf-component-assets'),
   'elventy-set-to-build',
   'eleventy'
