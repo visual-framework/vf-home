@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" media="all" href="https://dev.assets.emblstatic.net/vf/develop/css/styles.css" /> -->
+    <link rel="stylesheet" media="all" href="/css/styles.css" />
+    <link rel="stylesheet" media="all" href="/css/app.css" />
+    <title>The Visual Framework 2.0</title>
+  </head>
+  <body class="" >
+    <header class="vf-global-header">
+
+  <div class="vf-global-header__inner">
+
+<a href="http://www.embl.de"
+
+class="vf-logo--responsive">
+  <span class="vf-sr-only">Visual Framework 2.0</span>
+</a>
+
+    <p class="vf-global-header__site-name">Visual Framework for Life Science websites</p>
+
+<nav class="vf-navigation vf-navigation--global">
+  <ul class="vf-navigation__list | vf-list--inline">
+    <li class="vf-navigation__item">
+      <a href="JavaScript:Void(0);" class="vf-navigation__link">services</a>
+    </li>
+    <li class="vf-navigation__item">
+      <a href="JavaScript:Void(0);" class="vf-navigation__link">research</a>
+    </li>
+    <li class="vf-navigation__item">
+      <a href="JavaScript:Void(0);" class="vf-navigation__link">training</a>
+    </li>
+    <li class="vf-navigation__item">
+      <a href="JavaScript:Void(0);" class="vf-navigation__link">about us</a>
+    </li>
+  </ul>
+</nav>
+
+  </div>
+
+</header>
+
+    <div class="vf-body">
+      <div class="vf-grid">
+        <div>
+          <section class="vf-intro | embl-grid embl-grid--has-centered-content">
+<div>
+  <!-- empty -->
+</div>
+<div>
+  <h1 class="vf-intro__heading vf-intro__heading--has-tag">The Visual Framework 2.0 <a href="" class="vf-badge vf-badge--primary vf-badge--phases">alpha</a></h1>
+  <p class="vf-lede">A front-end toolkit to quickly build better life science websites</p>
+  <p class="vf-intro__text">The Visual Framework (VF) is designed with the needs of life science websites and services. It goes beyond guidance for tables, graphs, data-heavy typography and focuses on being sane defaults and implements its CSS in a way that won't interfere with your existing components that use Bootstrap, Angular, or something else.</p>
+</div>
+</section>
+<section class="vf-content | embl-grid embl-grid--has-centered-content">
+<div>
+<h2>🎫 What is this?</h2>
+</div>
+<div>
+<p>The VF 2.0 enables consistency and portability, it is extensible, modular and overridable; here to help and not get in the way.</p>
+<ul>
+<li><strong>Demo:</strong>  
+<a href="https://visual-framework.github.io/vf-core">Online component library</a>
+  §   <a href="https://github.com/visual-framework/vf-core/blob/develop/docs/changelog/index.md">Changelog</a></li>
+<li><strong>Philosophy:</strong>  
+<a href="https://blogs.embl.org/communications/2018/09/12/faster-scientific-websites-through-reusability/">Aims of the VF 2.0</a>
+  §   <a href="https://dev.beta.embl.org/guidelines/visual-framework/principles-methods/">Principles and Methods</a></li>
+<li><strong>Help out:</strong>  
+<a href="https://github.com/visual-framework/vf-core/blob/develop/CONTRIBUTING.md">Contributing guide</a>
+  §   <a href="https://github.com/visual-framework/vf-core/issues/new?template=new-component-request.md">Request a component</a>
+  §   <a href="https://visual-framework.github.io/vf-core/docs/guidelines.html">Make a new component</a></li>
+<li><strong>Make it your own:</strong>  
+<a href="https://github.com/khawkins98/vf-child-playground">Clone the child theme template</a></li>
+</ul>
+</div>
+</section>
+<section class="vf-content | embl-grid embl-grid--has-centered-content">
+<div>
+<h3>⏰ When will this be ready?</h3>
+</div>
+<div>
+<ul>
+<li>This is a v2.0 that was imagined in 2017 and development began in the summer of 2018.</li>
+<li>As of February 2019 we're on alpha.3.</li>
+<li>We're hopeful a beta could be ready before summer 2018.</li>
+</ul>
+<p>Watch the <a href="https://github.com/visual-framework/vf-core/releases">releases</a> and let us know your feedback: <a href="https://github.com/visual-framework/vf-core/issues">issues</a> or <a href="mailto:ken.hawkins@embl.de">email</a>.</p>
+</div>
+</section>
+<section class="vf-content | embl-grid embl-grid--has-centered-content">
+<div>
+<h3>🤔 Why a VF?</h3>
+</div>
+<div>
+<p>The Visual Framework address three major needs:</p>
+<ol>
+<li>⚗️🌳 Life sciences: We address common needs for <a href="https://www.ebi.ac.uk/services">life science websites</a>. The Visual Framework can be easily tailored to niche needs, but out of the box it's pleasant looking, but dry and serious to support focus, clarity and data.</li>
+<li>🏰 Share only what you need to: the Visual Framework is designed to work with other frameworks (both CSS, like Bootstrap, and JS, like React or Angular). This allows common components (and brand design) to be shared between sites without cross-contaminating into another framework. We mainly achieve this by:
+<ul>
+<li>Name spacing all selectors for CSS or JS (<code>vf-*</code>)</li>
+<li>No CSS styling on HTML elements. We only attached to name spaced classes, that is:
+<ul>
+<li>✅ <code>.vf-button {}</code></li>
+<li>🚫 <code>.button {}</code></li>
+<li>🚫 <code>button {}</code></li>
+<li>🚫🙊🙉 <code>div.button {}</code></li>
+</ul>
+</li>
+<li>🖕 This necessarily requires a bit more class writing, but it ensures the Visual Framework won't break existing code.</li>
+<li>BYOJS: Bring your own JavaScript. We've included only a minimal amount of JS in components and it's fully optional (just remove <a href="https://github.com/visual-framework/vf-core/issues/115#issuecomment-455524131">the JavaScript selectors</a>; i.e. <code>data-vf-js-tabs</code>). So if you'd rather use Angular or Bootstrap for your tabs, the Visual Framework won't get in the way.</li>
+</ul>
+</li>
+<li>🌕🌜 Use a little or a lot:
+<ul>
+<li>A lot: The framework (and <a href="https://github.com/khawkins98/vf-child-playground">child theme template</a>) will generate a monolithic <code>styles.css</code> and <code>script.js</code> that can be easily included, a la Bootstrap.</li>
+<li>A little: Instead you can include <code>.scss</code> partials or per-component <code>.css</code> and <code>.js</code> files. You can do this through making a <a href="https://github.com/khawkins98/vf-child-playground">child theme</a> or <a href="https://www.npmjs.com/org/visual-framework">npm installs</a>.</li>
+</ul>
+</li>
+</ol>
+</div>
+</section>
+<section class="vf-content | embl-grid embl-grid--has-centered-content">
+<div>
+<!-- empty -->
+</div>
+<div>
+<h2>🚧 ✍ Developing, contributing</h2>
+</div>
+</section>
+<section class="vf-content | embl-grid embl-grid--has-centered-content">
+<div>
+<h3>How do I make my own theme or customise components?</h3>
+</div>
+<div>
+<p><a id="get-started"></a> <a href="https://github.com/visual-framework/vf-core/blob/develop/docs">See the contributing guide</a></p>
+<h3>I have an idea or concern!</h3>
+<p>There are a few ways that we discuss and track ideas:</p>
+<ul>
+<li>⁉ General: Slack at <a href="https://embl-vf.slack.com/messages">embl-vf.slack.com</a> for general ideas and discussion</li>
+<li>⚙️ Technical: <a href="https://github.com/visual-framework/vf-ebi/issues">GitHub issues here</a> for implementing deeply technical and specific issues, like the Sass build process, browser bugs</li>
+<li>🏢 E-mail: if you have a sweeping Big Idea™️, e-mail Ken Hawkins <a href="mailto:ken.hawkins@embl.de">ken.hawkins@embl.de</a></li>
+</ul>
+</div>
+</section>
+<section class="vf-content | embl-grid embl-grid--has-centered-content">
+<div>
+<h2>Versioning</h2>
+</div>
+<div>
+<p><a href="https://github.com/visual-framework/vf-core/blob/develop/docs/changelog">See the versioning guide in the changelog</a></p>
+</div>
+</section>
+<section class="vf-content | embl-grid embl-grid--has-centered-content">
+<div>
+<h3>v2.0 Releases</h3>
+</div>
+<div>
+<p>As the Visual Framework is in heavy, active development, we will have many <code>v2.0.0-alpha.X</code> releases. With new alphas planned on a monthly basis (last Thursday of each month).</p>
+</div>
+</section>
+<section class="vf-content | embl-grid embl-grid--has-centered-content">
+<div>
+<h2>Local development</h2>
+</div>
+<div>
+<p>To use the Visual Framework your machine will require some software to be installed to start. <a href="https://github.com/visual-framework/vf-core/blob/develop/docs/contributing/setting-up.njk">See the &quot;Setting up&quot; guide</a>.</p>
+</div>
+</section>
+
+        </div>
+      </div>
+    </div>
+    <div class="vf-body">
+<div class="vf-grid">
+  <div>
+    <a href="https://github.com/visual-framework/vf-eleventy" class="vf-link">View vf-eleventy on GitHub</a> |
+    <a href="https://github.com/visual-framework/vf-core" class="vf-link">VF-Core v2.0-alpha.4</a> |
+    <a href="https://embl-vf.slack.com/messages" class="vf-link">Get help on Slack</a>
+
+    
+
+  </div>
+</div>
+</div>
+
+
+<!-- This page was generated on Invalid DateTime -->
+<script src="https://dev.assets.emblstatic.net/vf/develop/scripts/scripts.js"></script>
+
+  </body>
+</html>
