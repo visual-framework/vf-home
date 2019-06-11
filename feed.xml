@@ -1,0 +1,24 @@
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>The Visual Framework 2.0</title>
+  <subtitle>A front-end toolkit to quickly build better life science websites</subtitle>
+  <link href="https://visual-framework.github.io/vf-eleventy/feed.xml" rel="self"/>
+  <link href="https://visual-framework.github.io/vf-welcome/"/>
+  <updated>2019-04-09T12:24:50+00:00</updated>
+  <id>https://visual-framework.github.io/vf-eleventy</id>
+  <author>
+    <name>Visual Framework system</name>
+    <email>ken.hawkins@embl.de</email>
+  </author>
+  
+  <entry>
+    <title>I&#39;m an update</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/posts/sample-post/"/>
+    <updated>2019-04-09T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/posts/sample-post/</id>
+    <content type="html">&lt;p&gt;I&#39;m some content.&lt;/p&gt;
+</content>
+  </entry>
+</feed>
