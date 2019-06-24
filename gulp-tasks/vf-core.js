@@ -80,18 +80,26 @@ const reload = browserSync.reload;
 // -----------------------------------------------------------------------------
 
 const sassPaths = [
-  componentPath + '/vf-sass-config/variables',
-  componentPath + '/vf-sass-config/functions',
-  componentPath + '/vf-sass-config/mixins',
-  componentPath,
-  componentPath + '/vf-form',
-  componentPath + '/vf-core-components',
-  componentPath + '/vf-core-components/vf-sass-config/variables',
-  componentPath + '/vf-core-components/vf-sass-config/functions',
-  componentPath + '/vf-core-components/vf-sass-config/mixins',
+  // Design tokens have first priority
   componentPath + '/vf-design-tokens/dist/sass',
   componentPath + '/vf-design-tokens/dist/sass/custom-properties',
   componentPath + '/vf-design-tokens/dist/sass/maps',
+  componentPath + '/vf-core-components/vf-design-tokens/dist/sass',
+  componentPath + '/vf-core-components/vf-design-tokens/dist/sass/custom-properties',
+  componentPath + '/vf-core-components/vf-design-tokens/dist/sass/maps',
+  // then sass config
+  componentPath + '/vf-sass-config/variables',
+  componentPath + '/vf-sass-config/functions',
+  componentPath + '/vf-sass-config/mixins',
+  componentPath + '/vf-core-components/vf-sass-config/variables',
+  componentPath + '/vf-core-components/vf-sass-config/functions',
+  componentPath + '/vf-core-components/vf-sass-config/mixins',
+  // then components
+  componentPath,
+  componentPath + '/vf-core-components',
+  // and finally any multi-components
+  componentPath + '/vf-form',
+  componentPath + '/vf-core-components/vf-form',
   path.resolve(__dirname, 'node_modules'),
 ];
 
@@ -138,7 +146,7 @@ gulp.task('vf-css', function() {
   return gulp
     .src([componentPath+'/**/*.scss',componentPath+'/**/**/*.scss'], {
       allowEmpty: true,
-      ignore: [componentPath+'/**/index.scss',componentPath+'/**/**/index.scss']
+      ignore: [componentPath+'/**/index.scss',componentPath+'/**/**/index.scss',componentPath+'/vf-core-components/vf-core/components/**/*.scss']
     })
     .pipe(ListStream.obj(function (err, data) {
       if (err)
