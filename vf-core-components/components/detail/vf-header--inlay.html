@@ -226,7 +226,7 @@
 <span class="hljs-selector-pseudo">:root</span> {
   <span class="hljs-comment">/* These CSS properties are theming variables. If used, add to your HTML
      after the VF CSS for vf-masthead and before the HTML for vf-masthead. */</span>
-  <span class="hljs-attribute">--vf-masthead__bg-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">'{{ '</span>/assets/vf-masthead/assets/group-bg_2d4155.png<span class="hljs-string">' | path }}'</span>);
+  <span class="hljs-attribute">--vf-masthead__bg-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">'{{ '</span>../../assets/vf-masthead/assets/group-bg_2d4155.png<span class="hljs-string">' | path }}'</span>);
 }
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
 
@@ -267,11 +267,11 @@
                 
                 <option value="file-7845ee58ee31469e6adae962e8bc7c7c">index.scss</option>
                 
-                <option value="file-ae8c7578f8803b5cb5840be0d10a8580">package-lock.json</option>
-                
                 <option value="file-daed2da2f46c9774b64328aeaf3e6338">package.json</option>
                 
                 <option value="file-4c5e1acb4e8d7c8d7f27a97a73d36904">vf-header.scss</option>
+                
+                <option value="file-8f9fc273e2a208891a3227621e71e2ac">yarn.lock</option>
                 
             </select>
         </div>
@@ -500,48 +500,6 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
             </ul>
         </div>
         
-        <div class="FileBrowser-item" id="file-ae8c7578f8803b5cb5840be0d10a8580" data-role="resource-preview">
-            <ul class="Meta">
-                <li class="Meta-item">
-                    <strong class="Meta-key">Content:</strong>
-                    <span class="Meta-value">
-                        <div class="FileBrowser-itemPreview">
-                            
-                            <code class="Code Code--lang-JSON FileBrowser-code">
-                                <pre>{
-	<span class="hljs-attr">"name"</span>: <span class="hljs-string">"@visual-framework/vf-header"</span>,
-	<span class="hljs-attr">"version"</span>: <span class="hljs-string">"0.0.15"</span>,
-	<span class="hljs-attr">"lockfileVersion"</span>: <span class="hljs-number">1</span>,
-	<span class="hljs-attr">"requires"</span>: <span class="hljs-literal">true</span>,
-	<span class="hljs-attr">"dependencies"</span>: {
-		<span class="hljs-attr">"node-normalize-scss"</span>: {
-			<span class="hljs-attr">"version"</span>: <span class="hljs-string">"8.0.0"</span>,
-			<span class="hljs-attr">"resolved"</span>: <span class="hljs-string">"https://registry.npmjs.org/node-normalize-scss/-/node-normalize-scss-8.0.0.tgz"</span>,
-			<span class="hljs-attr">"integrity"</span>: <span class="hljs-string">"sha512-eQMVmvs2Hj33v3m/jstZOBGOr0lO+Rr3tamGdZxBtiUbJ/WXywsLz/LhVQDSugxG4TEnfYyGxdfbRVKNxw+x7g=="</span>
-		}
-	}
-}
-</pre>
-                            </code>
-                            
-                        </div>
-                    </span>
-                </li>
-                <li class="Meta-item">
-                    <strong class="Meta-key">URL:</strong>
-                    <span class="Meta-value"><a data-no-pjax href="../raw/vf-header/package-lock.json"><span>/components/raw/vf-header/package-lock.json</span></a></span>
-                </li>
-                <li class="Meta-item">
-                    <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">src/components/vf-core-components/vf-core/components/vf-header/package-lock.json</span>
-                </li>
-                <li class="Meta-item">
-                    <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">395 Bytes</span>
-                </li>
-            </ul>
-        </div>
-        
         <div class="FileBrowser-item" id="file-daed2da2f46c9774b64328aeaf3e6338" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
@@ -620,7 +578,7 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
 
 <span class="hljs-selector-class">.vf-header</span> {
   <span class="hljs-selector-class">.vf-navigation--main</span> {
-    grid-column: <span class="hljs-number">2</span> / -<span class="hljs-number">2</span>;
+    grid-column: <span class="hljs-number">1</span> / -<span class="hljs-number">1</span>;
   }
   <span class="hljs-selector-class">.vf-navigation--additional</span> {
     grid-column: <span class="hljs-number">1</span> / -<span class="hljs-number">1</span>;
@@ -647,12 +605,19 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
 <span class="hljs-selector-class">.vf-header--inlay</span> {
   grid-column: <span class="hljs-number">2</span> / -<span class="hljs-number">2</span>;
 
-  <span class="hljs-selector-class">.vf-masthead__heading</span> {
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">1rem</span>;
+  <span class="hljs-selector-class">.vf-navigation--main</span> {
+    &amp;::before {
+      <span class="hljs-attribute">display</span>: none;
+    }
   }
 
-  <span class="hljs-selector-class">.vf-navigation</span> {
-    grid-column: <span class="hljs-number">1</span> / -<span class="hljs-number">1</span>;
+  @<span class="hljs-keyword">media</span> (min-width: <span class="hljs-variable">$vf-breakpoint--l</span>) {
+    <span class="hljs-selector-class">.vf-masthead__heading</span> {
+      <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">3.75rem</span>; <span class="hljs-comment">// this makes the header have the same spacing as the rest of the inlay</span>
+    }
+    <span class="hljs-selector-class">.vf-navigation--main</span> {
+      <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">3rem</span>; <span class="hljs-comment">// this is so the first list item lines up</span>
+    }
   }
 }
 </pre>
@@ -671,7 +636,70 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">875 Bytes</span>
+                    <span class="Meta-value">1.1 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-8f9fc273e2a208891a3227621e71e2ac" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-JSON FileBrowser-code">
+                                <pre># THIS IS AN AUTOGENERATED FILE. DO NOT EDIT THIS FILE DIRECTLY.
+# yarn lockfile v1
+
+
+"@visual-framework/vf-global-header@^0.0.37":
+  version "0.0.37"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-global-header/-/vf-global-header-0.0.37.tgz#52a579bf7a36b7aee7a5f5338efa327a14ef6bf3"
+  dependencies:
+    "@visual-framework/vf-logo" "^0.0.37"
+    "@visual-framework/vf-navigation" "^0.0.37"
+
+"@visual-framework/vf-grid@^0.0.37":
+  version "0.0.37"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-grid/-/vf-grid-0.0.37.tgz#672edf335aa597513683d94b10c62aebdd23b7af"
+
+"@visual-framework/vf-list@^0.0.36":
+  version "0.0.36"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-list/-/vf-list-0.0.36.tgz#d760583d886b80e3dace309d8e46a41506927202"
+
+"@visual-framework/vf-logo@^0.0.37":
+  version "0.0.37"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-logo/-/vf-logo-0.0.37.tgz#88464930578d9fbaddc2f74560a69c34e7ca5e98"
+
+"@visual-framework/vf-masthead@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-masthead/-/vf-masthead-0.0.38.tgz#2f3621fbbc7af83925c7ffaced8a789805ee47ce"
+  dependencies:
+    "@visual-framework/vf-grid" "^0.0.37"
+
+"@visual-framework/vf-navigation@^0.0.37":
+  version "0.0.37"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-navigation/-/vf-navigation-0.0.37.tgz#f7029ecfdaffce400a7c2fbdae2144aba24128d6"
+  dependencies:
+    "@visual-framework/vf-list" "^0.0.36"
+</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/vf-header/yarn.lock"><span>/components/raw/vf-header/yarn.lock</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src/components/vf-core-components/vf-core/components/vf-header/yarn.lock</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">1.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -762,7 +790,7 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
 <h2 id="about">About</h2>
 <h2 id="installation-and-implementation">Installation and Implementation</h2>
 <p>This component is distributed with npm. After <a href="https://www.npmjs.com/get-npm">installing npm</a>, you can install the <code>vf-header</code> with this command.</p>
-<code><pre>$ <span class="hljs-built_in">npm</span> install --save @visual-framework/vf-header</pre></code><p>The source files included are written in <a href="http://sass-lang.com">Sass</a>(<code>scss</code>). You can point your Sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this.</p>
+<code><pre>$ yarn <span class="hljs-keyword">add</span><span class="bash"> --dev @visual-framework/vf-header</span></pre></code><p>The source files included are written in <a href="http://sass-lang.com">Sass</a>(<code>scss</code>). You can point your Sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this.</p>
 <code><pre>@<span class="hljs-keyword">import</span> <span class="hljs-string">"@visual-framework/vf-header/index.scss"</span>;</pre></code><p><em>Make sure you import any requirements along with the modules.</em></p>
 
         
@@ -2766,6 +2794,70 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
 
 
 <span class="Status-dot" style="border-color: #E89300;" title="beta"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-5" data-behaviour="collection" id="tree-components-collection-vf-card">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Card</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="vf-card--topic-card.html" data-pjax>
+                <span>Topic Card</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #DC0A28;" title="alhpa"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="vf-card--navigation-card.html" data-pjax>
+                <span>Navigation Card</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #DC0A28;" title="alhpa"></span>
 
 
 </div>
@@ -5182,6 +5274,30 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="setting-up.html" data-pjax>
                 <span>Setting Up</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #DC0A28;" title="alhpa"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="updating-a-component.html" data-pjax>
+                <span>Updating A Component</span>
                 
 
 <div class="Status Status--unlabelled">

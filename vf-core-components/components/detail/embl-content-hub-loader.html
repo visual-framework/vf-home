@@ -455,9 +455,12 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
 @<span class="hljs-keyword">import</span> <span class="hljs-string">'embl-content-hub-loader.variables.scss'</span>;
 
 <span class="hljs-comment">// contentHub html caries an extra div that should be outside of the grid layout</span>
-<span class="hljs-selector-class">.vf-content-hub-html</span> {
+<span class="hljs-selector-class">.embl-grid</span> &gt; <span class="hljs-selector-class">.vf-content-hub-html</span>,
+<span class="hljs-selector-class">.vf-grid</span> &gt; <span class="hljs-selector-class">.embl-content-hub-html</span>,
+<span class="hljs-selector-class">.embl-grid</span> &gt; <span class="hljs-selector-class">.vf-content-hub-html</span>,
+<span class="hljs-selector-class">.vf-grid</span> &gt; <span class="hljs-selector-class">.embl-content-hub-html</span> {
   grid-column: <span class="hljs-number">1</span> / -<span class="hljs-number">1</span>;
-  <span class="hljs-comment">// @todo: this should probably be .embl-content-hub-html, but that requires a</span>
+  <span class="hljs-comment">// @todo: this should probably just be .embl-content-hub-html, but that requires a</span>
   <span class="hljs-comment">//        disruptive change in the contenthub itself and will impact many systems.</span>
   <span class="hljs-comment">//        that change will require coordination</span>
 }
@@ -477,7 +480,7 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">423 Bytes</span>
+                    <span class="Meta-value">546 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -596,6 +599,11 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
   <span class="hljs-comment">// Add a class to the body once the last item has been processed</span>
   <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">emblContentHubSignalFinished</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">'body'</span>)[<span class="hljs-number">0</span>].classList.add(<span class="hljs-string">'embl-content-hub-loaded'</span>);
+
+    <span class="hljs-comment">// if the JS to run embl-conditional-edit is present, run it now</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> emblConditionalEdit === <span class="hljs-string">"function"</span>) {
+      emblConditionalEdit();
+    }
   }
 
   <span class="hljs-comment">// Dispatch load to the pollyfill</span>
@@ -745,7 +753,7 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">7.5 KB</span>
+                    <span class="Meta-value">7.7 KB</span>
                 </li>
             </ul>
         </div>
@@ -1062,7 +1070,7 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
 <p>Currently this is done as HTML imports (see the code example) + some JS. In the future other methods will be support (such as JSON).</p>
 <h2 id="install">Install</h2>
 <p>This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install <code>primer-buttons</code> with this command.</p>
-<code><pre>$ <span class="hljs-built_in">npm</span> install --save @visual-framework/embl-content-hub-loader</pre></code><h2 id="usage">Usage</h2>
+<code><pre>$ yarn <span class="hljs-keyword">add</span><span class="bash"> --dev @visual-framework/embl-content-hub-loader</span></pre></code><h2 id="usage">Usage</h2>
 <p>The source files included are written in [Sass][sass] (<code>scss</code>) You can simply point your sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this.</p>
 <code><pre>@<span class="hljs-keyword">import</span> <span class="hljs-string">"@visual-framework/embl-content-hub-loader/index.scss"</span>;</pre></code><p><em>Make sure you import any requirements along with the modules.</em></p>
 
@@ -3067,6 +3075,70 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
 
 
 <span class="Status-dot" style="border-color: #E89300;" title="beta"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-5" data-behaviour="collection" id="tree-components-collection-vf-card">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Card</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="vf-card--topic-card.html" data-pjax>
+                <span>Topic Card</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #DC0A28;" title="alhpa"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="vf-card--navigation-card.html" data-pjax>
+                <span>Navigation Card</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #DC0A28;" title="alhpa"></span>
 
 
 </div>
@@ -5483,6 +5555,30 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="setting-up.html" data-pjax>
                 <span>Setting Up</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #DC0A28;" title="alhpa"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="updating-a-component.html" data-pjax>
+                <span>Updating A Component</span>
                 
 
 <div class="Status Status--unlabelled">
