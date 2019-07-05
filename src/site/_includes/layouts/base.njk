@@ -10,12 +10,52 @@
     <title>{{ title or (renderData and renderData.title) or siteConfig.siteInformation.title}}</title>
   </head>
   <body class="{{ bodyClass }}" >
-    {% render '@vf-global-header' %}
+    <header class="vf-global-header">
+
+      <div class="vf-global-header__inner">
+
+        <a href="{{ '/' | url }}" class="vf-logo--responsive">
+          <span class="vf-sr-only">{{siteConfig.siteInformation.title}}</span>
+        </a>
+        <a href="{{ '/' | url }}" class="vf-link | vf-global-header__site-name">{{ siteConfig.siteInformation.title }}</a>
+
+        {# {% render '@vf-navigation--global' %} #}
+
+      </div>
+
+    </header>
+
     <div class="vf-body">
       <div class="vf-grid">
         <div>
           {{ content | safe }}
+
+
+          <hr class="vf-divider" />
+
+          <section class="vf-content | embl-grid embl-grid--has-centered-content">
+          <div>
+
+            <h4>I have an idea or concern!</h4>
+
+          </div>
+          <div>
+
+          {% markdown %}
+
+          There are a few ways that we discuss and track ideas:
+
+          - ⁉ General: Slack at [embl-vf.slack.com](https://embl-vf.slack.com/messages) for general ideas and discussion
+          - ⚙️ Technical: [GitHub issues here](https://github.com/visual-framework/vf-ebi/issues) for implementing deeply technical and specific issues, like the Sass build process, browser bugs
+          - 🏢 E-mail: if you have a sweeping Big Idea™️, e-mail Ken Hawkins <ken.hawkins@embl.de>
+          {% endmarkdown %}
+
+          </div>
+          </section>
+
         </div>
+
+
       </div>
     </div>
     {% include "footer.njk" %}

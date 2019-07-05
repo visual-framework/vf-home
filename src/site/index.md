@@ -22,7 +22,7 @@ layout: layouts/base.njk
 <section class="vf-content | embl-grid embl-grid--has-centered-content">
 <div>
 
-## 🎫 What is this?
+#### 🎫 What is this?
 
 </div>
 <div>
@@ -49,7 +49,7 @@ The VF 2.0 enables consistency and portability, it is extensible, modular and ov
 <section class="vf-content | embl-grid embl-grid--has-centered-content">
 <div>
 
-### ⏰ When will this be ready?
+#### ⏰ When will this be ready?
 
 </div>
 <div>
@@ -67,7 +67,7 @@ Watch the [releases](https://github.com/visual-framework/vf-core/releases) and l
 <section class="vf-content | embl-grid embl-grid--has-centered-content">
 <div>
 
-### 🤔 Why a VF?
+#### 🤔 Why a VF?
 
 </div>
 <div>
@@ -101,35 +101,27 @@ The Visual Framework address three major needs:
 <div>
 
 
-## 🚧 ✍ Developing, contributing
+#### 🚧 ✍ Developing, contributing
 </div>
 </section>
 
 <section class="vf-content | embl-grid embl-grid--has-centered-content">
 <div>
 
-### How do I make my own theme or customise components?
+#### How do I make my own theme or customise components?
 
 </div>
 <div>
 
 <a id="get-started"></a> [See the contributing guide](https://github.com/visual-framework/vf-core/blob/develop/docs)
 
-### I have an idea or concern!
-
-There are a few ways that we discuss and track ideas:
-
-- ⁉ General: Slack at [embl-vf.slack.com](https://embl-vf.slack.com/messages) for general ideas and discussion
-- ⚙️ Technical: [GitHub issues here](https://github.com/visual-framework/vf-ebi/issues) for implementing deeply technical and specific issues, like the Sass build process, browser bugs
-- 🏢 E-mail: if you have a sweeping Big Idea™️, e-mail Ken Hawkins <ken.hawkins@embl.de>
-
 </div>
 </section>
 
 <section class="vf-content | embl-grid embl-grid--has-centered-content">
 <div>
 
-## Versioning
+#### Versioning
 
 </div>
 <div>
@@ -143,7 +135,7 @@ There are a few ways that we discuss and track ideas:
 <section class="vf-content | embl-grid embl-grid--has-centered-content">
 <div>
 
-### v2.0 Releases
+#### v2.0 Releases
 
 </div>
 <div>
@@ -158,7 +150,7 @@ As the Visual Framework is in heavy, active development, we will have many `v2.0
 <section class="vf-content | embl-grid embl-grid--has-centered-content">
 <div>
 
-## Local development
+#### Local development
 
 </div>
 <div>
