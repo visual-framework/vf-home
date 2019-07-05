@@ -21,9 +21,9 @@ module.exports = function(config) {
   // -----
 
   // {{ "myContent" | sampleFilter }}
-  config.addFilter("sampleFilter", function(value) {
-    return 'ddd' + value;
-  });
+  // config.addFilter("sampleFilter", function(value) {
+  //   return 'ddd' + value;
+  // });
 
   // Add some utiliuty filters
   config.addFilter("markdown", require("./src/filters/markdown.js") );
@@ -55,6 +55,17 @@ module.exports = function(config) {
   config.addNunjucksTag("render", function(nunjucksEngine) {
     var fractalRenderExtension = require("./src/filters/render.js");
     return new fractalRenderExtension(nunjucksEngine,fractal);
+  });
+
+  // Add a tag level markdown filter
+  // {% markdown %}
+  //
+  // [I'm some markdown](#link)
+  //
+  // {% endmarkdown %}
+  config.addNunjucksTag("markdown", function(nunjucksEngine) {
+    var fractalRenderExtension = require("./src/filters/markdown_tag.js");
+    return new fractalRenderExtension(nunjucksEngine);
   });
 
   // config.addNunjucksTag("uppercase", function(nunjucksEngine) {
