@@ -2,7 +2,7 @@
 
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>The Visual Framework 2.0</title>
+  <title>Welcome to the Visual Framework 2.0</title>
   <subtitle>A front-end toolkit to quickly build better life science websites</subtitle>
   <link href="https://visual-framework.github.io/vf-eleventy/feed.xml" rel="self"/>
   <link href="https://visual-framework.github.io/vf-welcome/"/>
