@@ -4,6 +4,48 @@
     <loc>/</loc>
   </url>
   <url>
+    <loc>/documentation/components/1-creating-new-components/</loc>
+  </url>
+  <url>
+    <loc>/documentation/components/2-updating-a-component/</loc>
+  </url>
+  <url>
+    <loc>/documentation/components/3-deprecating-components/</loc>
+  </url>
+  <url>
+    <loc>/documentation/getting-started/1-code-of-conduct/</loc>
+  </url>
+  <url>
+    <loc>/documentation/getting-started/2-structure/</loc>
+  </url>
+  <url>
+    <loc>/documentation/getting-started/3-setting-up/</loc>
+  </url>
+  <url>
+    <loc>/documentation/getting-started/4-naming/</loc>
+  </url>
+  <url>
+    <loc>/documentation/getting-started/5-pull-requests/</loc>
+  </url>
+  <url>
+    <loc>/documentation/guidelines/css/</loc>
+  </url>
+  <url>
+    <loc>/documentation/guidelines/governance/</loc>
+  </url>
+  <url>
+    <loc>/documentation/guidelines/javascript/</loc>
+  </url>
+  <url>
+    <loc>/documentation/guidelines/user-base/</loc>
+  </url>
+  <url>
+    <loc>/documentation/guidelines/versioning/</loc>
+  </url>
+  <url>
+    <loc>/documentation/</loc>
+  </url>
+  <url>
     <loc>/posts/sample-post/</loc>
   </url>
 </urlset>
