@@ -12,7 +12,7 @@ layout: layouts/base.njk
   <h1 class="vf-intro__heading vf-intro__heading--has-tag">Welcome <a href="" class="vf-badge vf-badge--primary vf-badge--phases">alpha</a></h1>
   <p class="vf-lede">The Visual Frameowrk 2.0: {{ siteConfig.siteInformation.short_description | safe }}</p>
 
-  <p class="vf-intro__text">The Visual Framework (VF) is designed with the needs of life science websites and services. It goes beyond guidance for tables, graphs, data-heavy typography and focuses on being sane defaults and implements its CSS in a way that won't interfere with your existing components that use Bootstrap, Angular, or something else.</p>
+  <p class="vf-intro__text">The Visual Framework (VF) is designed with the <a href="https://blogs.embl.org/communications/2018/09/12/faster-scientific-websites-through-reusability" class="vf-link">needs of life science websites and services</a>. It goes beyond guidance for tables, graphs, data-heavy typography and focuses on being sane defaults and implements its CSS in a way that won't interfere with your existing components that use Bootstrap, Angular, or something else.</p>
 
 </div>
 </section>
