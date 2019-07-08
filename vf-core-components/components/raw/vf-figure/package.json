@@ -1,5 +1,5 @@
 {
-  "version": "0.0.36",
+  "version": "0.0.37",
   "name": "@visual-framework/vf-figure",
   "description": "vf-figure component",
   "homepage": "https://visual-framework.github.io/vf-core/",
@@ -19,5 +19,5 @@
     "fractal",
     "component"
   ],
-  "gitHead": "7bb3e8605bb5e604a55e7480e8e0d7620cee1b7f"
+  "gitHead": "44284637cfbb3cc73a97ba62b0c3103e49f27d40"
 }

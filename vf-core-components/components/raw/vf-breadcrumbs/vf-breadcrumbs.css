@@ -35,6 +35,8 @@
   --vf-ui-color--grey--light: #d8d8d8;
   --vf-ui-color--yellow: #fffadc;
   --vf-ui-color--red: #d32f2f;
+  --vf-ui-color--white: #ffffff;
+  --vf-ui-color--off-white: #fafafa;
 }
 
 .vf-list {
@@ -46,6 +48,10 @@
   line-height: 1.71;
   margin: 0 0 16px 0;
   margin: 0 0 var(--vf-text-margin--bottom, 16px) 0;
+}
+
+.vf-list__item {
+  margin-bottom: 16px;
 }
 
 .vf-list--l {
@@ -62,10 +68,18 @@
   padding-left: 16px;
 }
 
+.vf-list--ordered__item {
+  margin-bottom: 16px;
+}
+
 .vf-list--unordered {
   margin: 0;
   padding-left: 16px;
   list-style-type: disc;
+}
+
+.vf-list--unordered__item {
+  margin-bottom: 16px;
 }
 
 .vf-list--inline {
@@ -76,6 +90,10 @@
 
 .vf-list--inline [class*=__item] {
   display: inline;
+}
+
+.vf-list--inline__item {
+  margin-bottom: 16px;
 }
 
 .vf-list__link {
@@ -97,10 +115,27 @@
 }
 
 .vf-breadcrumbs {
-  display: flex;
-  grid-column: 1 / -1;
+  grid-column: main;
   margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 16px;
+  max-width: 76.5em;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .vf-breadcrumbs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-wdith: 1023px) {
+  .vf-breadcrumbs__list:not(.vf-breadcrumbs__list.vr-breadcrumbs__list--related) {
+    display: block;
+  }
 }
 
 .vf-breadcrumbs__item {
@@ -109,6 +144,7 @@
   line-height: 1.71;
   margin: 0 0 16px 0;
   margin: 0 0 var(--vf-text-margin--bottom, 16px) 0;
+  color: #000000;
   margin-right: 3px;
   position: relative;
 }
@@ -128,8 +164,10 @@
   display: inline;
 }
 
-.vf-breadcrumbs__list + .vf-breadcrumbs__heading {
-  margin-left: 32px;
+@media (min-width: 1024px) {
+  .vf-breadcrumbs__list + .vf-breadcrumbs__heading {
+    margin-left: 32px;
+  }
 }
 
 .vf-breadcrumbs__link {
@@ -144,6 +182,10 @@
 
 .vf-breadcrumbs__list--related .vf-breadcrumbs__item:not(:last-of-type)::after {
   content: '';
+}
+
+.vf-breadcrumbs__list--related .vf-breadcrumbs__link {
+  color: #307fe2;
 }
 
 .vf-breadcrumbs__list--related .vf-breadcrumbs__link:hover {
