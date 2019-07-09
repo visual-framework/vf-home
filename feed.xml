@@ -14,10 +14,10 @@
   </author>
   
   <entry>
-    <title>1. Creating a new component</title>
-    <link href="https://visual-framework.github.io/vf-eleventy/documentation/components/1-creating-new-components/"/>
+    <title>Creating a new component</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/documentation/components/creating-new-components/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-eleventy/documentation/components/1-creating-new-components/</id>
+    <id>https://visual-framework.github.io/vf-eleventy/documentation/components/creating-new-components/</id>
     <content type="html">
 This codebase includes a folder and file creation tool. It allows you to quickly create all the required files to make a component. It gives you the option to create am element, block, or container.
 
@@ -56,40 +56,10 @@ This codebase includes a folder and file creation tool. It allows you to quickly
   </entry>
   
   <entry>
-    <title>2. Updating, versioning a component</title>
-    <link href="https://visual-framework.github.io/vf-eleventy/documentation/components/2-updating-a-component/"/>
+    <title>Deprecating components</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/documentation/components/deprecating-components/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-eleventy/documentation/components/2-updating-a-component/</id>
-    <content type="html">
-Like the Visual Framework 2.0, components follow [semantic versioning](https://semver.org/) by increasing their full version number every time they have breaking changes.
-
-However the version number of components its not tied to the version number of the Visual Framework&#39;s `vf-core`; that is:
-
-- `vf-core​@2.1.2` might use `vf-button​@1.0.1` and `vf-component-x​@8.2.1`
-- `vf-button@1.0.1` might require `vf-link@3.0.1` or newer
-
-As such components should specify if they only support specific versions of `vf-core` or require other specific versions of patterns.
-
-Other notes and tips on components:
-
-- should use a [semantic versioning](https://semver.org/) style of releases.
-- must work with `vf-core v2.x`, but a component may specify a
-minimum required minor version of vf-core.
-- may indicate any required versions of peer-components in your component&#39;s README.md.
-    - `vf-component-x`@`2.1.2` requires `vf-component-y`@`^8.1.0`
-- can live as part of the `vf-core` [monorepo](https://gomonorepo.org/)
-    - Interested in adding a component? [Get in touch](https://embl-vf.slack.com/messages)
-- You can read more about [component versioning in this issue](https://github.com/visual-framework/vf-core/issues/119).
-
-&lt;span class=&quot;vf-badge vf-badge--tertiary&quot;&gt;Related&lt;/span&gt; [Notes on VF versioning](/vf-welcome/documentation/guidelines/versioning).
-</content>
-  </entry>
-  
-  <entry>
-    <title>3. Deprecating components</title>
-    <link href="https://visual-framework.github.io/vf-eleventy/documentation/components/3-deprecating-components/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-eleventy/documentation/components/3-deprecating-components/</id>
+    <id>https://visual-framework.github.io/vf-eleventy/documentation/components/deprecating-components/</id>
     <content type="html">
 Inevitably code will be replaced and improved, leaving components stale and or outdated. So we should tell developers to not use them, here&#39;s how.
 
@@ -134,10 +104,40 @@ See also: [example `vf-deprecated` component](https://github.com/visual-framewor
   </entry>
   
   <entry>
-    <title>1. Code of conduct</title>
-    <link href="https://visual-framework.github.io/vf-eleventy/documentation/getting-started/1-code-of-conduct/"/>
+    <title>Updating, versioning a component</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/documentation/components/updating-a-component/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-eleventy/documentation/getting-started/1-code-of-conduct/</id>
+    <id>https://visual-framework.github.io/vf-eleventy/documentation/components/updating-a-component/</id>
+    <content type="html">
+Like the Visual Framework 2.0, components follow [semantic versioning](https://semver.org/) by increasing their full version number every time they have breaking changes.
+
+However the version number of components its not tied to the version number of the Visual Framework&#39;s `vf-core`; that is:
+
+- `vf-core​@2.1.2` might use `vf-button​@1.0.1` and `vf-component-x​@8.2.1`
+- `vf-button@1.0.1` might require `vf-link@3.0.1` or newer
+
+As such components should specify if they only support specific versions of `vf-core` or require other specific versions of patterns.
+
+Other notes and tips on components:
+
+- should use a [semantic versioning](https://semver.org/) style of releases.
+- must work with `vf-core v2.x`, but a component may specify a
+minimum required minor version of vf-core.
+- may indicate any required versions of peer-components in your component&#39;s README.md.
+    - `vf-component-x`@`2.1.2` requires `vf-component-y`@`^8.1.0`
+- can live as part of the `vf-core` [monorepo](https://gomonorepo.org/)
+    - Interested in adding a component? [Get in touch](https://embl-vf.slack.com/messages)
+- You can read more about [component versioning in this issue](https://github.com/visual-framework/vf-core/issues/119).
+
+&lt;span class=&quot;vf-badge vf-badge--tertiary&quot;&gt;Related&lt;/span&gt; [Notes on VF versioning](/vf-welcome/documentation/guidelines/versioning).
+</content>
+  </entry>
+  
+  <entry>
+    <title>Code of conduct</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/documentation/getting-started/code-of-conduct/"/>
+    <updated>2019-04-09T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/documentation/getting-started/code-of-conduct/</id>
     <content type="html">
 We don&#39;t yet have a full policy but, in general: be nice, respectful
 and considerate. The maintainers will do the same.
@@ -145,118 +145,10 @@ and considerate. The maintainers will do the same.
   </entry>
   
   <entry>
-    <title>2. Structure of the Visual Framework</title>
-    <link href="https://visual-framework.github.io/vf-eleventy/documentation/getting-started/2-structure/"/>
+    <title>Naming things</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/documentation/getting-started/naming/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-eleventy/documentation/getting-started/2-structure/</id>
-    <content type="html">
-## Design decisions and tokens
-
-The Visual Framework uses the [Design Token concept](https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421) to specify design (colour, spacing, type) as reusable JSON or YAML that are translated from `.yml` data into `.scss` using [Theo](https://github.com/salesforce-ux/theo#-theo).
-
-This Design Token abstraction [helps portability and integration](https://uxdesign.cc/design-tokens-for-dummies-8acebf010d71) with other technical systems.
-
-You can find the Design Tokens in `components/vf-design-tokens`.
-
-## File structure
-
-
-
-The `vf-core` repo contains three types of files:
-
-1. Components that are located in `./components`
-2. Build scripts located in the root of the project (mainly)
-3. The web interface `./tools/vf-frctl-theme`
-
-
-## Detailed overview
-
-&lt;div class=&quot;vf-box&quot;&gt;
-
-&lt;pre&gt;
-    ├── .editorconfig
-    ├── CHANGELOG.md
-    ├── CONTRIBUTING.md
-    ├── README.md
-    ├── components  (all the components you wish to use)
-    │   ├── _previews (templates for the web component browser)
-    │   ├── vf-activity-group
-    |   |   ...
-    │   └── vf-video-teaser
-    ├── docs (documentation files for the web interface)
-    ├── fractal.js (configuration for the web component library)
-    ├── gulpfile.js
-    ├── lerna.json
-    ├── package.json
-    ├── public (dynamic folder used for rendering of global CSS, JS, component assets)
-    └── tools
-        ├── component-generator (make new components)
-        ├── css-generator (build requirement)
-        └── vf-frctl-theme (web interface)
-&lt;/pre&gt;
-
-&lt;/div&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title>3. Setting up your development environment</title>
-    <link href="https://visual-framework.github.io/vf-eleventy/documentation/getting-started/3-setting-up/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-eleventy/documentation/getting-started/3-setting-up/</id>
-    <content type="html">
-To develop the Visual Framework your will need some software.
-
-## Development environment
-
-If you don&#39;t already have a code editor and are new to git, a good starting point is to:
-
-1. [Setup a GitHub.com account](https://github.com/join)
-1. Install the [GitHub Desktop git client](https://desktop.github.com/)
-1. For editing code, [install Atom](https://atom.io/)
-
-## Development tools
-
-First, see if you have the needed tools installed.
-
-1. Open a command line/terminal
-1. Enter `node -v`
-1. Enter `gulp -v`
-1. Enter `yarn -v`
-
-If any of those steps return an error you need to install the corresponding
-software.
-
-- To install Node: go to the official [downloads page](https://nodejs.org/download/)
-- To install Gulp: Gulp requires Node and can be installed by: `yarn global add gulpjs/gulp-cli`
-- To install Yarn: Yarn require Node, [follow the install guide](https://yarnpkg.com/lang/en/docs/install/)
-
-## Installing the Visual Framework
-
-You only need to clone this repo if you wish to make a pull request to create, amend or delete components of the `vf-core`.
-
-Here&#39;s how:
-
-1. Clone this repo
-    - `git clone https://github.com/visual-framework/vf-ebi.git`
-1. Move to the directory
-    - `cd visual-framework-tooling-prototype`
-1. You probably want the develop branch (or [your new feature branch](https://github.com/visual-framework/vf-core/blob/develop/CONTRIBUTING.md))
-    - `git checkout develop`
-1. Install [fractal](https://github.com/frctl/fractal) You might need to use `sudo`.
-    - `yarn global add @frctl/fractal`
-1. Download all the things
-    - `yarn install`
-1. Run a dev build and open in your browser
-    - `gulp vf-dev`
-</content>
-  </entry>
-  
-  <entry>
-    <title>4. Naming things</title>
-    <link href="https://visual-framework.github.io/vf-eleventy/documentation/getting-started/4-naming/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-eleventy/documentation/getting-started/4-naming/</id>
+    <id>https://visual-framework.github.io/vf-eleventy/documentation/getting-started/naming/</id>
     <content type="html">
 &lt;p class=&quot;vf-lede&quot;&gt;The Visual Framework uses a dual approach for the naming of things.&lt;/p&gt;
 
@@ -311,10 +203,10 @@ and UK.gov&#39;s information on [patterns](https://design-system.service.gov.uk/
   </entry>
   
   <entry>
-    <title>5. Making your first Pull Request</title>
-    <link href="https://visual-framework.github.io/vf-eleventy/documentation/getting-started/5-pull-requests/"/>
+    <title>Making your first Pull Request</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/documentation/getting-started/pull-requests/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-eleventy/documentation/getting-started/5-pull-requests/</id>
+    <id>https://visual-framework.github.io/vf-eleventy/documentation/getting-started/pull-requests/</id>
     <content type="html">
 To contribute code back, you&#39;ll need to make a PR ([Pull Request](https://help.github.com/en/articles/about-pull-requests)),
 as you won&#39;t have write access, GitHub will prompt you to fork the `vf-core` repository
@@ -354,6 +246,114 @@ builds.
 To be confident that we can ammend components code if needed without breaking anything we need to test against the agreed look and interaction(s) of a component.
 
 We are making use of [Percy](https://percy.io/EMBL/EMBL-Visual-Framework) to do this, comparisons will be automatically generated before a pull request for a component is accepted.
+</content>
+  </entry>
+  
+  <entry>
+    <title>Setting up your development environment</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/documentation/getting-started/setting-up/"/>
+    <updated>2019-04-09T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/documentation/getting-started/setting-up/</id>
+    <content type="html">
+To develop the Visual Framework your will need some software.
+
+## Development environment
+
+If you don&#39;t already have a code editor and are new to git, a good starting point is to:
+
+1. [Setup a GitHub.com account](https://github.com/join)
+1. Install the [GitHub Desktop git client](https://desktop.github.com/)
+1. For editing code, [install Atom](https://atom.io/)
+
+## Development tools
+
+First, see if you have the needed tools installed.
+
+1. Open a command line/terminal
+1. Enter `node -v`
+1. Enter `gulp -v`
+1. Enter `yarn -v`
+
+If any of those steps return an error you need to install the corresponding
+software.
+
+- To install Node: go to the official [downloads page](https://nodejs.org/download/)
+- To install Gulp: Gulp requires Node and can be installed by: `yarn global add gulpjs/gulp-cli`
+- To install Yarn: Yarn require Node, [follow the install guide](https://yarnpkg.com/lang/en/docs/install/)
+
+## Installing the Visual Framework
+
+You only need to clone this repo if you wish to make a pull request to create, amend or delete components of the `vf-core`.
+
+Here&#39;s how:
+
+1. Clone this repo
+    - `git clone https://github.com/visual-framework/vf-ebi.git`
+1. Move to the directory
+    - `cd visual-framework-tooling-prototype`
+1. You probably want the develop branch (or [your new feature branch](https://github.com/visual-framework/vf-core/blob/develop/CONTRIBUTING.md))
+    - `git checkout develop`
+1. Install [fractal](https://github.com/frctl/fractal) You might need to use `sudo`.
+    - `yarn global add @frctl/fractal`
+1. Download all the things
+    - `yarn install`
+1. Run a dev build and open in your browser
+    - `gulp vf-dev`
+</content>
+  </entry>
+  
+  <entry>
+    <title>Structure of the Visual Framework</title>
+    <link href="https://visual-framework.github.io/vf-eleventy/documentation/getting-started/structure/"/>
+    <updated>2019-04-09T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-eleventy/documentation/getting-started/structure/</id>
+    <content type="html">
+## Design decisions and tokens
+
+The Visual Framework uses the [Design Token concept](https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421) to specify design (colour, spacing, type) as reusable JSON or YAML that are translated from `.yml` data into `.scss` using [Theo](https://github.com/salesforce-ux/theo#-theo).
+
+This Design Token abstraction [helps portability and integration](https://uxdesign.cc/design-tokens-for-dummies-8acebf010d71) with other technical systems.
+
+You can find the Design Tokens in `components/vf-design-tokens`.
+
+## File structure
+
+
+
+The `vf-core` repo contains three types of files:
+
+1. Components that are located in `./components`
+2. Build scripts located in the root of the project (mainly)
+3. The web interface `./tools/vf-frctl-theme`
+
+
+## Detailed overview
+
+&lt;div class=&quot;vf-box&quot;&gt;
+
+&lt;pre&gt;
+    ├── .editorconfig
+    ├── CHANGELOG.md
+    ├── CONTRIBUTING.md
+    ├── README.md
+    ├── components  (all the components you wish to use)
+    │   ├── _previews (templates for the web component browser)
+    │   ├── vf-activity-group
+    |   |   ...
+    │   └── vf-video-teaser
+    ├── docs (documentation files for the web interface)
+    ├── fractal.js (configuration for the web component library)
+    ├── gulpfile.js
+    ├── lerna.json
+    ├── package.json
+    ├── public (dynamic folder used for rendering of global CSS, JS, component assets)
+    └── tools
+        ├── component-generator (make new components)
+        ├── css-generator (build requirement)
+        └── vf-frctl-theme (web interface)
+&lt;/pre&gt;
+
+&lt;/div&gt;
 </content>
   </entry>
   

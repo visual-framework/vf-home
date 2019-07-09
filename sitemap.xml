@@ -4,28 +4,28 @@
     <loc>/</loc>
   </url>
   <url>
-    <loc>/documentation/components/1-creating-new-components/</loc>
+    <loc>/documentation/components/creating-new-components/</loc>
   </url>
   <url>
-    <loc>/documentation/components/2-updating-a-component/</loc>
+    <loc>/documentation/components/deprecating-components/</loc>
   </url>
   <url>
-    <loc>/documentation/components/3-deprecating-components/</loc>
+    <loc>/documentation/components/updating-a-component/</loc>
   </url>
   <url>
-    <loc>/documentation/getting-started/1-code-of-conduct/</loc>
+    <loc>/documentation/getting-started/code-of-conduct/</loc>
   </url>
   <url>
-    <loc>/documentation/getting-started/2-structure/</loc>
+    <loc>/documentation/getting-started/naming/</loc>
   </url>
   <url>
-    <loc>/documentation/getting-started/3-setting-up/</loc>
+    <loc>/documentation/getting-started/pull-requests/</loc>
   </url>
   <url>
-    <loc>/documentation/getting-started/4-naming/</loc>
+    <loc>/documentation/getting-started/setting-up/</loc>
   </url>
   <url>
-    <loc>/documentation/getting-started/5-pull-requests/</loc>
+    <loc>/documentation/getting-started/structure/</loc>
   </url>
   <url>
     <loc>/documentation/guidelines/css/</loc>
