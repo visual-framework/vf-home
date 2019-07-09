@@ -14,10 +14,7 @@
 
       <div class="vf-global-header__inner">
 
-        <a href="{{ '/' | url }}" class="vf-logo--responsive" title="Visual Framework 2.0">
-          <span class="vf-sr-only">Visual Framework 2.0</span>
-        </a>
-        {# <a href="{{ '/' | url }}" class="vf-link | vf-global-header__site-name">Visual Framework 2.0</a> #}
+        {% render '@vf-logo--responsive', {href:  '/' | url, sreen_reader_text: 'Visual Framework 2.0' } %}
 
         <nav class="vf-navigation vf-navigation--global">
           <ul class="vf-navigation__list | vf-list--inline">
