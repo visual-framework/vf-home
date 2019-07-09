@@ -49,13 +49,13 @@ first of all: thanks!
 We welcome ideas, bug reports, opinions and pull requests. Telling the maintainers
 why you want or have done something is always very helpful.
 
-<ul>
-{%- for page in collections['getting started'] | sort(page, true, false, 'url') %}
+<ol>
+{%- for page in collections['getting started'] | sort(false, true, 'order') %}
 {%- if page.data.layout %}
   <li><a href="{{ page.url | url }}">{{ page.data.title }}</a></li>
 {%- endif %}
 {%- endfor %}
-</ul>
+</ol>
 
 </div>
 </section>
@@ -72,13 +72,13 @@ why you want or have done something is always very helpful.
 Once you've set up the VF Core locally or made a new design system, you'll want to
 extend it by creating components to add new charts, tables or other types of functionality.
 
-<ul>
-{%- for page in collections['contributing components'] | sort(false, true, 'url') %}
+<ol>
+{%- for page in collections['contributing components'] | sort(false, true, 'order') %}
 {%- if page.data.layout %}
   <li><a href="{{ page.url | url }}">{{ page.data.title }}</a></li>
 {%- endif %}
 {%- endfor %}
-</ul>
+</ol>
 
 </div>
 </section>
