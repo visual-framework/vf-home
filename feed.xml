@@ -39,11 +39,11 @@ This codebase includes a folder and file creation tool. It allows you to quickly
        - For further guidance on component configuration, [consult the comments in the component template files](https://github.com/visual-framework/vf-core/tree/develop/tools/component-generator/templates).
    - Run `gulp vf-dev` to compile and preview the component
 1. Sharing you component back
-   - Publish it to npm; or
-   - If you think your component is of use to the wider `vf-core` community, [make a Pull Request](https://github.com/visual-framework/vf-core/pulls).
+   - Publish it to npm; and/or
+   - If you think your component is useful to the global `vf-core` community, [make a Pull Request](https://github.com/visual-framework/vf-core/pulls) or [open an issue](https://github.com/visual-framework/vf-core/issues/new/choose) to discuss.
 
  &lt;div class=&quot;vf-box&quot;&gt;
- Tip: also consult the [guidelines](guidelines) for the naming of things and coding standards.
+ Tip: also consult the [guidelines](/vf-welcome/documentation/guidelines) for the naming of things and coding standards.
  &lt;/div&gt;
 
  ## Language and spelling of documentation, code
@@ -120,14 +120,14 @@ As such components should specify if they only support specific versions of `vf-
 
 Other notes and tips on components:
 
-- should use a [semantic versioning](https://semver.org/) style of releases.
+- should use a [semantic versioning](https://semver.org/) style of releases
 - must work with `vf-core v2.x`, but a component may specify a
-minimum required minor version of vf-core.
+minimum required minor version of vf-core
 - may indicate any required versions of peer-components in your component&#39;s README.md.
     - `vf-component-x`@`2.1.2` requires `vf-component-y`@`^8.1.0`
 - can live as part of the `vf-core` [monorepo](https://gomonorepo.org/)
-    - Interested in adding a component? [Get in touch](https://embl-vf.slack.com/messages)
-- You can read more about [component versioning in this issue](https://github.com/visual-framework/vf-core/issues/119).
+    - Interested in adding a component? [Get in touch](https://discord.gg/XHAvkUX) or [make an issue](https://github.com/visual-framework/vf-core/issues/new/choose)
+- read more about [component versioning in this issue](https://github.com/visual-framework/vf-core/issues/119)
 
 &lt;span class=&quot;vf-badge vf-badge--tertiary&quot;&gt;Related&lt;/span&gt; [Notes on VF versioning](/vf-welcome/documentation/guidelines/versioning).
 </content>
@@ -593,9 +593,10 @@ Code committed to `vf-core` should meet these measures:
 
 ## Where ideas are proposed and discussed
 
-Ideas are typically [discussed on Slack](https://embl-vf.slack.com/messages)
+Ideas are typically [discussed on chat](https://discord.gg/XHAvkUX)
 and [GitHub issues](https://github.com/visual-framework/vf-core/issues) and decisions
 are documented there.
+
 
 ## What&#39;s in decision
 
@@ -613,6 +614,10 @@ those asking for change.
 Who are the maintainers? Currently (as of April 2019) it&#39;s limited to EMBL and
 EMBL-EBI developers, but we aim to expand this into a consultative group after
 `beta.1` in late spring/summer 2019.
+
+## The decision process
+
+At a high level it [follows a flow like this diagram](https://coggle.it/diagram/V0hkiP976OIbGpy8/t/vanilla-pattern).
 </content>
   </entry>
   
