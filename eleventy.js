@@ -4,14 +4,11 @@ const Path         = require('path');
 
 module.exports = function(config) {
 
-  // get the fractal enviroment
-  var fractal = global.fractal;
-
-  // A useful way to reference to the contect we are runing eleventy in
-  let env = process.env.ELEVENTY_ENV;
-
-  // Layout aliases can make templates more portable
-  config.addLayoutAlias('default', 'layouts/base.njk');
+  // Add in tags, filters useful for Visual Framework installs
+  // (fractal's render tag, codeblock, markdown, etc)
+  // and common configuration
+  const vfEleventyExtension = require("@visual-framework/vf-eleventy--extensions");
+  config.addPlugin(vfEleventyExtension);
 
   // BroswerSync options
   config.setBrowserSyncConfig({ open: true });
@@ -25,9 +22,7 @@ module.exports = function(config) {
   //   return 'ddd' + value;
   // });
 
-  // Add some utiliuty filters
-  config.addFilter("markdown", require("./src/filters/markdown.js") );
-  config.addFilter("squash", require("./src/filters/squash.js") );
+  // Add any utiliuty filters
   config.addFilter("dateDisplay", (dateObj, format = "LLL d, y") => {
     return DateTime.fromJSDate(dateObj, {
       zone: "utc"
@@ -46,27 +41,10 @@ module.exports = function(config) {
   //   return 'hi ' + firstName + lastName;
   // });
 
-  // minify the html output
-  // config.addTransform("htmlmin", require("./src/utils/minify-html.js"));
+  // If you want to minify html output
+  // config.addTransform("htmlmin", require("./node_modules/\@visual-framework/vf-eleventy--extensions/utils/minify-html.js"));
 
-  // Support the fractal-style render
-  // `{% render "@vf-heading", {"title": "EMBL.org", "type": "extra-large"} %}`
-  // config.addNunjucksTag("render", require("./src/filters/render.js"));
-  config.addNunjucksTag("render", function(nunjucksEngine) {
-    var fractalRenderExtension = require("./src/filters/render.js");
-    return new fractalRenderExtension(nunjucksEngine,fractal);
-  });
-
-  // Add a tag level markdown filter
-  // {% markdown %}
-  //
-  // [I'm some markdown](#link)
-  //
-  // {% endmarkdown %}
-  config.addNunjucksTag("markdown", function(nunjucksEngine) {
-    var fractalRenderExtension = require("./src/filters/markdown_tag.js");
-    return new fractalRenderExtension(nunjucksEngine);
-  });
+  // Add any custom tags
 
   // config.addNunjucksTag("uppercase", function(nunjucksEngine) {
   //   return new function() {
@@ -93,13 +71,6 @@ module.exports = function(config) {
   // pass some assets right through
   config.addPassthroughCopy("./src/site/images");
 
-  // rss feed plugin
-  // https://github.com/11ty/eleventy-plugin-rss
-  const pluginRss = require("@11ty/eleventy-plugin-rss");
-  config.addPlugin(pluginRss);
-
-  // make the seed target act like prod
-  env = (env=="seed") ? "prod" : env;
   return {
     dir: {
       input: "src/site",
@@ -113,7 +84,7 @@ module.exports = function(config) {
     htmlTemplateEngine : ["njk", "md"],
     markdownTemplateEngine : "njk",
     passthroughFileCopy: true,
-    pathPrefix: "/vf-welcome/"
+    pathPrefix: "/vf-welcome/" // if your site is deployed to a sub-url, otherwise comment out
   };
 
 };

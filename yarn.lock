@@ -546,6 +546,13 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-divider/-/vf-divider-1.0.0-rc.2.tgz#928a91d2e200fb427aab57d80bfc380b4d8ded97"
   integrity sha512-FvJ+iVSeF3rcC4cFPhvHbFWWuNtxQj0aWf43hvBBkdHdofbMM396RJS80TrM2tGZoVqJosAE+nBCDLgZUMUSxQ==
 
+"@visual-framework/vf-eleventy--extensions@^1.0.0-alpha.1":
+  version "1.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-eleventy--extensions/-/vf-eleventy--extensions-1.0.0-alpha.1.tgz#ce45cfdb4385e9a1f2402acad4c23d999dca7886"
+  integrity sha512-NWVizCk9EBbrV7cTOy/u5Q4SlQSqxwRg5S2v0uwD4cqrGT3dR8N+WG8e91f7FnhpuJjg4gPbEjbPQR3cYR6y3w==
+  dependencies:
+    "@11ty/eleventy-plugin-rss" "^1.0.6"
+
 "@visual-framework/vf-favicon@1.0.0-beta.2":
   version "1.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-favicon/-/vf-favicon-1.0.0-beta.2.tgz#0cecc3794dd5ff46146e7a0dce2dad38b9338607"
