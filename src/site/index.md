@@ -81,7 +81,7 @@ Want to make your own design system or component?
 
 #### Local development
 
-To use the Visual Framework your machine will require some software to be installed to start. [See the "Setting up" guide](https://github.com/visual-framework/vf-core/blob/develop/docs/contributing/setting-up.njk).
+To use the Visual Framework your machine will require some software to be installed to start. [See the "Setting up" guide]({{ '/documentation/getting-started/setting-up' | url }}).
 
 </div>
 </section>
