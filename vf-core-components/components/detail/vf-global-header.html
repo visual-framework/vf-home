@@ -219,6 +219,8 @@
                 
                 <option value="file-c25c31161f3aa44d2e48bd56659f6460">package.json</option>
                 
+                <option value="file-8d2de872137db49e32c5e5b195365039">package.variables.scss</option>
+                
                 <option value="file-d0f2dbc0080e020f1c89fe586a5a607b">vf-global-header.css</option>
                 
                 <option value="file-02878d1540cce7e873771796711c12af">vf-global-header.scss</option>
@@ -241,6 +243,17 @@
 
 All notable changes to this project will be documented in this file.
 See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-link">https://conventionalcommits.org</span>) for commit guidelines.
+
+<span class="hljs-section"># 1.0.0-alpha.4 (2019-08-22)</span>
+
+
+<span class="hljs-section">### Bug Fixes</span>
+<span class="hljs-bullet">
+* </span>vf-global-header-dependencies ([<span class="hljs-string">e98d8b6</span>](<span class="hljs-link">https://github.com/visual-framework/vf-core/commit/e98d8b6</span>))
+
+
+
+
 
 <span class="hljs-section"># 1.0.0-alpha.3 (2019-07-25)</span>
 
@@ -284,7 +297,7 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">455 Bytes</span>
+                    <span class="Meta-value">610 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -343,7 +356,7 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
                             
                             <code class="Code Code--lang-JSON FileBrowser-code">
                                 <pre>{
-  <span class="hljs-attr">"version"</span>: <span class="hljs-string">"1.0.0-alpha.3"</span>,
+  <span class="hljs-attr">"version"</span>: <span class="hljs-string">"1.0.0-alpha.4"</span>,
   <span class="hljs-attr">"name"</span>: <span class="hljs-string">"@visual-framework/vf-global-header"</span>,
   <span class="hljs-attr">"description"</span>: <span class="hljs-string">"vf-global-header component"</span>,
   <span class="hljs-attr">"homepage"</span>: <span class="hljs-string">"https://visual-framework.github.io/vf-core/"</span>,
@@ -363,7 +376,7 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
     <span class="hljs-string">"fractal"</span>,
     <span class="hljs-string">"component"</span>
   ],
-  <span class="hljs-attr">"gitHead"</span>: <span class="hljs-string">"5cddd451a4dfefa82c44afa9c1826d9869de7ac9"</span>
+  <span class="hljs-attr">"gitHead"</span>: <span class="hljs-string">"eebdc5903c527fef28a321e670b1320054eb182e"</span>
 }
 </pre>
                             </code>
@@ -382,6 +395,40 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
                     <span class="Meta-value">697 Bytes</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-8d2de872137db49e32c5e5b195365039" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-SCSS FileBrowser-code">
+                                <pre><span class="hljs-variable">$componentInfo</span>: (
+             name: <span class="hljs-string">"@visual-framework/vf-global-header"</span>,
+             version: <span class="hljs-string">"1.0.0-alpha.4"</span>,
+             location: <span class="hljs-string">"components/vf-core-"</span>,
+             vfCoreVersion: <span class="hljs-string">"0.0.2"</span>
+          );</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/vf-global-header/package.variables.scss"><span>/components/raw/vf-global-header/package.variables.scss</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src/components/vf-core-components/vf-global-header/package.variables.scss</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">208 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -704,10 +751,10 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
         <p><a href="https://badge.fury.io/js/%40visual-framework%2Fvf-global-header"><img src="https://badge.fury.io/js/%40visual-framework%2Fvf-global-header.svg" alt="npm version"></a></p>
 <h2 id="about">About</h2>
 <p>Note that most users should pull the markup for the header from the EMBL ContentHub with:</p>
-<code><pre>&lt;<span class="hljs-keyword">link</span> rel=<span class="hljs-string">"import"</span> href=<span class="hljs-string">"https://dev.beta.embl.org/api/v1/pattern.html?filter-content-type=article&amp;filter-id=574&amp;pattern=node-body&amp;source=contenthub"</span> <span class="hljs-built_in">data</span><span class="hljs-params">-target</span>=<span class="hljs-string">"self"</span> <span class="hljs-built_in">data</span><span class="hljs-params">-embl</span><span class="hljs-params">-js</span><span class="hljs-params">-content</span><span class="hljs-params">-hub</span><span class="hljs-params">-loader</span>&gt;</pre></code><h2 id="installation-and-implementation">Installation and Implementation</h2>
+<pre><code>&lt;<span class="hljs-keyword">link</span> rel=<span class="hljs-string">"import"</span> href=<span class="hljs-string">"https://dev.beta.embl.org/api/v1/pattern.html?filter-content-type=article&amp;filter-id=574&amp;pattern=node-body&amp;source=contenthub"</span> <span class="hljs-built_in">data</span><span class="hljs-params">-target</span>=<span class="hljs-string">"self"</span> <span class="hljs-built_in">data</span><span class="hljs-params">-embl</span><span class="hljs-params">-js</span><span class="hljs-params">-content</span><span class="hljs-params">-hub</span><span class="hljs-params">-loader</span>&gt;</code></pre><h2 id="installation-and-implementation">Installation and Implementation</h2>
 <p>This component is distributed with npm. After <a href="https://www.npmjs.com/get-npm">installing npm</a>, you can install the <code>vf-global-header</code> with this command.</p>
-<code><pre>$ yarn <span class="hljs-keyword">add</span> --dev <span class="hljs-title">@visual-framework</span>/vf-<span class="hljs-keyword">global</span>-header</pre></code><p>The source files included are written in <a href="http://sass-lang.com">Sass</a>(<code>scss</code>). You can point your Sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this.</p>
-<code><pre>@<span class="hljs-keyword">import</span> <span class="hljs-string">"@visual-framework/vf-global-header/index.scss"</span>;</pre></code><p><em>Make sure you import any requirements along with the modules.</em></p>
+<pre><code>$ yarn <span class="hljs-keyword">add</span> --dev <span class="hljs-title">@visual-framework</span>/vf-<span class="hljs-keyword">global</span>-header</code></pre><p>The source files included are written in <a href="http://sass-lang.com">Sass</a>(<code>scss</code>). You can point your Sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this.</p>
+<pre><code>@<span class="hljs-keyword">import</span> <span class="hljs-string">"@visual-framework/vf-global-header/index.scss"</span>;</code></pre><p><em>Make sure you import any requirements along with the modules.</em></p>
 
         
     </div>

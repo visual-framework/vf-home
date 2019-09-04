@@ -1,6 +1,6 @@
 {
   "name": "@visual-framework/vf-design-tokens",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "description": "A collection of design tokens for consumption across projects and products",
   "main": "index.js",
   "scripts": {
@@ -32,5 +32,5 @@
     "path": "^0.12.7",
     "theo": "^8.1.3"
   },
-  "gitHead": "5cddd451a4dfefa82c44afa9c1826d9869de7ac9"
+  "gitHead": "eebdc5903c527fef28a321e670b1320054eb182e"
 }

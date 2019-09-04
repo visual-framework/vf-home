@@ -210,6 +210,8 @@
                 
                 <option value="file-0d9d2720c928db5f27fc4e1b9596f761">package.json</option>
                 
+                <option value="file-c24ab7864489882c074e25b117aa890f">package.variables.scss</option>
+                
                 <option value="file-54092227c0160ec6959ac898e68e0c9d">vf-banner.css</option>
                 
                 <option value="file-77c94ef54f41a60b7ad9b511d98a4d9c">vf-banner.js</option>
@@ -235,7 +237,7 @@
 All notable changes to this project will be documented in this file.
 See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-link">https://conventionalcommits.org</span>) for commit guidelines.
 
-<span class="hljs-section"># 1.0.0-alpha.3 (2019-07-25)</span>
+<span class="hljs-section"># 1.0.0-alpha.4 (2019-08-22)</span>
 
 <span class="hljs-strong">**Note:**</span> Version bump only for package @visual-framework/vf-banner
 </pre>
@@ -315,7 +317,7 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
                             
                             <code class="Code Code--lang-JSON FileBrowser-code">
                                 <pre>{
-  <span class="hljs-attr">"version"</span>: <span class="hljs-string">"1.0.0-alpha.3"</span>,
+  <span class="hljs-attr">"version"</span>: <span class="hljs-string">"1.0.0-alpha.4"</span>,
   <span class="hljs-attr">"name"</span>: <span class="hljs-string">"@visual-framework/vf-banner"</span>,
   <span class="hljs-attr">"description"</span>: <span class="hljs-string">"vf-banner component"</span>,
   <span class="hljs-attr">"homepage"</span>: <span class="hljs-string">"https://visual-framework.github.io/vf-core/"</span>,
@@ -336,7 +338,7 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
     <span class="hljs-string">"fractal"</span>,
     <span class="hljs-string">"component"</span>
   ],
-  <span class="hljs-attr">"gitHead"</span>: <span class="hljs-string">"5cddd451a4dfefa82c44afa9c1826d9869de7ac9"</span>
+  <span class="hljs-attr">"gitHead"</span>: <span class="hljs-string">"eebdc5903c527fef28a321e670b1320054eb182e"</span>
 }
 </pre>
                             </code>
@@ -355,6 +357,40 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
                     <span class="Meta-value">698 Bytes</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-c24ab7864489882c074e25b117aa890f" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-SCSS FileBrowser-code">
+                                <pre><span class="hljs-variable">$componentInfo</span>: (
+             name: <span class="hljs-string">"@visual-framework/vf-banner"</span>,
+             version: <span class="hljs-string">"1.0.0-alpha.4"</span>,
+             location: <span class="hljs-string">"components/vf-core-"</span>,
+             vfCoreVersion: <span class="hljs-string">"0.0.2"</span>
+          );</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/vf-banner/package.variables.scss"><span>/components/raw/vf-banner/package.variables.scss</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src/components/vf-core-components/vf-banner/package.variables.scss</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">201 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -869,7 +905,7 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
   <span class="hljs-attribute">position</span>: fixed;
   <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-  <span class="hljs-attribute">z-index</span>: <span class="hljs-number">5150</span>;
+  <span class="hljs-attribute">z-index</span>: set-layer(vf-z-index--banner);
 }
 
 <span class="hljs-selector-class">.vf-banner__content</span> {
@@ -1079,7 +1115,7 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
 <li>Alert (to come) <code>vf-banner vf-banner--alert</code></li>
 <li>Warning (to come) <code>vf-banner vf-banner--warning</code></li>
 </ul>
-<h2 id="js-documentation-for-modal-variant">JS Documentation for <code>--modal</code> variant</h2>
+<h2 id="js-documentation-for---modal-variant">JS Documentation for <code>--modal</code> variant</h2>
 <p>Like all JS-enabled components in the Visual Framework, if you wish to use the bundled JS, you need to include JS data attributes, here is an overview of what the options are for the <code>vf-banner--modal</code> variant.</p>
 <ul>
 <li>Enable VF JS:<ul>
@@ -1120,9 +1156,9 @@ See [<span class="hljs-string">Conventional Commits</span>](<span class="hljs-li
 </ul>
 <h2 id="install">Install</h2>
 <p>This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install <code>primer-buttons</code> with this command.</p>
-<code><pre>$ yarn <span class="hljs-keyword">add</span><span class="bash"> --dev @visual-framework/vf-banner</span></pre></code><h2 id="usage">Usage</h2>
+<pre><code>$ yarn <span class="hljs-keyword">add</span><span class="bash"> --dev @visual-framework/vf-banner</span></code></pre><h2 id="usage">Usage</h2>
 <p>The source files included are written in [Sass][sass] (<code>scss</code>) You can simply point your sass <code>include-path</code> at your <code>node_modules</code> directory and import it like this.</p>
-<code><pre>@<span class="hljs-keyword">import</span> <span class="hljs-string">"@visual-framework/vf-banner/index.scss"</span>;</pre></code><p><em>Make sure you import any requirements along with the modules.</em></p>
+<pre><code>@<span class="hljs-keyword">import</span> <span class="hljs-string">"@visual-framework/vf-banner/index.scss"</span>;</code></pre><p><em>Make sure you import any requirements along with the modules.</em></p>
 
         
     </div>
