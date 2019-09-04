@@ -13,6 +13,177 @@
   </author>
   
   <entry>
+    <title>I&#39;m an update</title>
+    <link href="https://visual-framework.github.io/vf-welcome/demos/"/>
+    <updated>2019-04-09T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-welcome/demos/</id>
+    <content type="html">&lt;p&gt;Sample integrations of the VF with other Frameworks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://visual-framework.github.io/vf-welcome/demos/integration-pure&quot;&gt;&amp;quot;Pure&amp;quot; VF 2.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://visual-framework.github.io/vf-welcome/demos/integration-bootstrap&quot;&gt;Bootstrap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://visual-framework.github.io/vf-welcome/demos/integration-vf1&quot;&gt;VF 2.0 + VF 1.x&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;React (coming soonish)&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>I&#39;m an update</title>
+    <link href="https://visual-framework.github.io/vf-welcome/demos/integration-bootstrap/"/>
+    <updated>2019-04-09T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-welcome/demos/integration-bootstrap/</id>
+    <content type="html">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot;&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-3.3.1.slim.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;jumbotron&quot;&gt;
+  &lt;h1 class=&quot;display-4&quot;&gt;Hello, world!&lt;/h1&gt;
+  &lt;p class=&quot;lead&quot;&gt;This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.&lt;/p&gt;
+  &lt;hr class=&quot;my-4&quot;&gt;
+  &lt;p&gt;It uses utility classes for typography and spacing to space content out within the larger container.&lt;/p&gt;
+  &lt;a class=&quot;btn btn-primary btn-lg&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Learn more&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;a href=&quot;https://getbootstrap.com/docs/4.3/components/&quot; class=&quot;vf-link&quot;&gt;Lot&#39;s more Bootstrap components to try out here&lt;/a&gt;
+
+&lt;link rel=&quot;import&quot; href=&quot;https://dev.beta.embl.org/api/v1/pattern.html?pattern=vf-jobs-snippet&amp;filter-content-type=jobs&amp;filter-field-contains[field_jobs_description]=Cancer&amp;filter-field-date-after[field_jobs_expiration]=today&amp;limit=3&amp;source=contenthub&quot; data-target=&quot;self&quot; data-embl-js-content-hub-loader=&quot;&quot;&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>I&#39;m pure 2.0</title>
+    <link href="https://visual-framework.github.io/vf-welcome/demos/integration-pure/"/>
+    <updated>2019-04-09T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-welcome/demos/integration-pure/</id>
+    <content type="html">
+&lt;link rel=&quot;import&quot; href=&quot;https://dev.beta.embl.org/api/v1/pattern.html?pattern=vf-jobs-snippet&amp;filter-content-type=jobs&amp;filter-field-contains[field_jobs_description]=Cancer&amp;filter-field-date-after[field_jobs_expiration]=today&amp;limit=3&amp;source=contenthub&quot; data-target=&quot;self&quot; data-embl-js-content-hub-loader=&quot;&quot;&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>I&#39;m an update</title>
+    <link href="https://visual-framework.github.io/vf-welcome/demos/integration-vf1/"/>
+    <updated>2019-04-09T12:24:50+00:00</updated>
+    <id>https://visual-framework.github.io/vf-welcome/demos/integration-vf1/</id>
+    <content type="html">
+
+
+
+  &lt;!-- CSS: implied media=all --&gt;
+  &lt;!-- CSS concatenated and minified via ant build script--&gt;
+
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/css/ebi-global.css&quot; type=&quot;text/css&quot; media=&quot;all&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://dev.ebi.emblstatic.net/web_guidelines/EBI-Icon-fonts/v1.3/fonts.css&quot; type=&quot;text/css&quot; media=&quot;all&quot;&gt;
+
+  &lt;!-- Use this CSS file for any custom styling --&gt;
+  &lt;!--
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/custom.css&quot; type=&quot;text/css&quot; media=&quot;all&quot; /&gt;
+  --&gt;
+
+  &lt;!-- If you have a custom header image or colour --&gt;
+  &lt;!--
+  &lt;meta name=&quot;ebi:masthead-color&quot; content=&quot;#000&quot; /&gt;
+  &lt;meta name=&quot;ebi:masthead-image&quot; content=&quot;//www.ebi.ac.uk/web_guidelines/EBI-Framework/images/backgrounds/embl-ebi-background.jpg&quot; /&gt;
+  --&gt;
+
+  &lt;!-- you can replace this with theme-[projectname].css. See http://www.ebi.ac.uk/web/style/colour for details of how to do this --&gt;
+  &lt;!-- also inform ES so we can host your colour palette file --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/css/theme-embl-petrol.css&quot; type=&quot;text/css&quot; media=&quot;all&quot;&gt;
+  &lt;!-- end CSS--&gt;
+
+  &lt;header id=&quot;masthead-black-bar&quot; class=&quot;clearfix masthead-black-bar&quot;&gt;
+  &lt;/header&gt;
+  &lt;div id=&quot;content&quot;&gt;
+    &lt;div data-sticky-container=&quot;&quot;&gt;
+      &lt;header id=&quot;masthead&quot; class=&quot;masthead&quot; data-sticky=&quot;&quot; data-sticky-on=&quot;large&quot; data-top-anchor=&quot;content:top&quot; data-btm-anchor=&quot;content:bottom&quot;&gt;
+        &lt;div class=&quot;masthead-inner row&quot;&gt;
+          &lt;!-- local-title --&gt;
+          &lt;div class=&quot;columns medium-12&quot; id=&quot;local-title&quot;&gt;
+            &lt;h1&gt;&lt;a href=&quot;https://visual-framework.github.io/vf-welcome/&quot; title=&quot;Back to [service-name] homepage&quot;&gt;EBI Framework&lt;/a&gt;&lt;/h1&gt;
+          &lt;/div&gt;
+          &lt;!-- /local-title --&gt;
+          &lt;!-- local-nav --&gt;
+          &lt;nav&gt;
+            &lt;ul id=&quot;local-nav&quot; class=&quot;dropdown menu float-left&quot; data-description=&quot;navigational&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;https://visual-framework.github.io/vf-welcome/&quot;&gt;Overview&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a data-open=&quot;modal-download&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Support &lt;i class=&quot;icon icon-generic&quot; data-icon=&quot;x&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/nav&gt;
+          &lt;!-- /local-nav --&gt;
+        &lt;/div&gt;
+      &lt;/header&gt;
+    &lt;/div&gt;
+    &lt;!-- Suggested layout containers --&gt;
+    &lt;section id=&quot;main-content-area&quot; class=&quot;row&quot; role=&quot;main&quot;&gt;
+      &lt;!-- Your menu structure should make a breadcrumb redundant, but if a breadcrump is needed uncomment the below --&gt;
+      &lt;nav aria-label=&quot;You are here:&quot; role=&quot;navigation&quot;&gt;
+        &lt;ul class=&quot;breadcrumbs columns&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;https://visual-framework.github.io/vf-welcome/&quot;&gt;EBI Framework&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://visual-framework.github.io/vf-welcome/demos/&quot;&gt;Sample pages&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;
+            &lt;span class=&quot;show-for-sr&quot;&gt;Current: &lt;/span&gt; Blank boilerplate
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+
+      &lt;div class=&quot;columns&quot;&gt;
+        &lt;section&gt;
+          &lt;h2&gt;EBI Boilerplate + jobs widget&lt;/h2&gt;
+
+          &lt;p&gt;A quick port of https://www.ebi.ac.uk/style-lab/websites/sample-site/boilerplate/blank.html&lt;/p&gt;
+
+          &lt;p&gt;&lt;a href=&quot;https://www.ebi.ac.uk/style-lab/websites/patterns/&quot; class=&quot;vf-link&quot;&gt;Lot&#39;s more VF 1.x components to try out here&lt;/a&gt;.&lt;/p&gt;
+
+          &lt;link rel=&quot;import&quot; href=&quot;https://dev.beta.embl.org/api/v1/pattern.html?pattern=vf-jobs-snippet&amp;filter-content-type=jobs&amp;filter-field-contains[field_jobs_description]=Cancer&amp;filter-field-date-after[field_jobs_expiration]=today&amp;limit=3&amp;source=contenthub&quot; data-target=&quot;self&quot; data-embl-js-content-hub-loader=&quot;&quot;&gt;
+
+        &lt;/section&gt;
+      &lt;/div&gt;
+
+    &lt;/section&gt;
+    &lt;!-- Optional local footer (insert citation / project-specific copyright / etc here --&gt;
+    &lt;!--
+    &lt;footer id=&quot;local-footer&quot; class=&quot;local-footer&quot; role=&quot;local-footer&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;span class=&quot;reference&quot;&gt;How to reference this page: ...&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+    --&gt;
+    &lt;!-- End optional local footer --&gt;
+  &lt;/div&gt;
+  &lt;!-- End suggested layout containers / #content --&gt;
+
+  &lt;footer&gt;
+    &lt;div id=&quot;global-footer&quot; class=&quot;global-footer&quot;&gt;
+      &lt;nav id=&quot;global-nav-expanded&quot; class=&quot;global-nav-expanded row&quot;&gt;
+        &lt;!-- Footer will be automatically inserted by footer.js --&gt;
+      &lt;/nav&gt;
+      &lt;section id=&quot;ebi-footer-meta&quot; class=&quot;ebi-footer-meta row&quot;&gt;
+        &lt;!-- Footer meta will be automatically inserted by footer.js --&gt;
+      &lt;/section&gt;
+    &lt;/div&gt;
+  &lt;/footer&gt;
+
+  &lt;!-- JavaScript --&gt;
+  &lt;!-- Grab Google CDN&#39;s jQuery, with a protocol relative URL; fall back to local if offline --&gt;
+  &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js&quot;&gt;&lt;/script&gt;
+  &lt;!--
+  &lt;script&gt;window.jQuery || document.write(&#39;&lt;script src=&quot;../js/libs/jquery-1.10.2.min.js&quot;&gt;&lt;\/script&gt;&#39;)&lt;/script&gt;
+  --&gt;
+
+  &lt;script defer=&quot;defer&quot; src=&quot;https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/js/script.js&quot;&gt;&lt;/script&gt;
+
+  &lt;!-- The Foundation theme JavaScript --&gt;
+  &lt;script src=&quot;https://ebi.emblstatic.net/web_guidelines/EBI-Framework/v1.3/libraries/foundation-6/js/foundation.js&quot;&gt;&lt;/script&gt;
+  
+  &lt;script type=&quot;text/JavaScript&quot;&gt;$(document).foundation();&lt;/script&gt;
+  
+</content>
+  </entry>
+  
+  <entry>
     <title>Creating a new component</title>
     <link href="https://visual-framework.github.io/vf-welcome/documentation/components/creating-new-components/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>

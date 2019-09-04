@@ -4,6 +4,18 @@
     <loc>/</loc>
   </url>
   <url>
+    <loc>/demos/</loc>
+  </url>
+  <url>
+    <loc>/demos/integration-bootstrap/</loc>
+  </url>
+  <url>
+    <loc>/demos/integration-pure/</loc>
+  </url>
+  <url>
+    <loc>/demos/integration-vf1/</loc>
+  </url>
+  <url>
     <loc>/documentation/components/creating-new-components/</loc>
   </url>
   <url>

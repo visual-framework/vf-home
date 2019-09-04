@@ -5,6 +5,26 @@
     "index": " Welcome alpha Visual Frameowrk 20: frontend toolkit quickly build better life science websites Framework (VF) designed with needs websites services goes beyond guidance tables graphs dataheavy typography focuses being sane defaults implements its CSS way that won&#39;t interfere your existing components use Bootstrap Angular something else⏰ When will this readyThis v20 imagined 2017 development began summer 2018 July 2019 &#39;re alpha7Expect beta 2019 heavy active development have many v200alphaX releases With new alphas planned monthly basis (last Thursday each month)Watch releases let us know feedback: issues email🤔 Why VF address three major needs:⚗️🌳 Life sciences: common websites can easily tailored niche needs out box &#39;s pleasant looking dry serious support focus clarity data🏰 Share only what need : work other frameworks (both CSS like JS React Angular) This allows ( brand design) shared between sites without crosscontaminating into another framework mainly achieve by:Name spacing selectors JS (vf*) styling HTML elements attached name spaced classes :✅ vfbutton {}🚫 button button {}🚫🙊🙉 divbutton {}🖕 necessarily requires bit more class writing ensures break codeBYOJS: Bring own JavaScript &#39;ve included minimal amount fully optional (just remove JavaScript selectors; e datavfjstabs) &#39;d rather Angular Bootstrap tabs get way🧩 Use just need: vfcore npm install dynamically based need; see vfeleventy boilerplate example specific make design system site [demonstration come]🚧 ✍ Developing contributingWant component Getting startedContributing componentsGeneral guidelines best practiceLocal development machine require some software installed start See Setting guide"
   },
   {
+    "url": "/demos/",
+    "title": "I&#39;m an update",
+    "index": "Sample integrations VF with other Frameworks:Pure 20BootstrapVF 20 + 1xReact (coming soonish)"
+  },
+  {
+    "url": "/demos/integration-bootstrap/",
+    "title": "I&#39;m an update",
+    "index": " Hello world! This simple hero unit jumbotronstyle component calling extra attention featured content information uses utility classes typography spacing space out within larger container Learn moreLot&#39;s more Bootstrap components try here"
+  },
+  {
+    "url": "/demos/integration-pure/",
+    "title": "I&#39;m pure 2.0",
+    "index": ""
+  },
+  {
+    "url": "/demos/integration-vf1/",
+    "title": "I&#39;m an update",
+    "index": " &lt;! &gt; EBI Framework Overview Download Support Sample pages Current: Blank boilerplate Boilerplate + jobs widget quick port https://wwwebiacuk/stylelab/websites/samplesite/boilerplate/blankhtml Lot&#39;s more VF 1x components try out here How reference this page: &gt; windowjQuery || documentwrite(&#39;&#39;) $(document)foundation();"
+  },
+  {
     "url": "/documentation/components/creating-new-components/",
     "title": "Creating a new component",
     "index": "This codebase includes folder file creation tool allows quickly create required files make component gives option element block container1 Install Yeoman &#39;ve come this far don&#39;t have `yo` should able install with `yarn global add yo@latest` get stuck [see official guide](http://yeomanio/codelab/setuphtml)1 Create new component Run `gulp vfcomponent` answer questions when prompted **Type component:** use variation atomic design methodology [read about differences here](http://bradfrostcom/blog/post/atomicwebdesign/#atoms) use: elements blocks containers element would heading button block teaser search form container group teasers **Name Go something simple obvious (todo: need guide/documentation how name things) Don&#39;t worry namespacing prefixing tooling will take care this **NPM package:** &#39;re making interesting (probably &#39;element&#39;) then saying &#39;yes&#39; allow component shared optional part framework NPM Your customised template `/components` directory1 Add `@import &#39;vfyourcomponentscss&#39;;` `/assets/scss/stylesscss`1 Developing your Edit `/components/yourcomponentname` folder further guidance configuration [consult comments files](https://githubcom/visualframework/vfcore/tree/develop/tools/componentgenerator/templates) vfdev` compile preview component1 Sharing back Publish npm; / think useful `vfcore` community [make Pull Request](https://githubcom/visualframework/vfcore/pulls) [open issue](https://githubcom/visualframework/vfcore/issues/new/choose) discuss Tip: also consult [guidelines](/vfwelcome/documentation/guidelines) naming things coding standards ## Language spelling documentation code project being led by EMBL where British English &#39;re aware that most code American (`colour` vs `color`); : 📚🇬🇧 Documentation written 💂‍ `Rarely centred text always colours` ⌨️🇺🇸 Code english 🧢 `$vfmaincolor: green;`"
