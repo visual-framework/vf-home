@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-beta.4",
+  "version": "1.0.0-beta.5",
   "name": "@visual-framework/vf-breadcrumbs",
   "description": "vf-breadcrumbs component",
   "homepage": "https://visual-framework.github.io/vf-core/",
@@ -19,5 +19,5 @@
     "fractal",
     "component"
   ],
-  "gitHead": "eebdc5903c527fef28a321e670b1320054eb182e"
+  "gitHead": "f5967acecacdadcd78ade0fbaeecfbec0977b1db"
 }
