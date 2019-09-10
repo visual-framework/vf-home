@@ -25,20 +25,18 @@ You'll need to [install npm](https://docs.npmjs.com/downloading-and-installing-n
 
 ## Adding Visual Framework components
 
-To add a component you can use npm/Yarn or install it manually.
+To add a component, use the command line or install it manually.
 
 ### By package
 
 - installation: `yarn add @visual-framework/vf-logo`
 - updating components: `yarn upgrade-interactive --latest`
-  - alias: `npm run update-components`
+  - alias: `yarn run update-components`
 
 ### Manual installation for customisation
 
 1. Download a pattern
 2. Copy it to `./src/components/vf-component-name`
-
-In either case you'll need to re-run `npm run-script dev` to access the pattern.
 
 ## Footnotes
 
