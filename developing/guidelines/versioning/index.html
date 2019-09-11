@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" media="all" href="/vf-welcome/css/styles.css" />
+    <title>Versioning of vf-core</title>
+  </head>
+  <body class="" >
+    <header class="vf-global-header">
+
+      <div class="vf-global-header__inner">
+
+        <a href="https://visual-framework.github.io/vf-welcome/"
+
+class="vf-logo">
+  <img class="vf-logo__image" src="https://visual-framework.github.io/vf-welcome/assets/vf-logo/assets/logo.svg" alt="">
+  <span class="vf-logo__text"></span>
+</a>
+
+
+        <nav class="vf-navigation vf-navigation--global">
+          <ul class="vf-navigation__list | vf-list--inline">
+            <li class="vf-navigation__item">
+              <a href="/vf-welcome/" class="vf-navigation__link">About the Visual Framework</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a href="/vf-welcome/developing" class="vf-navigation__link">Documentation</a>
+            </li>
+            <li class="vf-navigation__item">
+              <a href="https://discord.gg/XHAvkUX" class="vf-navigation__link">Help, chat</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </header>
+
+    <div class="vf-body">
+
+      <!-- Breadcrumbs -->
+      
+      <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
+        <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
+          <li class="vf-breadcrumbs__item">
+            <a href="/vf-welcome/" class="vf-breadcrumbs__link">Welcome to the Visual Framework 2.0</a>
+          </li>
+          <li class="vf-breadcrumbs__item">
+            Versioning of vf-core
+          </li>
+        </ul>
+      </nav>
+      
+
+      <div class="vf-grid">
+        <div>
+          <main class="vf-content | embl-grid embl-grid--has-centered-content">
+<div></div>
+<div>
+  <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
+  <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
+    <li class="vf-breadcrumbs__item">
+        <a href="/vf-welcome/developing" class="vf-breadcrumbs__link">Documentation</a>
+    </li>
+    <li class="vf-breadcrumbs__item">
+        Versioning of vf-core
+    </li>
+  </ul>
+  </nav>
+<h1>Versioning of vf-core</h1>
+<h2>How we version vf-core and its components</h2>
+<p>The versioning of components is self-contained and distinct from the version number of <code>vf-core</code></p>
+<p>Example: if <code>vf-component</code>@<code>2.2.0</code> has a breaking change, it would be updated to
+<code>vf-component</code>@<code>3.0.0</code>. That new version number does not affect compatibility with with <code>vf-core</code>@<code>2.x</code>.</p>
+<p><span class="vf-badge vf-badge--tertiary">Related</span> <a href="/vf-welcome/developing/components/2-updating-a-component">Notes on component versioning</a>.</p>
+<h3>Versioning explained</h3>
+<p>As not all users of the Visual Framework will be able to update to the very latest and we do not wish to hold others back, we are using a <a href="https://semver.org/">semantic versioning</a> style of releases.</p>
+<table>
+<thead>
+<tr>
+<th>Major release</th>
+<th>Minor release</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(Branch)</td>
+<td>(Tag)</td>
+<td></td>
+</tr>
+<tr>
+<td>2.0</td>
+<td>v2.0.0</td>
+<td>Initial release evolving from Compliance theme</td>
+</tr>
+<tr>
+<td>&quot;</td>
+<td>v2.0.1</td>
+<td>Tagged patch release</td>
+</tr>
+<tr>
+<td>&quot;</td>
+<td>v2.0.2</td>
+<td>Tagged patch release</td>
+</tr>
+<tr>
+<td>&quot;</td>
+<td>v2.0.3</td>
+<td>Tagged patch release</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>v2.1.0</td>
+<td>Minor release with possible breaking changes</td>
+</tr>
+<tr>
+<td>&quot;</td>
+<td>v2.1.1</td>
+<td>Tagged patch release</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>v2.2.0</td>
+<td>Minor release with possible breaking changes</td>
+</tr>
+<tr>
+<td>3.0</td>
+<td>v3.0.0</td>
+<td>Major release with many breaking changes</td>
+</tr>
+</tbody>
+</table>
+<p>We support the last two minor releases with bug fixes and branding. New features will only be added to the current and development versions.</p>
+<p>Where's version 1.x, you ask? That's the <a href="https://github.com/ebiwd/EBI-Framework">EMBL-EBI specific Visual Framework</a> from where this concept <a href="https://blogs.embl.org/communications/2018/09/12/faster-scientific-websites-through-reusability/">originated, and evolved</a>.</p>
+<h3>Test releases</h3>
+<p>Testing releases will be identified in their tag, a la: <code>v2.0-alpha.1</code>, where <code>-alpha.1</code> is the tag. <code>-alpha</code>, <code>-beta</code> and <code>-rc</code> are tag suffixes.</p>
+  <cite class="vf-cite">
+    Last updated on <time datetime="Tue Apr 09 2019 12:24:50 GMT+0000 (Coordinated Universal Time)">Apr 9, 2019</time>
+  </cite>
+</div>
+</main>
+<!-- layout: layouts/documentation.njk -->
+
+
+          <hr class="vf-divider" />
+
+          <section class="vf-content | embl-grid embl-grid--has-centered-content">
+          <div>
+            <h4>I have an idea <span class="vf-no-wrap">or concern!</span></h4>
+          </div>
+          <div>
+          <p>There are a few ways that we discuss and track ideas:</p>
+<ul>
+<li>⁉ General: <a href="https://discord.gg/XHAvkUX">Chat</a> for general ideas and discussion.</li>
+<li>⚙️ Technical: <a href="https://github.com/visual-framework/vf-ebi/issues">GitHub issues here</a> for implementing deeply technical and specific issues, like the Sass build process, browser bugs. Also see the <a href="/vf-welcome/troubleshooting">Troubleshooting guide</a>.</li>
+<li>🏢 E-mail: if you have a sweeping Big Idea™️, e-mail Ken Hawkins <a href="mailto:ken.hawkins@embl.de">ken.hawkins@embl.de</a>.</li>
+</ul>
+
+
+          </div>
+          </section>
+        </div>
+
+      </div>
+    </div>
+    
+<div class="vf-body">
+<div class="vf-grid">
+  <div>
+    <a href="https://github.com/visual-framework" class="vf-link">View the Visual Framework on GitHub</a>
+    
+
+  </div>
+</div>
+</div>
+
+
+<!-- This page was generated on Invalid DateTime -->
+<script src="https://dev.assets.emblstatic.net/vf/develop/scripts/scripts.js"></script>
+
+  </body>
+</html>

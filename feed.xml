@@ -185,9 +185,9 @@
   
   <entry>
     <title>Creating a new component</title>
-    <link href="https://visual-framework.github.io/vf-welcome/documentation/components/creating-new-components/"/>
+    <link href="https://visual-framework.github.io/vf-welcome/developing/components/creating-new-components/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-welcome/documentation/components/creating-new-components/</id>
+    <id>https://visual-framework.github.io/vf-welcome/developing/components/creating-new-components/</id>
     <content type="html">
 This codebase includes a folder and file creation tool. It allows you to quickly create all the required files to make a component. It gives you the option to create am element, block, or container.
 
@@ -213,7 +213,7 @@ This codebase includes a folder and file creation tool. It allows you to quickly
    - If you think your component is useful to the global `vf-core` community, [make a Pull Request](https://github.com/visual-framework/vf-core/pulls) or [open an issue](https://github.com/visual-framework/vf-core/issues/new/choose) to discuss.
 
  &lt;div class=&quot;vf-box&quot;&gt;
- Tip: also consult the [guidelines](/vf-welcome/documentation/guidelines) for the naming of things and coding standards.
+ Tip: also consult the [guidelines](/vf-welcome/developing/guidelines) for the naming of things and coding standards.
  &lt;/div&gt;
 
  ## Language and spelling of documentation, code
@@ -227,9 +227,9 @@ This codebase includes a folder and file creation tool. It allows you to quickly
   
   <entry>
     <title>Deprecating components</title>
-    <link href="https://visual-framework.github.io/vf-welcome/documentation/components/deprecating-components/"/>
+    <link href="https://visual-framework.github.io/vf-welcome/developing/components/deprecating-components/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-welcome/documentation/components/deprecating-components/</id>
+    <id>https://visual-framework.github.io/vf-welcome/developing/components/deprecating-components/</id>
     <content type="html">
 Inevitably code will be replaced and improved, leaving components stale and or outdated. So we should tell developers to not use them, here&#39;s how.
 
@@ -275,9 +275,9 @@ See also: [example `vf-deprecated` component](https://github.com/visual-framewor
   
   <entry>
     <title>Updating, versioning a component</title>
-    <link href="https://visual-framework.github.io/vf-welcome/documentation/components/updating-a-component/"/>
+    <link href="https://visual-framework.github.io/vf-welcome/developing/components/updating-a-component/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-welcome/documentation/components/updating-a-component/</id>
+    <id>https://visual-framework.github.io/vf-welcome/developing/components/updating-a-component/</id>
     <content type="html">
 Like the Visual Framework 2.0, components follow [semantic versioning](https://semver.org/) by increasing their full version number every time they have breaking changes.
 
@@ -299,15 +299,15 @@ minimum required minor version of vf-core
     - Interested in adding a component? [Get in touch](https://discord.gg/XHAvkUX) or [make an issue](https://github.com/visual-framework/vf-core/issues/new/choose)
 - read more about [component versioning in this issue](https://github.com/visual-framework/vf-core/issues/119)
 
-&lt;span class=&quot;vf-badge vf-badge--tertiary&quot;&gt;Related&lt;/span&gt; [Notes on VF versioning](/vf-welcome/documentation/guidelines/versioning).
+&lt;span class=&quot;vf-badge vf-badge--tertiary&quot;&gt;Related&lt;/span&gt; [Notes on VF versioning](/vf-welcome/developing/guidelines/versioning).
 </content>
   </entry>
   
   <entry>
     <title>Code of conduct</title>
-    <link href="https://visual-framework.github.io/vf-welcome/documentation/getting-started/code-of-conduct/"/>
+    <link href="https://visual-framework.github.io/vf-welcome/developing/getting-started/code-of-conduct/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-welcome/documentation/getting-started/code-of-conduct/</id>
+    <id>https://visual-framework.github.io/vf-welcome/developing/getting-started/code-of-conduct/</id>
     <content type="html">
 We don&#39;t yet have a full policy but, in general: be nice, respectful
 and considerate. The maintainers will do the same.
@@ -316,9 +316,9 @@ and considerate. The maintainers will do the same.
   
   <entry>
     <title>Naming things</title>
-    <link href="https://visual-framework.github.io/vf-welcome/documentation/getting-started/naming/"/>
+    <link href="https://visual-framework.github.io/vf-welcome/developing/getting-started/naming/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-welcome/documentation/getting-started/naming/</id>
+    <id>https://visual-framework.github.io/vf-welcome/developing/getting-started/naming/</id>
     <content type="html">
 &lt;p class=&quot;vf-lede&quot;&gt;The Visual Framework uses a dual approach for the naming of things.&lt;/p&gt;
 
@@ -374,9 +374,9 @@ and UK.gov&#39;s information on [patterns](https://design-system.service.gov.uk/
   
   <entry>
     <title>Making your first Pull Request</title>
-    <link href="https://visual-framework.github.io/vf-welcome/documentation/getting-started/pull-requests/"/>
+    <link href="https://visual-framework.github.io/vf-welcome/developing/getting-started/pull-requests/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-welcome/documentation/getting-started/pull-requests/</id>
+    <id>https://visual-framework.github.io/vf-welcome/developing/getting-started/pull-requests/</id>
     <content type="html">
 To contribute code back, you&#39;ll need to make a PR ([Pull Request](https://help.github.com/en/articles/about-pull-requests)),
 as you won&#39;t have write access, GitHub will prompt you to fork the `vf-core` repository
@@ -421,9 +421,9 @@ We are making use of [Percy](https://percy.io/EMBL/EMBL-Visual-Framework) to do 
   
   <entry>
     <title>Setting up your development environment</title>
-    <link href="https://visual-framework.github.io/vf-welcome/documentation/getting-started/setting-up/"/>
+    <link href="https://visual-framework.github.io/vf-welcome/developing/getting-started/setting-up/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-welcome/documentation/getting-started/setting-up/</id>
+    <id>https://visual-framework.github.io/vf-welcome/developing/getting-started/setting-up/</id>
     <content type="html">
 To develop the Visual Framework your will need some software.
 
@@ -462,7 +462,7 @@ Here&#39;s how:
     - `git clone https://github.com/visual-framework/vf-core.git`
 1. Move to the directory
     - `cd visual-framework-tooling-prototype`
-1. You probably want the develop branch (or [your new feature branch](/vf-welcome/documentation/getting-started/naming))
+1. You probably want the develop branch (or [your new feature branch](/vf-welcome/developing/getting-started/naming))
     - `git checkout develop`
 1. Install [fractal](https://github.com/frctl/fractal) You might need to use `sudo`.
     - `yarn global add @frctl/fractal`
@@ -482,9 +482,9 @@ We test and support Windows 10 using [`scoop`](https://scoop.sh/).
   
   <entry>
     <title>Structure of the Visual Framework</title>
-    <link href="https://visual-framework.github.io/vf-welcome/documentation/getting-started/structure/"/>
+    <link href="https://visual-framework.github.io/vf-welcome/developing/getting-started/structure/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-welcome/documentation/getting-started/structure/</id>
+    <id>https://visual-framework.github.io/vf-welcome/developing/getting-started/structure/</id>
     <content type="html">
 ## Design decisions and tokens
 
@@ -537,9 +537,9 @@ The `vf-core` repo contains three types of files:
   
   <entry>
     <title>Sass and CSS guidelines</title>
-    <link href="https://visual-framework.github.io/vf-welcome/documentation/guidelines/css/"/>
+    <link href="https://visual-framework.github.io/vf-welcome/developing/guidelines/css/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-welcome/documentation/guidelines/css/</id>
+    <id>https://visual-framework.github.io/vf-welcome/developing/guidelines/css/</id>
     <content type="html">
 ## CSS Naming conventions
 
@@ -743,9 +743,9 @@ Your code editor can help you find these when mopping up before a project goes l
   
   <entry>
     <title>Governance of the Visual Framework</title>
-    <link href="https://visual-framework.github.io/vf-welcome/documentation/guidelines/governance/"/>
+    <link href="https://visual-framework.github.io/vf-welcome/developing/guidelines/governance/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-welcome/documentation/guidelines/governance/</id>
+    <id>https://visual-framework.github.io/vf-welcome/developing/guidelines/governance/</id>
     <content type="html">
 The Visual Framework 2.0 is an open source project meant for the wider life
 science community, so the maintainers aim to be transparent about what goes in
@@ -801,9 +801,9 @@ At a high level it [follows a flow like this diagram](https://coggle.it/diagram/
   
   <entry>
     <title>JavaScript guidelines</title>
-    <link href="https://visual-framework.github.io/vf-welcome/documentation/guidelines/javascript/"/>
+    <link href="https://visual-framework.github.io/vf-welcome/developing/guidelines/javascript/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-welcome/documentation/guidelines/javascript/</id>
+    <id>https://visual-framework.github.io/vf-welcome/developing/guidelines/javascript/</id>
     <content type="html">
 ## Just enough JavaScript
 
@@ -863,9 +863,9 @@ So:
   
   <entry>
     <title>User base and needs</title>
-    <link href="https://visual-framework.github.io/vf-welcome/documentation/guidelines/user-base/"/>
+    <link href="https://visual-framework.github.io/vf-welcome/developing/guidelines/user-base/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-welcome/documentation/guidelines/user-base/</id>
+    <id>https://visual-framework.github.io/vf-welcome/developing/guidelines/user-base/</id>
     <content type="html">
 The Visual Framework core (&#39;vf-core&#39;) is not intended for direct consumption into
 websites, rather it&#39;s a component library that should be installed as an npm and
@@ -916,9 +916,9 @@ as a demonstrative design system.
   
   <entry>
     <title>Versioning of vf-core</title>
-    <link href="https://visual-framework.github.io/vf-welcome/documentation/guidelines/versioning/"/>
+    <link href="https://visual-framework.github.io/vf-welcome/developing/guidelines/versioning/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
-    <id>https://visual-framework.github.io/vf-welcome/documentation/guidelines/versioning/</id>
+    <id>https://visual-framework.github.io/vf-welcome/developing/guidelines/versioning/</id>
     <content type="html">
 ## How we version vf-core and its components
 
@@ -927,7 +927,7 @@ The versioning of components is self-contained and distinct from the version num
 Example: if `vf-component`@`2.2.0` has a breaking change, it would be updated to
 `vf-component`@`3.0.0`. That new version number does not affect compatibility with with `vf-core`@`2.x`.
 
-&lt;span class=&quot;vf-badge vf-badge--tertiary&quot;&gt;Related&lt;/span&gt; [Notes on component versioning](/vf-welcome/documentation/components/2-updating-a-component).
+&lt;span class=&quot;vf-badge vf-badge--tertiary&quot;&gt;Related&lt;/span&gt; [Notes on component versioning](/vf-welcome/developing/components/2-updating-a-component).
 
 
 ### Versioning explained

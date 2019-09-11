@@ -4,6 +4,9 @@
     <loc>/</loc>
   </url>
   <url>
+    <loc>/building/</loc>
+  </url>
+  <url>
     <loc>/demos/</loc>
   </url>
   <url>
@@ -16,48 +19,51 @@
     <loc>/demos/integration-vf1/</loc>
   </url>
   <url>
-    <loc>/documentation/components/creating-new-components/</loc>
+    <loc>/developing/components/creating-new-components/</loc>
   </url>
   <url>
-    <loc>/documentation/components/deprecating-components/</loc>
+    <loc>/developing/components/deprecating-components/</loc>
   </url>
   <url>
-    <loc>/documentation/components/updating-a-component/</loc>
+    <loc>/developing/components/updating-a-component/</loc>
   </url>
   <url>
-    <loc>/documentation/getting-started/code-of-conduct/</loc>
+    <loc>/developing/getting-started/code-of-conduct/</loc>
   </url>
   <url>
-    <loc>/documentation/getting-started/naming/</loc>
+    <loc>/developing/getting-started/naming/</loc>
   </url>
   <url>
-    <loc>/documentation/getting-started/pull-requests/</loc>
+    <loc>/developing/getting-started/pull-requests/</loc>
   </url>
   <url>
-    <loc>/documentation/getting-started/setting-up/</loc>
+    <loc>/developing/getting-started/setting-up/</loc>
   </url>
   <url>
-    <loc>/documentation/getting-started/structure/</loc>
+    <loc>/developing/getting-started/structure/</loc>
   </url>
   <url>
-    <loc>/documentation/guidelines/css/</loc>
+    <loc>/developing/guidelines/css/</loc>
   </url>
   <url>
-    <loc>/documentation/guidelines/governance/</loc>
+    <loc>/developing/guidelines/governance/</loc>
   </url>
   <url>
-    <loc>/documentation/guidelines/javascript/</loc>
+    <loc>/developing/guidelines/javascript/</loc>
   </url>
   <url>
-    <loc>/documentation/guidelines/user-base/</loc>
+    <loc>/developing/guidelines/user-base/</loc>
   </url>
   <url>
-    <loc>/documentation/guidelines/versioning/</loc>
+    <loc>/developing/guidelines/versioning/</loc>
   </url>
   <url>
-    <loc>/documentation/</loc>
+    <loc>/developing/</loc>
   </url>
   <url>
     <loc>/posts/sample-post/</loc>
+  </url>
+  <url>
+    <loc>/troubleshooting/</loc>
   </url>
 </urlset>
