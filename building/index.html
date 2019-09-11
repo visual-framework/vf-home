@@ -69,16 +69,18 @@ class="vf-logo">
 <div>
 </div>
 <div>
-<h2>Add VF components using npm</h2>
-<p>Pull VF components directly into your existing tooling at <code>some-kind-of-sample-site</code>. This approach gets you a components Sass, JS, template and any other assets and lets you build what you need.</p>
+<h2>Build static CSS, JS</h2>
+<p>If you just need some CSS and JS to pair with your existing application or site, use the <code>vf-build-boilerplate</code>.</p>
 <ul>
-<li><code>yarn add @visual-framework/vf-sass-config @visual-framework/vf-inlay</code></li>
+<li><code>Pre-alpha, link to come in late summer 2019</code></li>
+<li>add Visual Framework components with <code>yarn add @visual-framework/vf-component-name</code> or make a new component with <code>gulp vf-component</code></li>
 </ul>
 <h2>A pre-made boilerplate using VF components</h2>
-<p>Uses the performant <a href="#link">11ty</a> as a static site generator to build sites with VF components. This approach pre-integrates the VF Core, giving you easy access to component assets and a rollup build process to generate compiled CSS and JS.</p>
+<p>Uses the performant <a href="https://www.11ty.io/">11ty</a> as a static site generator to build sites with VF components. This approach pre-integrates the VF Core, giving you easy access to component assets and a rollup build process to generate compiled CSS and JS.</p>
 <p><a href="https://github.com/visual-framework/vf-eleventy"><code>vf-eleventy</code> boilerplate</a></p>
 <ul>
 <li><code>yarn create @visual-framework/vf-eleventy your-new-site-name</code></li>
+<li>add Visual Framework components with <code>yarn add @visual-framework/vf-component-name</code> or make a new component with <code>gulp vf-component</code></li>
 </ul>
 <h2>Build a design system using VF components</h2>
 <p>Extends<code>vf-eleventy</code>to document your design system, create+document components, patterns and boilerplates. You can also generate static CSS and JS assets for simple use elsewhere in vanilla HTML+CSS+JS pages.</p>
@@ -95,6 +97,12 @@ class="vf-logo">
 <p>A demonstration React-based project using VF components. Pre-alpha, link to come in autumn 2019.</p>
 <ul>
 <li><code>Pre-alpha, link to come in autumn 2019</code></li>
+</ul>
+<h2>Bare bones VF components</h2>
+<p>The most basic use of the Visual Framework components allows usage directly into your existing build environment. This approach gets you a components Sass, JS, template and any other assets and lets you build what you need.</p>
+<p>This approach is recommended for more advanced developers who are highly familar with Node and Sass.</p>
+<ul>
+<li><code>yarn add @visual-framework/vf-sass-config @visual-framework/vf-inlay</code></li>
 </ul>
 </div>
 <div>
