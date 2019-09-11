@@ -54,25 +54,9 @@ designed to work with other frameworks (both CSS, like Bootstrap, and JS, like R
 <div></div>
 <div>
 
-## Building a VF-powered system
+## [Building a VF-powered system]({{ '/building' | url }})
 
-- [See the building guide]({{ '/building' | url }})
-
-</div>
-</section>
-
-
-<section class="vf-content | embl-grid embl-grid--has-centered-content">
-<div></div>
-<div>
-
-## Developing, contributing
-
-Want to make your own design system or component?
-
-- <a id="developing"></a> [Getting started]({{ '/developing#getting-started' | url }})
-- [Contributing components]({{ '/developing#components' | url }})
-- [General guidelines, best practice]({{ '/developing#guidelines' | url }})
+The when and how to making a project powered with Visual Framework components. [See the building guide]({{ '/building' | url }}).
 
 </div>
 </section>
@@ -107,9 +91,29 @@ No, but yes … do both.
 This question is more about the general approach of the Visual Framework architecture, but the VF Core is designed to address common issues with component portability in the life science space …
 and use bootstrap too
 
+### Have a problem?
+
+See the [Troubleshooting guide]({{ '/troubleshooting' | url }}).
+
 ## What’s next
 
 Efforts in the next few months will be extending and stabilising the above projects and further stabilising [`vf-core`](#link-to-beta.2-issues).
+
+</div>
+</section>
+
+<!-- Developing section -->
+<section class="vf-content | embl-grid embl-grid--has-centered-content">
+<div></div>
+<div>
+
+## [Developing, contributing]({{ '/developing' | url }})
+
+Want to make your own design system or component?
+
+- <a id="developing"></a> [Getting started]({{ '/developing#getting-started' | url }})
+- [Contributing components]({{ '/developing#components' | url }})
+- [General guidelines, best practice]({{ '/developing#guidelines' | url }})
 
 </div>
 </section>
