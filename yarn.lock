@@ -670,6 +670,7 @@
 "@visual-framework/vf-navigation@^1.0.0-alpha.5":
   version "1.0.0-alpha.5"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-navigation/-/vf-navigation-1.0.0-alpha.5.tgz#e4cbb1d719eb503dff665299fb368ce0de63b814"
+  integrity sha512-xV/Fx6S0kGeot5dFWQcv7jhLaGRAqpKLbdZDoOC8tYknEn6IUlEMJGnYoXdtRPOC9FLQLypq8X/3MhDrj4uhDw==
 
 "@visual-framework/vf-no-js@1.0.0-rc.5":
   version "1.0.0-rc.5"

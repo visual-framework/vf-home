@@ -1,5 +1,5 @@
 ---
-title: Got problems?
+title: Problems 🏚 😭
 subtitle: Troubleshooting tips for some frequent things that can go wrong.
 date: 2019-04-09 12:24:50
 tags:
@@ -58,10 +58,32 @@ you’ll want to save any local changes first.
 Your local files might be out of sync, stash your local changes elsewhere and
 run `git reset --hard`
 
+## Using Windows?
+
+Windows has its own section of tips.
+
+### Use Windows Terminal Preview
+
+And within that we recommend using PowerShell. [Here's how to install Terminal](https://github.com/microsoft/terminal#microsoft-store).
+
+### Use Scoop for dependency management
+
+If you need to install, node, yarn and all the things, use [`scoop`](https://scoop.sh/).
+
 ### Windows paths
 
 Windows need some extra love with path handling, this can usually be sorted
 within `node` and `gulp` by `let myFixedPath = myPath.replace(/\\/g, '/');`
+
+### Symlinks and Windows
+
+The Visual Framework utilises symlinks, these work fine on Windows but they will
+need to be initialised on your first git pull:
+
+1. Open PowerShell as an Administrator
+2. Delete the old symlink `rm .\src\components\vf-core-components`
+3. Recreate it `cmd /c mklink /D .\src\components\vf-core-components .\node_modules\@visual-framework\`
+
 </div>
 <div>
   {# empty #}
@@ -71,15 +93,13 @@ within `node` and `gulp` by `let myFixedPath = myPath.replace(/\\/g, '/');`
 
 <section class="vf-content | embl-grid embl-grid--has-centered-content">
 <div>
-
   {# empty #}
-
 </div>
 <div>
 
 <hr class="vf-divider" />
 
-## Stil stumped?
+## Still stumped?
 
 [Make an issue](https://github.com/visual-framework/vf-core/issues) or [chat us](https://discord.gg/XHAvkUX).
 
@@ -88,7 +108,6 @@ within `node` and `gulp` by `let myFixedPath = myPath.replace(/\\/g, '/');`
   {# empty #}
 </div>
 </section>
-
 
 {# <section class="vf-content | embl-grid embl-grid--has-centered-content">
 <div></div>
