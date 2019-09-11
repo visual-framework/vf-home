@@ -6,9 +6,7 @@ layout: layouts/base.njk
 ---
 
 <section class="vf-intro | embl-grid embl-grid--has-centered-content">
-<div>
-  <!-- empty -->
-</div>
+<div><!-- empty --></div>
 <div>
   <h1 class="vf-intro__heading vf-intro__heading--has-tag">{{ title }} <a href="#" class="vf-badge vf-badge--primary vf-badge--phases">beta</a></h1>
   <p class="vf-lede">The Visual Frameowrk 2.0: {{ siteConfig.siteInformation.short_description | safe }}</p>
@@ -18,6 +16,15 @@ layout: layouts/base.njk
 </div>
 </section>
 
+<section class="vf-content | embl-grid embl-grid--has-centered-content">
+<div><!-- empty --></div><div class="vf-box vf-box--inlay">
+
+## Guide: [Building a VF-powered system]({{ '/building' | url }})
+
+The when and how to making a project powered with Visual Framework components. [See the building guide]({{ '/building' | url }}).
+
+</div>
+</section>
 
 <section class="vf-content | embl-grid embl-grid--has-centered-content">
 <div></div>
@@ -32,7 +39,7 @@ layout: layouts/base.njk
 The Visual Framework address three major needs:
 
 1. **Clarity**<br/>
-highly customisable but out of the box a pleasant look that is dry to focus on clarity and data.
+highly customisable but out of the box a pleasant look that builds in solid UX principles to increase comprehension and decrease [cognitive load](https://www.google.com/search?q=cognitive+load+software+usability). Just because the scientific material is challenging, it doesn't mean using the website [needs to be](https://theoutline.com/post/2954/user-interface-designers-are-horrified-by-hawaii-s-missile-alert-system).
 
 1. **Compatibility**<br/>
 designed to work with other frameworks (both CSS, like Bootstrap, and JS, like React or Angular). This allows common components (and brand design) to be shared between sites without cross-contaminating into another framework. We mainly achieve this by:
@@ -49,18 +56,6 @@ designed to work with other frameworks (both CSS, like Bootstrap, and JS, like R
 
 </div>
 </section>
-
-<section class="vf-content | embl-grid embl-grid--has-centered-content">
-<div></div>
-<div>
-
-## [Building a VF-powered system]({{ '/building' | url }})
-
-The when and how to making a project powered with Visual Framework components. [See the building guide]({{ '/building' | url }}).
-
-</div>
-</section>
-
 
 <section class="vf-content | embl-grid embl-grid--has-centered-content">
 <div></div>
@@ -104,10 +99,10 @@ Efforts in the next few months will be extending and stabilising the above proje
 
 <!-- Developing section -->
 <section class="vf-content | embl-grid embl-grid--has-centered-content">
-<div></div>
-<div>
+<div><!-- empty --></div>
+<div class="vf-box vf-box--inlay">
 
-## [Developing, contributing]({{ '/developing' | url }})
+## Guide: [Developing, contributing]({{ '/developing' | url }})
 
 Want to make your own design system or component?
 
