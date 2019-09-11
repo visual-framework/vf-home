@@ -1,0 +1,99 @@
+---
+title: Got problems?
+subtitle: Troubleshooting tips for some frequent things that can go wrong.
+date: 2019-04-09 12:24:50
+tags:
+  - troubleshooting
+layout: layouts/base.njk
+templateEngineOverride: njk, md
+---
+
+<br/><br/>
+{% render '@vf-intro', {"vf_intro_phase": "", "vf_intro_heading": title,
+  "vf_intro_lede": subtitle,
+  "vf_intro_text": [
+    "Many problems are due to local develpment environment configuration, here's how to get your machine back on track."
+  ]
+} %}
+
+
+<section class="vf-content | embl-grid embl-grid--has-centered-content">
+<div>
+
+  {# empty #}
+
+</div>
+<div>
+
+Before filing a ticket or tossing your machine out the window, we've found most
+issues can be sorted by one of these.
+
+### Use `gulp dev` and not `gulp vf-dev`
+
+If you're getting an error building your CSS or JS, make sure you're running the
+correct command. `gulp vf-dev` should only be invoked from the command line when
+developing `vf-core`, for other projects run `gulp dev`
+
+### Run `yarn install`
+
+Your `node_modules` folder might not be up to date.
+
+### Rollback your components or `vf-core` version
+
+You might have an incombatibility between component versions or `vf-core`. If
+you've recently updated, rollback version and re-run `gulp dev`. If that fixes
+issues, consult the component `CHANGELOG.md` files or read up on the [`vf-core`
+release notes](https://github.com/visual-framework/vf-core/releases).
+
+### Make sure there are symlinks inside your component directory
+
+In your local component directory, you should have symlinks to where you keep
+your Yarn-installed components, such as `./src/components/vf-core-components` which
+points to `../../node_modules/@visual-framework/`. Sometimes these folders are manually
+deleted and not replaced by `git origin pull`, but `git reset --hard` will --
+you’ll want to save any local changes first.
+
+### Git reset, hard
+
+Your local files might be out of sync, stash your local changes elsewhere and
+run `git reset --hard`
+
+### Windows paths
+
+Windows need some extra love with path handling, this can usually be sorted
+within `node` and `gulp` by `let myFixedPath = myPath.replace(/\\/g, '/');`
+</div>
+<div>
+  {# empty #}
+</div>
+</section>
+
+
+<section class="vf-content | embl-grid embl-grid--has-centered-content">
+<div>
+
+  {# empty #}
+
+</div>
+<div>
+
+<hr class="vf-divider" />
+
+## Stil stumped?
+
+[Make an issue](https://github.com/visual-framework/vf-core/issues) or [chat us](https://discord.gg/XHAvkUX).
+
+</div>
+<div>
+  {# empty #}
+</div>
+</section>
+
+
+{# <section class="vf-content | embl-grid embl-grid--has-centered-content">
+<div></div>
+<div>
+
+
+</div>
+</section> #}
