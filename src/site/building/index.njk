@@ -1,0 +1,74 @@
+---
+title: Visual Framework building guide
+subtitle: The when and how to making a project powered with Visual Framework components.
+date: 2019-04-09 12:24:50
+tags:
+  - building
+layout: layouts/base.njk
+templateEngineOverride: njk, md
+---
+
+<br/><br/>
+{% render '@vf-intro', {"vf_intro_phase": "", "vf_intro_heading": title,
+  "vf_intro_lede": subtitle,
+  "vf_intro_text": [
+    "Visual Framework components can be utilised in many ways, here are a few recommended approaches that will fit most use cases."
+  ]
+} %}
+
+
+<section class="vf-content | embl-grid embl-grid--has-centered-content">
+<div>
+
+  {# empty #}
+
+</div>
+<div>
+
+  ## Add VF components using npm
+
+  Pull VF components directly into your existing tooling at `some-kind-of-sample-site`. This approach gets you a components Sass, JS, template and any other assets and lets you build what you need.
+
+  -  `yarn add @visual-framework/vf-sass-config @visual-framework/vf-inlay`
+
+  ## A pre-made boilerplate using VF components
+
+  Uses the performant [11ty](#link) as a static site generator to build sites with VF components. This approach pre-integrates the VF Core, giving you easy access to component assets and a rollup build process to generate compiled CSS and JS.
+
+  [`vf-eleventy` boilerplate](https://github.com/visual-framework/vf-eleventy)
+
+  -  `yarn create @visual-framework/vf-eleventy your-new-site-name`
+
+  ## Build a design system using VF components
+
+  Extends`vf-eleventy`to document your design system, create+document components, patterns and boilerplates. You can also generate static CSS and JS assets for simple use elsewhere in vanilla HTML+CSS+JS pages.
+
+  [`vf-demo-design-system` boilerplate](https://github.com/visual-framework/vf-demo-design-system)
+
+  - `yarn create @visual-framework/vf-eleventy your-new-site-name vf-demo-design-system`
+
+  ## WordPress theme
+
+  Build a WordPress site using VF components.
+
+  - `Pre-alpha, link to come in autumn 2019`
+
+  ## React boilerplate
+
+  A demonstration React-based project using VF components. Pre-alpha, link to come in autumn 2019.
+
+  - `Pre-alpha, link to come in autumn 2019`
+
+</div>
+<div>
+</div>
+</section>
+
+
+{# <section class="vf-content | embl-grid embl-grid--has-centered-content">
+<div></div>
+<div>
+
+
+</div>
+</section> #}

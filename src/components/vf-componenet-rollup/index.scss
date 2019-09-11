@@ -163,3 +163,7 @@ html, button {
 // This is a demonstration of vf-core's ability to warn and proceed on missing
 // sass imports
 @import 'vf-somepattern/vf-i-dont-exist.scss';
+
+/* Local components */
+@import 'vf-sample/vf-sample.scss';
+@import 'vf-local-overrides/vf-local-overrides.scss';
