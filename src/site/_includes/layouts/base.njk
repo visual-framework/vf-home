@@ -35,23 +35,33 @@
     </header>
 
     <div class="vf-body">
+
+      <!-- Breadcrumbs -->
+      {% if page.filePathStem != '/index' %}
+      <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
+        <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
+          <li class="vf-breadcrumbs__item">
+            <a href="{{ '/' | url }}" class="vf-breadcrumbs__link">{{ siteConfig.siteInformation.title }}</a>
+          </li>
+          <li class="vf-breadcrumbs__item">
+            {{ title }}
+          </li>
+        </ul>
+      </nav>
+      {% endif %}
+
       <div class="vf-grid">
         <div>
           {{ content | safe }}
-
 
           <hr class="vf-divider" />
 
           <section class="vf-content | embl-grid embl-grid--has-centered-content">
           <div>
-
-            <h4>I have an idea or concern!</h4>
-
+            <h4>I have an idea <span class="vf-no-wrap">or concern!</span></h4>
           </div>
           <div>
-
           {% markdown %}
-
           There are a few ways that we discuss and track ideas:
 
           - ⁉ General: [Chat](https://discord.gg/XHAvkUX) for general ideas and discussion
@@ -61,9 +71,7 @@
 
           </div>
           </section>
-
         </div>
-
 
       </div>
     </div>

@@ -680,6 +680,11 @@
   version "1.0.0-beta.5"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-sass-config/-/vf-sass-config-1.0.0-beta.5.tgz#c2b27bf7bcd74dec638c9983ef82472edf8bbcbf"
 
+"@visual-framework/vf-sass-utilities@^1.0.0-beta.5":
+  version "1.0.0-beta.5"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-sass-utilities/-/vf-sass-utilities-1.0.0-beta.5.tgz#14d733e19dea87dfed67032b62f237f7a96bb0f0"
+  integrity sha512-+FHZ8GgJVON6V7M7Uom575YSZvLiSk24FiboOE/DfHfqXz0NnTYqN3QGJVE4iy+NSiRNiDqCLRMaAOt6waoUGA==
+
 "@visual-framework/vf-summary@^1.0.0-beta.5":
   version "1.0.0-beta.5"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-summary/-/vf-summary-1.0.0-beta.5.tgz#ddceb2dd6b6c9ad489c81c3a311d03b69d4c0c73"
