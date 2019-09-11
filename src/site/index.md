@@ -1,5 +1,6 @@
 ---
-subtitle: No homepage, yet.
+title: Welcome to the VF
+subtitle: Tailored for life science websites
 date: 2018-08-22 12:24:50
 layout: layouts/base.njk
 ---
@@ -9,7 +10,7 @@ layout: layouts/base.njk
   <!-- empty -->
 </div>
 <div>
-  <h1 class="vf-intro__heading vf-intro__heading--has-tag">Welcome to the VF <a href="#" class="vf-badge vf-badge--primary vf-badge--phases">beta</a></h1>
+  <h1 class="vf-intro__heading vf-intro__heading--has-tag">{{ title }} <a href="#" class="vf-badge vf-badge--primary vf-badge--phases">beta</a></h1>
   <p class="vf-lede">The Visual Frameowrk 2.0: {{ siteConfig.siteInformation.short_description | safe }}</p>
 
   <p class="vf-intro__text">The Visual Framework (VF) is designed with the <a href="https://blogs.embl.org/communications/2018/09/12/faster-scientific-websites-through-reusability" class="vf-link">needs of life science websites and services</a>. It goes beyond guidance for tables, graphs, data-heavy typography and focuses on being sane defaults and implements its CSS in a way that won't interfere with your existing components that use Bootstrap, Angular, or something else.</p>
@@ -22,7 +23,7 @@ layout: layouts/base.njk
 <div></div>
 <div>
 
-## Tailored for life science websites
+## {{ subtitle }}
 
 <!-- This content is styled using the .vf-content component, intended for use
      where the application of classnames is difficult, such as Markdown text
