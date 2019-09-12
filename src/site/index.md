@@ -61,6 +61,8 @@ designed to work with other frameworks (both CSS, like Bootstrap, and JS, like R
 <div></div>
 <div>
 
+<a name="faq"></a>
+
 ## FAQ
 
 ### Is VF Core just a Bootstrap with a different theme?
