@@ -90,10 +90,6 @@ and use bootstrap too
 
 See the [Troubleshooting guide]({{ '/troubleshooting' | url }}).
 
-## What’s next
-
-Efforts in the next few months will be extending and stabilising the above projects and further stabilising [`vf-core`](#link-to-beta.2-issues).
-
 </div>
 </section>
 
