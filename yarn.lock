@@ -498,9 +498,9 @@
   version "1.0.0-beta.6"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-badge/-/vf-badge-1.0.0-beta.6.tgz#53389a9526b3d068c51b288b6e97e6e9133b2f05"
 
-"@visual-framework/vf-banner@1.0.0-alpha.6":
-  version "1.0.0-alpha.6"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-banner/-/vf-banner-1.0.0-alpha.6.tgz#c294eb863b29af12047f6956a77b4aab743896db"
+"@visual-framework/vf-banner@1.0.0-alpha.7":
+  version "1.0.0-alpha.7"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-banner/-/vf-banner-1.0.0-alpha.7.tgz#adca50b4e1c3cfa7612931ec82742909c8f92f5d"
 
 "@visual-framework/vf-blockquote@^1.0.0-beta.6":
   version "1.0.0-beta.6"
