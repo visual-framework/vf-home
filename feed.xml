@@ -13,6 +13,76 @@
   </author>
   
   <entry>
+    <title>What&#39;s a component</title>
+    <link href="https://visual-framework.github.io/vf-welcome/developing/components/what-is-a-component/"/>
+    <updated>2019-04-09T12:24:49+00:00</updated>
+    <id>https://visual-framework.github.io/vf-welcome/developing/components/what-is-a-component/</id>
+    <content type="html">&lt;h2&gt;What&#39;s in a component?&lt;/h2&gt;
+&lt;p&gt;A component is made up of these files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CHANGELOG.md
+&lt;ul&gt;
+&lt;li&gt;Notable changes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;index.scss
+&lt;ul&gt;
+&lt;li&gt;Used to generate a standalone version of the component&#39;s CSS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;package.json
+&lt;ul&gt;
+&lt;li&gt;Version information and any npm required dependencies; you should avoid npm-requiring other VF components&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;README.md
+&lt;ul&gt;
+&lt;li&gt;Information on the role and how to use a component&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;vf-sample.config.yml
+&lt;ul&gt;
+&lt;li&gt;Configuration information about the compont, release status, type of component, variants&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;vf-sample.njk
+&lt;ul&gt;
+&lt;li&gt;A Nunjuck-based template&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;vf-sample.scss
+&lt;ul&gt;
+&lt;li&gt;Styling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;vf-sample.js
+&lt;ul&gt;
+&lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Some files will also be dynamically made at build time&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;package.variables.scss&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;Varaibles extratcted from pacakge.json that can be used in the Sass, such as a version number&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;vf-sample.precompiled.js&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;A compiled version of the Nunjucks template&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;vf-sample.css&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;Standoline CSS made from the index.scss&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  
+  <entry>
     <title>I&#39;m an update</title>
     <link href="https://visual-framework.github.io/vf-welcome/demos/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
@@ -189,8 +259,6 @@
     <updated>2019-04-09T12:24:50+00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/components/creating-new-components/</id>
     <content type="html">
-This codebase includes a folder and file creation tool. It allows you to quickly create all the required files to make a component. It gives you the option to create am element, block, or container.
-
 1. Install Yeoman
    - If you&#39;ve come this far and you don&#39;t have `yo`, you should be able to install it with `yarn global add yo@latest`
    - If you get stuck, [see the official install guide](http://yeoman.io/codelab/setup.html)
@@ -231,8 +299,6 @@ This codebase includes a folder and file creation tool. It allows you to quickly
     <updated>2019-04-09T12:24:50+00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/components/deprecating-components/</id>
     <content type="html">
-Inevitably code will be replaced and improved, leaving components stale and or outdated. So we should tell developers to not use them, here&#39;s how.
-
 Here&#39;s what we need to make sure we do:
 
 1. Developers can avoid installing and outdated componetn;
@@ -279,10 +345,6 @@ See also: [example `vf-deprecated` component](https://github.com/visual-framewor
     <updated>2019-04-09T12:24:50+00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/components/updating-a-component/</id>
     <content type="html">
-Like the Visual Framework 2.0, components follow [semantic versioning](https://semver.org/) by increasing their full version number every time they have breaking changes.
-
-However the version number of components its not tied to the version number of the Visual Framework&#39;s `vf-core`; that is:
-
 - `vf-core​@2.1.2` might use `vf-button​@1.0.1` and `vf-component-x​@8.2.1`
 - `vf-button@1.0.1` might require `vf-link@3.0.1` or newer
 
@@ -320,12 +382,6 @@ and considerate. The maintainers will do the same.
     <updated>2019-04-09T12:24:50+00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/getting-started/naming/</id>
     <content type="html">
-&lt;p class=&quot;vf-lede&quot;&gt;The Visual Framework uses a dual approach for the naming of things.&lt;/p&gt;
-
-At the lower level there are **components** which are a type of &quot;ingredient&quot; used
-to assembl into the higher level **patterns** that are richer templates with
-usability guidance.
-
 ## Type 1: Components
 
 Components are intended for re-use and should be named for what they are; that is:

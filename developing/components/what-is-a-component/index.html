@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" media="all" href="/vf-welcome/css/styles.css" />
-    <title>Versioning of vf-core</title>
+    <title>What&#39;s a component</title>
     <link rel="apple-touch-icon" sizes="180x180" href="https://dev.assets.emblstatic.net/vf/assets/vf-favicon/assets/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://dev.assets.emblstatic.net/vf/assets/vf-favicon/assets/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://dev.assets.emblstatic.net/vf/assets/vf-favicon/assets/favicon-16x16.png">
@@ -61,7 +61,7 @@ class="vf-logo">
           </li>
           
           <li class="vf-breadcrumbs__item">
-            Versioning of vf-core
+            What&#39;s a component
           </li>
         </ul>
       </nav>
@@ -72,81 +72,80 @@ class="vf-logo">
           <section class="vf-intro | embl-grid embl-grid--has-centered-content">
   <div></div>
   <div>
-    <h1 class="vf-intro__heading">Versioning of vf-core</h1>
+    <h1 class="vf-intro__heading">What&#39;s a component</h1>
+<div class="vf-lede"><span class='vf-content'>Components are a modular set of extendable Sass/CSS styling, JavaScript and templating (Nunjucks).</span>
+</div>
+<div class="vf-intro__text"><span class='vf-content'>Think of components as lego blocks you can use to build the look, behaviour and content of your sites.</span>
+</div>
   </div>
 </section>
 <main class="vf-content | embl-grid embl-grid--has-centered-content">
 <div></div>
 <div>
-<h2>How we version vf-core and its components</h2>
-<p>The versioning of components is self-contained and distinct from the version number of <code>vf-core</code></p>
-<p>Example: if <code>vf-component</code>@<code>2.2.0</code> has a breaking change, it would be updated to
-<code>vf-component</code>@<code>3.0.0</code>. That new version number does not affect compatibility with with <code>vf-core</code>@<code>2.x</code>.</p>
-<p><span class="vf-badge vf-badge--tertiary">Related</span> <a href="/vf-welcome/developing/components/2-updating-a-component">Notes on component versioning</a>.</p>
-<h3>Versioning explained</h3>
-<p>As not all users of the Visual Framework will be able to update to the very latest and we do not wish to hold others back, we are using a <a href="https://semver.org/">semantic versioning</a> style of releases.</p>
-<table>
-<thead>
-<tr>
-<th>Major release</th>
-<th>Minor release</th>
-<th>Note</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>(Branch)</td>
-<td>(Tag)</td>
-<td></td>
-</tr>
-<tr>
-<td>2.0</td>
-<td>v2.0.0</td>
-<td>Initial release evolving from Compliance theme</td>
-</tr>
-<tr>
-<td>&quot;</td>
-<td>v2.0.1</td>
-<td>Tagged patch release</td>
-</tr>
-<tr>
-<td>&quot;</td>
-<td>v2.0.2</td>
-<td>Tagged patch release</td>
-</tr>
-<tr>
-<td>&quot;</td>
-<td>v2.0.3</td>
-<td>Tagged patch release</td>
-</tr>
-<tr>
-<td>2.1</td>
-<td>v2.1.0</td>
-<td>Minor release with possible breaking changes</td>
-</tr>
-<tr>
-<td>&quot;</td>
-<td>v2.1.1</td>
-<td>Tagged patch release</td>
-</tr>
-<tr>
-<td>2.2</td>
-<td>v2.2.0</td>
-<td>Minor release with possible breaking changes</td>
-</tr>
-<tr>
-<td>3.0</td>
-<td>v3.0.0</td>
-<td>Major release with many breaking changes</td>
-</tr>
-</tbody>
-</table>
-<p>We support the last two minor releases with bug fixes and branding. New features will only be added to the current and development versions.</p>
-<p>Where's version 1.x, you ask? That's the <a href="https://github.com/ebiwd/EBI-Framework">EMBL-EBI specific Visual Framework</a> from where this concept <a href="https://blogs.embl.org/communications/2018/09/12/faster-scientific-websites-through-reusability/">originated, and evolved</a>.</p>
-<h3>Test releases</h3>
-<p>Testing releases will be identified in their tag, a la: <code>v2.0-alpha.1</code>, where <code>-alpha.1</code> is the tag. <code>-alpha</code>, <code>-beta</code> and <code>-rc</code> are tag suffixes.</p>
+  <h2>What's in a component?</h2>
+<p>A component is made up of these files:</p>
+<ul>
+<li>CHANGELOG.md
+<ul>
+<li>Notable changes</li>
+</ul>
+</li>
+<li>index.scss
+<ul>
+<li>Used to generate a standalone version of the component's CSS</li>
+</ul>
+</li>
+<li>package.json
+<ul>
+<li>Version information and any npm required dependencies; you should avoid npm-requiring other VF components</li>
+</ul>
+</li>
+<li>README.md
+<ul>
+<li>Information on the role and how to use a component</li>
+</ul>
+</li>
+<li>vf-sample.config.yml
+<ul>
+<li>Configuration information about the compont, release status, type of component, variants</li>
+</ul>
+</li>
+<li>vf-sample.njk
+<ul>
+<li>A Nunjuck-based template</li>
+</ul>
+</li>
+<li>vf-sample.scss
+<ul>
+<li>Styling</li>
+</ul>
+</li>
+<li>vf-sample.js
+<ul>
+<li>JavaScript</li>
+</ul>
+</li>
+</ul>
+<h2>Some files will also be dynamically made at build time</h2>
+<ul>
+<li><em>package.variables.scss</em>
+<ul>
+<li>Varaibles extratcted from pacakge.json that can be used in the Sass, such as a version number</li>
+</ul>
+</li>
+<li><em>vf-sample.precompiled.js</em>
+<ul>
+<li>A compiled version of the Nunjucks template</li>
+</ul>
+</li>
+<li><em>vf-sample.css</em>
+<ul>
+<li>Standoline CSS made from the index.scss</li>
+</ul>
+</li>
+</ul>
   <cite class="vf-cite">
-    Last updated on <time datetime="Tue Apr 09 2019 12:24:50 GMT+0000 (Coordinated Universal Time)">Apr 9, 2019</time>
+    Last updated on <time datetime="Tue Apr 09 2019 12:24:49 GMT+0000 (Coordinated Universal Time)">Apr 9, 2019</time>
   </cite>
 </div>
 </main>
