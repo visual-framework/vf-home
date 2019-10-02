@@ -4,11 +4,23 @@ pageClass: developing
 templateEngineOverride: njk, md
 ---
 
+<section class="vf-intro | embl-grid embl-grid--has-centered-content">
+  <div></div>
+  <div>
+    <h1 class="vf-intro__heading">{{title}}</h1>
+    {% if subtitle %}
+<div class="vf-lede">{{subtitle | markdown | safe | replace("<p>", "<span class='vf-content'>") | replace("</p>", "</span>") }}</div>
+    {% endif %}
+    {% if intro %}
+<div class="vf-intro__text">{{intro | markdown | safe | replace("<p>", "<span class='vf-content'>") | replace("</p>", "</span>") }}</div>
+    {% endif %}
+  </div>
+</section>
+
+
 <main class="vf-content | embl-grid embl-grid--has-centered-content">
 <div></div>
 <div>
-
-  # {{ title }}
 
   {{ content | safe }}
   <cite class="vf-cite">
