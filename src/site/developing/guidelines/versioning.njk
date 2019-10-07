@@ -11,12 +11,13 @@ The versioning of components is self-contained and distinct from the version num
 Example: if `vf-component`@`2.2.0` has a breaking change, it would be updated to
 `vf-component`@`3.0.0`. That new version number does not affect compatibility with with `vf-core`@`2.x`.
 
+All components are compatible with with `vf-core` version 2, some components may require a minimum version of `vf-core`. 
+
 <span class="vf-badge vf-badge--tertiary">Related</span> [Notes on component versioning]({{ '/developing/components/2-updating-a-component' | url }}).
 
+## Version numbers explained
 
-### Versioning explained
-
-As not all users of the Visual Framework will be able to update to the very latest and we do not wish to hold others back, we are using a [semantic versioning](https://semver.org/) style of releases.
+We use [semantic versioning](https://semver.org/) and do release by tags. 
 
 | Major release | Minor release | Note |
 | ------------- | ------------- | ---- |
@@ -30,7 +31,17 @@ As not all users of the Visual Framework will be able to update to the very late
 | 2.2           | v2.2.0        | Minor release with possible breaking changes |
 | 3.0           | v3.0.0        | Major release with many breaking changes|
 
-We support the last two minor releases with bug fixes and branding. New features will only be added to the current and development versions.
+New features will only be added to the current and development versions.
+
+### Tags for components
+
+Components contain their own README.md and CHANGELOG.md and release are pushed to npm. Therefore we don't publish each individual component release as a unique tag. 
+
+### Release notes?
+
+Release notes can be found on [the GitHub releases tab](https://github.com/visual-framework/vf-core/releases).
+
+### Where's version 1?
 
 Where's version 1.x, you ask? That's the [EMBL-EBI specific Visual Framework](https://github.com/ebiwd/EBI-Framework) from where this concept [originated, and evolved](https://blogs.embl.org/communications/2018/09/12/faster-scientific-websites-through-reusability/).
 
