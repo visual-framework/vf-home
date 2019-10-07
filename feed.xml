@@ -489,7 +489,7 @@ If you don&#39;t already have a code editor and are new to git, a good starting 
 
 1. [Setup a GitHub.com account](https://github.com/join)
 1. Install the [GitHub Desktop git client](https://desktop.github.com/)
-1. For editing code, [install Atom](https://atom.io/)
+1. For editing code, [install Visual Studio Code](https://code.visualstudio.com/#alt-downloads)
 
 ## Development tools
 
@@ -984,7 +984,7 @@ Example: if `vf-component`@`2.2.0` has a breaking change, it would be updated to
 
 All components are compatible with with `vf-core` version 2, some components may require a minimum version of `vf-core`. 
 
-&lt;span class=&quot;vf-badge vf-badge--tertiary&quot;&gt;Related&lt;/span&gt; [Notes on component versioning](/vf-welcome/developing/components/2-updating-a-component).
+&lt;span class=&quot;vf-badge vf-badge--tertiary&quot;&gt;Related&lt;/span&gt; [Notes on component versioning](/vf-welcome/developing/components/updating-a-component/).
 
 ## Version numbers explained
 
