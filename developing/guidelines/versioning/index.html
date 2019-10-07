@@ -82,9 +82,10 @@ class="vf-logo">
 <p>The versioning of components is self-contained and distinct from the version number of <code>vf-core</code></p>
 <p>Example: if <code>vf-component</code>@<code>2.2.0</code> has a breaking change, it would be updated to
 <code>vf-component</code>@<code>3.0.0</code>. That new version number does not affect compatibility with with <code>vf-core</code>@<code>2.x</code>.</p>
+<p>All components are compatible with with <code>vf-core</code> version 2, some components may require a minimum version of <code>vf-core</code>.</p>
 <p><span class="vf-badge vf-badge--tertiary">Related</span> <a href="/vf-welcome/developing/components/2-updating-a-component">Notes on component versioning</a>.</p>
-<h3>Versioning explained</h3>
-<p>As not all users of the Visual Framework will be able to update to the very latest and we do not wish to hold others back, we are using a <a href="https://semver.org/">semantic versioning</a> style of releases.</p>
+<h2>Version numbers explained</h2>
+<p>We use <a href="https://semver.org/">semantic versioning</a> and do release by tags.</p>
 <table>
 <thead>
 <tr>
@@ -141,7 +142,12 @@ class="vf-logo">
 </tr>
 </tbody>
 </table>
-<p>We support the last two minor releases with bug fixes and branding. New features will only be added to the current and development versions.</p>
+<p>New features will only be added to the current and development versions.</p>
+<h3>Tags for components</h3>
+<p>Components contain their own README.md and CHANGELOG.md and release are pushed to npm. Therefore we don't publish each individual component release as a unique tag.</p>
+<h3>Release notes?</h3>
+<p>Release notes can be found on <a href="https://github.com/visual-framework/vf-core/releases">the GitHub releases tab</a>.</p>
+<h3>Where's version 1?</h3>
 <p>Where's version 1.x, you ask? That's the <a href="https://github.com/ebiwd/EBI-Framework">EMBL-EBI specific Visual Framework</a> from where this concept <a href="https://blogs.embl.org/communications/2018/09/12/faster-scientific-websites-through-reusability/">originated, and evolved</a>.</p>
 <h3>Test releases</h3>
 <p>Testing releases will be identified in their tag, a la: <code>v2.0-alpha.1</code>, where <code>-alpha.1</code> is the tag. <code>-alpha</code>, <code>-beta</code> and <code>-rc</code> are tag suffixes.</p>
