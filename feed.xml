@@ -536,7 +536,7 @@ We test and support Windows 10 using [`scoop`](https://scoop.sh/).
   </entry>
   
   <entry>
-    <title>Structure of the Visual Framework</title>
+    <title>Structure of the Visual Framework core</title>
     <link href="https://visual-framework.github.io/vf-welcome/developing/getting-started/structure/"/>
     <updated>2019-04-09T12:24:50+00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/getting-started/structure/</id>
@@ -547,7 +547,7 @@ The Visual Framework uses the [Design Token concept](https://medium.com/eightsha
 
 This Design Token abstraction [helps portability and integration](https://uxdesign.cc/design-tokens-for-dummies-8acebf010d71) with other technical systems.
 
-You can find the Design Tokens in `components/vf-design-tokens`.
+You can find the Design Tokens in `vf-core/components/vf-design-tokens`.
 
 ## File structure
 
@@ -561,8 +561,6 @@ The `vf-core` repo contains three types of files:
 
 
 ## Detailed overview
-
-&lt;div class=&quot;vf-box&quot;&gt;
 
 &lt;pre&gt;
     ├── .editorconfig
@@ -585,8 +583,6 @@ The `vf-core` repo contains three types of files:
         ├── css-generator (build requirement)
         └── vf-frctl-theme (web interface)
 &lt;/pre&gt;
-
-&lt;/div&gt;
 </content>
   </entry>
   

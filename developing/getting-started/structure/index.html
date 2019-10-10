@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" media="all" href="/vf-welcome/css/styles.css" />
-    <title>Structure of the Visual Framework</title>
+    <title>Structure of the Visual Framework core</title>
     <link rel="apple-touch-icon" sizes="180x180" href="https://dev.assets.emblstatic.net/vf/assets/vf-favicon/assets/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://dev.assets.emblstatic.net/vf/assets/vf-favicon/assets/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://dev.assets.emblstatic.net/vf/assets/vf-favicon/assets/favicon-16x16.png">
@@ -61,7 +61,7 @@ class="vf-logo">
           </li>
           
           <li class="vf-breadcrumbs__item">
-            Structure of the Visual Framework
+            Structure of the Visual Framework core
           </li>
         </ul>
       </nav>
@@ -72,7 +72,7 @@ class="vf-logo">
           <section class="vf-intro | embl-grid embl-grid--has-centered-content">
   <div></div>
   <div>
-    <h1 class="vf-intro__heading">Structure of the Visual Framework</h1>
+    <h1 class="vf-intro__heading">Structure of the Visual Framework core</h1>
   </div>
 </section>
 <main class="vf-content | embl-grid embl-grid--has-centered-content">
@@ -81,7 +81,7 @@ class="vf-logo">
 <h2>Design decisions and tokens</h2>
 <p>The Visual Framework uses the <a href="https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421">Design Token concept</a> to specify design (colour, spacing, type) as reusable JSON or YAML that are translated from <code>.yml</code> data into <code>.scss</code> using <a href="https://github.com/salesforce-ux/theo#-theo">Theo</a>.</p>
 <p>This Design Token abstraction <a href="https://uxdesign.cc/design-tokens-for-dummies-8acebf010d71">helps portability and integration</a> with other technical systems.</p>
-<p>You can find the Design Tokens in <code>components/vf-design-tokens</code>.</p>
+<p>You can find the Design Tokens in <code>vf-core/components/vf-design-tokens</code>.</p>
 <h2>File structure</h2>
 <p>The <code>vf-core</code> repo contains three types of files:</p>
 <ol>
@@ -90,7 +90,6 @@ class="vf-logo">
 <li>The web interface <code>./tools/vf-frctl-theme</code></li>
 </ol>
 <h2>Detailed overview</h2>
-<div class="vf-box">
 <pre>
     ├── .editorconfig
     ├── CHANGELOG.md
@@ -112,7 +111,6 @@ class="vf-logo">
         ├── css-generator (build requirement)
         └── vf-frctl-theme (web interface)
 </pre>
-</div>
   <cite class="vf-cite">
     Last updated on <time datetime="Tue Apr 09 2019 12:24:50 GMT+0000 (Coordinated Universal Time)">Apr 9, 2019</time>
   </cite>
