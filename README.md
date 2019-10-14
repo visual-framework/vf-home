@@ -8,7 +8,7 @@ The homepage, welcome and onboarding site for the Visual Framework 2.0.
 
 ## About this site
 
-It was built using the [Visual Framework Eleventy boilerplate](https://github.com/visual-framework/vf-eleventy),
+Made using the [Visual Framework Eleventy boilerplate](https://github.com/visual-framework/vf-eleventy),
 allowing direct usage of VF components.
 
 ## Local development
