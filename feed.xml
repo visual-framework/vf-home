@@ -358,7 +358,7 @@ minimum required minor version of vf-core
 - may indicate any required versions of peer-components in your component&#39;s README.md.
     - `vf-component-x`@`2.1.2` requires `vf-component-y`@`^8.1.0`
 - can live as part of the `vf-core` [monorepo](https://gomonorepo.org/)
-    - Interested in adding a component? [Get in touch](https://discord.gg/XHAvkUX) or [make an issue](https://github.com/visual-framework/vf-core/issues/new/choose)
+    - Interested in adding a component? [Get in touch](https://join.slack.com/t/visual-framework/shared_invite/enQtNDAxNzY0NDg4NTY0LWFhMjEwNGY3ZTk3NWYxNWVjOWQ1ZWE4YjViZmY1YjBkMDQxMTNlNjQ0N2ZiMTQ1ZTZiMGM4NjU5Y2E0MjM3ZGQ) or [make an issue](https://github.com/visual-framework/vf-core/issues/new/choose)
 - read more about [component versioning in this issue](https://github.com/visual-framework/vf-core/issues/119)
 
 &lt;span class=&quot;vf-badge vf-badge--tertiary&quot;&gt;Related&lt;/span&gt; [Notes on VF versioning](/vf-welcome/developing/guidelines/versioning).
@@ -822,7 +822,7 @@ Code committed to `vf-core` should meet these measures:
 
 ## Where ideas are proposed and discussed
 
-Ideas are typically [discussed on chat](https://discord.gg/XHAvkUX)
+Ideas are typically [discussed on chat](https://join.slack.com/t/visual-framework/shared_invite/enQtNDAxNzY0NDg4NTY0LWFhMjEwNGY3ZTk3NWYxNWVjOWQ1ZWE4YjViZmY1YjBkMDQxMTNlNjQ0N2ZiMTQ1ZTZiMGM4NjU5Y2E0MjM3ZGQ)
 and [GitHub issues](https://github.com/visual-framework/vf-core/issues) and decisions
 are documented there.
 
