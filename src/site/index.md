@@ -39,20 +39,23 @@ The when and how to making a project powered with Visual Framework components. [
 The Visual Framework address three major needs:
 
 1. **Clarity**<br/>
-highly customisable but out of the box a pleasant look that builds in solid UX principles to increase comprehension and decrease [cognitive load](https://www.google.com/search?q=cognitive+load+software+usability). Just because the scientific material is challenging, it doesn't mean using the website [needs to be](https://theoutline.com/post/2954/user-interface-designers-are-horrified-by-hawaii-s-missile-alert-system).
+the VF is highly customisable, but out of the box it has a highly usable look that builds in solid UX principles to increase comprehension and decrease [cognitive load](https://www.google.com/search?q=cognitive+load+software+usability). Just because the scientific material is challenging, it doesn't mean using the website [needs to be](https://theoutline.com/post/2954/user-interface-designers-are-horrified-by-hawaii-s-missile-alert-system).
 
 1. **Compatibility**<br/>
-designed to work with other frameworks (both CSS, like Bootstrap, and JS, like React or Angular). This allows common components (and brand design) to be shared between sites without cross-contaminating into another framework. We mainly achieve this by:
-    - No CSS styling on HTML elements. We only attached to name spaced classes, that is:
-      - `.button {}` 🚫
-      - `button {}` 🚫🚫
-      - `div.button {}` 🚫🚫🚫
-      - `.vf-button {}` ✅ 💯
-    - BYOJS: Bring your own JavaScript. We've included only a minimal amount of JS in components and it's fully optional (just remove [the JavaScript selectors](https://github.com/visual-framework/vf-core/issues/115#issuecomment-455524131); i.e. `data-vf-js-tabs`). So if you'd rather use Angular or Bootstrap for your tabs, the Visual Framework won't get in the way.
+the VF won't break your other framework's CSS or JS, so bring Bootstrap, Foundation, React or Angular. With the VF  components (and brand design) can be shared between sites without cross-contaminating other functionality. We achieve this by a [CSS Modules-style](https://github.com/css-modules/css-modules) approach:
+    
+    CSS: styling on HTML elements and only use namespaced classes, that is:
+      - Nope: `.button {}` or `button {}` or `div.button {}`
+      - Like this `.vf-button {}` 
+    
+    JavaScript: Use ours or bring your own 
+    
+    We've included only a minimal amount of JS in components and it's fully optional (just remove [the JavaScript selectors](https://github.com/visual-framework/vf-core/issues/115#issuecomment-455524131)). If you'd rather use Angular or Bootstrap for your tabs, the Visual Framework won't get in the way, just remove `data-vf-js-tabs` from your markup.
 
 1. **Componentisation**<br/>
-  Use only the portions you need.<br/>
-  Use `vf-core` to build your CSS, JS dynamically based on the components you need, or bring your own build system
+  Use only the portions you need.
+
+    Use `vf-core` to build your CSS, JS dynamically based on the components you need, or bring your own build system.
 
 </div>
 </section>
@@ -86,11 +89,16 @@ Stable for your non-production development. We're in a beta phase and things are
 No, but yes … do both.
 
 This question is more about the general approach of the Visual Framework architecture, but the VF Core is designed to address common issues with component portability in the life science space …
-and use bootstrap too
+and use bootstrap too.
 
-### Have a problem?
+### What components are available?
 
-See the [Troubleshooting guide]({{ '/troubleshooting' | url }}).
+Many common component for tabs, boxes, links and so on are available [as components from `vf-core`](https://visual-framework.github.io/vf-core/#components).
+
+
+### Help!
+
+Have a problem? See the [Troubleshooting guide]({{ '/troubleshooting' | url }}) or [chat the community on Slack](https://join.slack.com/t/visual-framework/shared_invite/enQtNDAxNzY0NDg4NTY0LWFhMjEwNGY3ZTk3NWYxNWVjOWQ1ZWE4YjViZmY1YjBkMDQxMTNlNjQ0N2ZiMTQ1ZTZiMGM4NjU5Y2E0MjM3ZGQ).
 
 </div>
 </section>
