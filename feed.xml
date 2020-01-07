@@ -598,15 +598,12 @@ Components in the Visual Framework follow the BEM naming convention.
 
 ```scss
 .component {
-
 }
 
 .component__item {
-
 }
 
 .component--alternative {
-
 }
 ```
 
@@ -616,7 +613,6 @@ We namespace all universal components with a prefix of `vf-`. This ensures that 
 
 ```css
 .vf-component {
-
 }
 ```
 
@@ -624,7 +620,6 @@ This allows the Visual Framework to also include team specific components that a
 
 ```css
 .embl-grid {
-
 }
 ```
 
@@ -639,11 +634,10 @@ In code we do not include further prefixes for the Visual Frameworks version of 
 An Element: headings, lists, buttons, dividers, links, etc. are named after what they are semantically.
 
 ```css
-.vf-heading {
-
+.vf-text {
 }
-.vf-heading--xl {
 
+.vf-text-heading--3 {
 }
 ```
 
@@ -653,10 +647,9 @@ A Block: headers, lists, etc. are a single purpose design component that is also
 
 ```css
 .vf-breadcrumbs {
-
 }
-.vf-page-header {
 
+.vf-page-header {
 }
 ```
 
@@ -664,8 +657,8 @@ In the HTML the Visual Framework makes use of `|` to separate Element classes fr
 
 ```html
 &lt;header class=&quot;vf-page-header&quot;&gt;
-  &lt;h1 class=&quot;vf-page-header__heading | vf-heading vf-heading--l&quot;&gt;Strategy &amp;amp Communications&lt;/h1&gt;
-  &lt;span class=&quot;vf-page-header__sub-heading | vf-heading vf-heading--r&quot;&gt;Blog&lt;/span&gt;
+  &lt;h1 class=&quot;vf-page-header__heading | vf-heading vf-heading--3&quot;&gt;Communications&lt;/h1&gt;
+  &lt;span class=&quot;vf-page-header__sub-heading | vf-heading vf-heading--4&quot;&gt;Blog&lt;/span&gt;
 &lt;/header&gt;
 ```
 
@@ -677,8 +670,8 @@ For example, the page header has two text nodes:
 
 ```html
 &lt;header class=&quot;vf-page-header&quot;&gt;
-  &lt;h1 class=&quot;vf-page-header__heading | vf-text vf-text--heading-l&quot;&gt;Strategy &amp;amp Communications&lt;/h1&gt;
-  &lt;span class=&quot;vf-page-header__sub-heading  | vf-text vf-text--heading-r&quot;&gt;Blog&lt;/span&gt;
+  &lt;h1 class=&quot;vf-page-header__heading | vf-text vf-text--heading-3&quot;&gt;Communications&lt;/h1&gt;
+  &lt;span class=&quot;vf-page-header__sub-heading  | vf-text vf-text--heading-4&quot;&gt;Blog&lt;/span&gt;
 &lt;/header&gt;
 ```
 
@@ -686,16 +679,16 @@ The span needs to be a grey colour instead of the default black so we add a mix 
 
 ```html
 &lt;header class=&quot;vf-page-header&quot;&gt;
-  &lt;h1 class=&quot;vf-text vf-text--heading-l&quot;&gt;Strategy &amp;amp Communications&lt;/h1&gt;
-  &lt;span class=&quot;vf-text vf-text--heading-r&quot;&gt;Blog&lt;/span&gt;
+  &lt;h1 class=&quot;vf-text vf-text-heading--3&quot;&gt;Communications&lt;/h1&gt;
+  &lt;span class=&quot;vf-text vf-text-heading--4&quot;&gt;Blog&lt;/span&gt;
 &lt;/header&gt;
 ```
 
 We add component specific mix classes to the `h1` and `span` to be able to style them:
 ```html
 &lt;header class=&quot;vf-page-header&quot;&gt;
-  &lt;h1 class=&quot;vf-page-header__heading | vf-text vf-text--heading-l&quot;&gt;Strategy &amp;amp Communications&lt;/h1&gt;
-  &lt;span class=&quot;vf-page-header__sub-heading  | vf-text vf-text--heading-r&quot;&gt;Blog&lt;/span&gt;
+  &lt;h1 class=&quot;vf-page-header__heading | vf-text vf-text-heading--3&quot;&gt;Communications&lt;/h1&gt;
+  &lt;span class=&quot;vf-page-header__sub-heading | vf-text vf-text-heading--4&quot;&gt;Blog&lt;/span&gt;
 &lt;/header&gt;
 ```
 
@@ -711,10 +704,10 @@ A Container is a horizontal slice of a page that contains Blocks and Elements. A
 
 ```html
 &lt;div class=&quot;vf-intro&quot;&gt;
-  &lt;h1 class=&quot;vf-intro__heading | vf-text--heading vf-text--heading-xl&quot;&gt;Cancer&lt;/h1&gt;
-  &lt;p class=&quot;vf-lede | vf-text--heading vf-text--heading-l&quot;&gt;Cancer is a generic term for lots of different diseases in which cells divide many more times than usual. This abnormal growth can affect many cell types in almost any part of the body.&lt;/p&gt;
-  &lt;p class=&quot;vf-intro__text | vf-text--body vf-text--body-r&quot;&gt;Cancer is a multi-stage process. Normal cells begin to divide abnormally, spreading beyond their normal boundaries, and abnormal tissue growth causes swellings called tumours to form. Tumours can be benign – with no harmful effect on the body – or malignant, invading healthy tissue and interfering with normal bodily functions.&lt;/p&gt;
-  &lt;p class=&quot;vf-intro__text | vf-text--body vf-text--body-r&quot;&gt;There are more than 100 types of cancer and symptoms vary depending on the type. &lt;a href=&quot;javascript:Void(0);&quot;&gt;Read more about Cancer&lt;/a&gt;.&lt;/p&gt;
+  &lt;h1 class=&quot;vf-intro__heading&quot;&gt;Cancer&lt;/h1&gt;
+  &lt;p class=&quot;vf-lede&quot;&gt;Cancer is a generic term for lots of different diseases in which cells divide many more times than usual. This abnormal growth can affect many cell types in almost any part of the body.&lt;/p&gt;
+  &lt;p class=&quot;vf-intro__text&quot;&gt;Cancer is a multi-stage process. Normal cells begin to divide abnormally, spreading beyond their normal boundaries, and abnormal tissue growth causes swellings called tumours to form. Tumours can be benign – with no harmful effect on the body – or malignant, invading healthy tissue and interfering with normal bodily functions.&lt;/p&gt;
+  &lt;p class=&quot;vf-intro__text&quot;&gt;There are more than 100 types of cancer and symptoms vary depending on the type. &lt;a href=&quot;javascript:Void(0);&quot;&gt;Read more about Cancer&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 ```
 
@@ -776,7 +769,7 @@ By default there are only a limited amount of mixins in the UI Pattern Library. 
 
 When you&#39;re working on a project you may need to make notes for things to get back to, or things that are&#39;t done and could change. You should use Sass comments for this.
 
-If you have written some code that needs something fixed or added to then add a comment prefixed with `@todo`. Something like this:
+If you have written some code that needs something fixed or added to then add a comment prefixed with `@todo`. Something l Rike this:
 
 ```
 // @todo fix height issue
@@ -789,7 +782,11 @@ If you have written some code that may change as it maybe something that gets pu
 ```
 
 Your code editor can help you find these when mopping up before a project goes live.
-</content>
+
+
+## Related: Building your first Visual Framework page
+
+If you&#39;re looking for some hands-on help with Visual Framework syntax, [see this blog post on a quick start](https://work.allaboutken.com/posts/20191118-first-page-with-the-visual-framework.html) on how to work with Visual Framework 2.0 CSS, JS and structure your HTML.</content>
   </entry>
   
   <entry>
