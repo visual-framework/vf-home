@@ -10,15 +10,12 @@ Components in the Visual Framework follow the BEM naming convention.
 
 ```scss
 .component {
-
 }
 
 .component__item {
-
 }
 
 .component--alternative {
-
 }
 ```
 
@@ -28,7 +25,6 @@ We namespace all universal components with a prefix of `vf-`. This ensures that 
 
 ```css
 .vf-component {
-
 }
 ```
 
@@ -36,7 +32,6 @@ This allows the Visual Framework to also include team specific components that a
 
 ```css
 .embl-grid {
-
 }
 ```
 
@@ -51,11 +46,10 @@ In code we do not include further prefixes for the Visual Frameworks version of 
 An Element: headings, lists, buttons, dividers, links, etc. are named after what they are semantically.
 
 ```css
-.vf-heading {
-
+.vf-text {
 }
-.vf-heading--xl {
 
+.vf-text-heading--3 {
 }
 ```
 
@@ -65,10 +59,9 @@ A Block: headers, lists, etc. are a single purpose design component that is also
 
 ```css
 .vf-breadcrumbs {
-
 }
-.vf-page-header {
 
+.vf-page-header {
 }
 ```
 
@@ -76,8 +69,8 @@ In the HTML the Visual Framework makes use of `|` to separate Element classes fr
 
 ```html
 <header class="vf-page-header">
-  <h1 class="vf-page-header__heading | vf-heading vf-heading--l">Strategy &amp Communications</h1>
-  <span class="vf-page-header__sub-heading | vf-heading vf-heading--r">Blog</span>
+  <h1 class="vf-page-header__heading | vf-heading vf-heading--3">Communications</h1>
+  <span class="vf-page-header__sub-heading | vf-heading vf-heading--4">Blog</span>
 </header>
 ```
 
@@ -89,8 +82,8 @@ For example, the page header has two text nodes:
 
 ```html
 <header class="vf-page-header">
-  <h1 class="vf-page-header__heading | vf-text vf-text--heading-l">Strategy &amp Communications</h1>
-  <span class="vf-page-header__sub-heading  | vf-text vf-text--heading-r">Blog</span>
+  <h1 class="vf-page-header__heading | vf-text vf-text--heading-3">Communications</h1>
+  <span class="vf-page-header__sub-heading  | vf-text vf-text--heading-4">Blog</span>
 </header>
 ```
 
@@ -98,16 +91,16 @@ The span needs to be a grey colour instead of the default black so we add a mix 
 
 ```html
 <header class="vf-page-header">
-  <h1 class="vf-text vf-text--heading-l">Strategy &amp Communications</h1>
-  <span class="vf-text vf-text--heading-r">Blog</span>
+  <h1 class="vf-text vf-text-heading--3">Communications</h1>
+  <span class="vf-text vf-text-heading--4">Blog</span>
 </header>
 ```
 
 We add component specific mix classes to the `h1` and `span` to be able to style them:
 ```html
 <header class="vf-page-header">
-  <h1 class="vf-page-header__heading | vf-text vf-text--heading-l">Strategy &amp Communications</h1>
-  <span class="vf-page-header__sub-heading  | vf-text vf-text--heading-r">Blog</span>
+  <h1 class="vf-page-header__heading | vf-text vf-text-heading--3">Communications</h1>
+  <span class="vf-page-header__sub-heading | vf-text vf-text-heading--4">Blog</span>
 </header>
 ```
 
@@ -123,10 +116,10 @@ A Container is a horizontal slice of a page that contains Blocks and Elements. A
 
 ```html
 <div class="vf-intro">
-  <h1 class="vf-intro__heading | vf-text--heading vf-text--heading-xl">Cancer</h1>
-  <p class="vf-lede | vf-text--heading vf-text--heading-l">Cancer is a generic term for lots of different diseases in which cells divide many more times than usual. This abnormal growth can affect many cell types in almost any part of the body.</p>
-  <p class="vf-intro__text | vf-text--body vf-text--body-r">Cancer is a multi-stage process. Normal cells begin to divide abnormally, spreading beyond their normal boundaries, and abnormal tissue growth causes swellings called tumours to form. Tumours can be benign – with no harmful effect on the body – or malignant, invading healthy tissue and interfering with normal bodily functions.</p>
-  <p class="vf-intro__text | vf-text--body vf-text--body-r">There are more than 100 types of cancer and symptoms vary depending on the type. <a href="JavaScript:Void(0);">Read more about Cancer</a>.</p>
+  <h1 class="vf-intro__heading">Cancer</h1>
+  <p class="vf-lede">Cancer is a generic term for lots of different diseases in which cells divide many more times than usual. This abnormal growth can affect many cell types in almost any part of the body.</p>
+  <p class="vf-intro__text">Cancer is a multi-stage process. Normal cells begin to divide abnormally, spreading beyond their normal boundaries, and abnormal tissue growth causes swellings called tumours to form. Tumours can be benign – with no harmful effect on the body – or malignant, invading healthy tissue and interfering with normal bodily functions.</p>
+  <p class="vf-intro__text">There are more than 100 types of cancer and symptoms vary depending on the type. <a href="JavaScript:Void(0);">Read more about Cancer</a>.</p>
 </div>
 ```
 
@@ -188,7 +181,7 @@ By default there are only a limited amount of mixins in the UI Pattern Library. 
 
 When you're working on a project you may need to make notes for things to get back to, or things that are't done and could change. You should use Sass comments for this.
 
-If you have written some code that needs something fixed or added to then add a comment prefixed with `@todo`. Something like this:
+If you have written some code that needs something fixed or added to then add a comment prefixed with `@todo`. Something l Rike this:
 
 ```
 // @todo fix height issue
@@ -201,3 +194,8 @@ If you have written some code that may change as it maybe something that gets pu
 ```
 
 Your code editor can help you find these when mopping up before a project goes live.
+
+
+## Related: Building your first Visual Framework page
+
+If you're looking for some hands-on help with Visual Framework syntax, [see this blog post on a quick start](https://work.allaboutken.com/posts/20191118-first-page-with-the-visual-framework.html) on how to work with Visual Framework 2.0 CSS, JS and structure your HTML.
