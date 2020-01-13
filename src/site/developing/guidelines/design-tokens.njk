@@ -1,0 +1,17 @@
+---
+title: Design tokens and  decisions
+subtitle: The Visual Framework uses the [Design Token concept](https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421) to specify design (colour, spacing, type) as reusable JSON or YAML that are translated from `.yml` data into `.scss` using [Theo](https://github.com/salesforce-ux/theo#-theo).
+date: 2020-01-13 12:24:50
+layout: layouts/developing.njk
+---
+
+This Design Token abstraction [helps portability and integration](https://uxdesign.cc/design-tokens-for-dummies-8acebf010d71) with other technical systems.
+
+> Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development.
+> [<cite>— Salesforce, Lightning Design System.</cite>](https://www.lightningdesignsystem.com/design-tokens/)
+
+The Design Tokens used within `vf-core` are generated from several `.yml` files. These are then compiled into various Sass files as needed. You can find the Design Tokens in [`vf-core/components/vf-design-tokens`](https://github.com/visual-framework/vf-core/tree/develop/components/vf-design-tokens).
+
+In the future we hope to offer Sketch and Photoshop colour palettes.
+
+If you required a different format (LESS, iOS, Android). Please get in touch.

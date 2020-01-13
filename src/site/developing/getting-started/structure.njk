@@ -1,19 +1,10 @@
 ---
-title: Structure of the Visual Framework core
-date: 2019-04-09 12:24:50
+title: File structure of the Visual Framework core
+subtitle: A map to the most important files and directories.
+date: 2020-01-13 12:24:50
 layout: layouts/developing.njk
 order: 2
 ---
-
-## Design decisions and tokens
-
-The Visual Framework uses the [Design Token concept](https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421) to specify design (colour, spacing, type) as reusable JSON or YAML that are translated from `.yml` data into `.scss` using [Theo](https://github.com/salesforce-ux/theo#-theo).
-
-This Design Token abstraction [helps portability and integration](https://uxdesign.cc/design-tokens-for-dummies-8acebf010d71) with other technical systems.
-
-You can find the Design Tokens in `vf-core/components/vf-design-tokens`.
-
-## File structure
 
 {# Tree map generated with
    tree -L 2 . -I 'node_modules|cache|test_*|.git|.github|bin' -a
