@@ -5,7 +5,7 @@
   <subtitle>A front-end toolkit to quickly build better life science websites</subtitle>
   <link href="https://visual-framework.github.io/vf-welcome/feed.xml" rel="self"/>
   <link href="https://visual-framework.github.io/vf-welcome/"/>
-  <updated>2019-04-09T12:24:50+00:00</updated>
+  <updated>2019-04-09T12:24:50-00:00</updated>
   <id>https://visual-framework.github.io/vf-welcome</id>
   <author>
     <name>Visual Framework system</name>
@@ -15,7 +15,7 @@
   <entry>
     <title>What&#39;s a component</title>
     <link href="https://visual-framework.github.io/vf-welcome/developing/components/what-is-a-component/"/>
-    <updated>2019-04-09T12:24:49+00:00</updated>
+    <updated>2019-04-09T12:24:49-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/components/what-is-a-component/</id>
     <content type="html">&lt;h2&gt;What&#39;s in a component?&lt;/h2&gt;
 &lt;p&gt;A component is made up of these files:&lt;/p&gt;
@@ -85,7 +85,7 @@
   <entry>
     <title>I&#39;m an update</title>
     <link href="https://visual-framework.github.io/vf-welcome/demos/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
+    <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/demos/</id>
     <content type="html">&lt;p&gt;Sample integrations of the VF with other Frameworks:&lt;/p&gt;
 &lt;ul&gt;
@@ -100,7 +100,7 @@
   <entry>
     <title>I&#39;m an update</title>
     <link href="https://visual-framework.github.io/vf-welcome/demos/integration-bootstrap/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
+    <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/demos/integration-bootstrap/</id>
     <content type="html">
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot;&gt;
@@ -125,7 +125,7 @@
   <entry>
     <title>I&#39;m pure 2.0</title>
     <link href="https://visual-framework.github.io/vf-welcome/demos/integration-pure/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
+    <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/demos/integration-pure/</id>
     <content type="html">
 &lt;link rel=&quot;import&quot; href=&quot;https://dev.beta.embl.org/api/v1/pattern.html?pattern=vf-jobs-snippet&amp;filter-content-type=jobs&amp;filter-field-contains[field_jobs_description]=Cancer&amp;filter-field-date-after[field_jobs_expiration]=today&amp;limit=3&amp;source=contenthub&quot; data-target=&quot;self&quot; data-embl-js-content-hub-loader=&quot;&quot;&gt;
@@ -135,7 +135,7 @@
   <entry>
     <title>I&#39;m an update</title>
     <link href="https://visual-framework.github.io/vf-welcome/demos/integration-vf1/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
+    <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/demos/integration-vf1/</id>
     <content type="html">
 
@@ -256,7 +256,7 @@
   <entry>
     <title>Creating a new component</title>
     <link href="https://visual-framework.github.io/vf-welcome/developing/components/creating-new-components/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
+    <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/components/creating-new-components/</id>
     <content type="html">
 1. Install Yeoman
@@ -296,7 +296,7 @@
   <entry>
     <title>Deprecating components</title>
     <link href="https://visual-framework.github.io/vf-welcome/developing/components/deprecating-components/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
+    <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/components/deprecating-components/</id>
     <content type="html">
 Here&#39;s what we need to make sure we do:
@@ -342,7 +342,7 @@ See also: [example `vf-deprecated` component](https://github.com/visual-framewor
   <entry>
     <title>Updating, versioning a component</title>
     <link href="https://visual-framework.github.io/vf-welcome/developing/components/updating-a-component/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
+    <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/components/updating-a-component/</id>
     <content type="html">
 - `vf-core​@2.1.2` might use `vf-button​@1.0.1` and `vf-component-x​@8.2.1`
@@ -368,7 +368,7 @@ minimum required minor version of vf-core
   <entry>
     <title>Code of conduct</title>
     <link href="https://visual-framework.github.io/vf-welcome/developing/getting-started/code-of-conduct/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
+    <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/getting-started/code-of-conduct/</id>
     <content type="html">
 We don&#39;t yet have a full policy but, in general: be nice, respectful
@@ -379,7 +379,7 @@ and considerate. The maintainers will do the same.
   <entry>
     <title>Naming things</title>
     <link href="https://visual-framework.github.io/vf-welcome/developing/getting-started/naming/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
+    <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/getting-started/naming/</id>
     <content type="html">
 ## Type 1: Components
@@ -431,7 +431,7 @@ and UK.gov&#39;s information on [patterns](https://design-system.service.gov.uk/
   <entry>
     <title>Making your first Pull Request</title>
     <link href="https://visual-framework.github.io/vf-welcome/developing/getting-started/pull-requests/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
+    <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/getting-started/pull-requests/</id>
     <content type="html">
 To contribute code back, you&#39;ll need to make a PR ([Pull Request](https://help.github.com/en/articles/about-pull-requests)),
@@ -478,7 +478,7 @@ We are making use of [Percy](https://percy.io/EMBL/EMBL-Visual-Framework) to do 
   <entry>
     <title>Setting up your development environment</title>
     <link href="https://visual-framework.github.io/vf-welcome/developing/getting-started/setting-up/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
+    <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/getting-started/setting-up/</id>
     <content type="html">
 To develop the Visual Framework your will need some software.
@@ -538,7 +538,7 @@ We test and support Windows 10 using [`scoop`](https://scoop.sh/).
   <entry>
     <title>Structure of the Visual Framework core</title>
     <link href="https://visual-framework.github.io/vf-welcome/developing/getting-started/structure/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
+    <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/getting-started/structure/</id>
     <content type="html">
 ## Design decisions and tokens
@@ -589,7 +589,7 @@ The `vf-core` repo contains three types of files:
   <entry>
     <title>Sass and CSS guidelines</title>
     <link href="https://visual-framework.github.io/vf-welcome/developing/guidelines/css/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
+    <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/guidelines/css/</id>
     <content type="html">
 ## CSS Naming conventions
@@ -792,7 +792,7 @@ If you&#39;re looking for some hands-on help with Visual Framework syntax, [see 
   <entry>
     <title>Governance of the Visual Framework</title>
     <link href="https://visual-framework.github.io/vf-welcome/developing/guidelines/governance/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
+    <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/guidelines/governance/</id>
     <content type="html">
 The Visual Framework 2.0 is an open source project meant for the wider life
@@ -850,7 +850,7 @@ At a high level it [follows a flow like this diagram](https://coggle.it/diagram/
   <entry>
     <title>JavaScript guidelines</title>
     <link href="https://visual-framework.github.io/vf-welcome/developing/guidelines/javascript/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
+    <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/guidelines/javascript/</id>
     <content type="html">
 ## Just enough JavaScript
@@ -912,7 +912,7 @@ So:
   <entry>
     <title>User base and needs</title>
     <link href="https://visual-framework.github.io/vf-welcome/developing/guidelines/user-base/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
+    <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/guidelines/user-base/</id>
     <content type="html">
 The Visual Framework core (&#39;vf-core&#39;) is not intended for direct consumption into
@@ -965,7 +965,7 @@ as a demonstrative design system.
   <entry>
     <title>Versioning</title>
     <link href="https://visual-framework.github.io/vf-welcome/developing/guidelines/versioning/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
+    <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/guidelines/versioning/</id>
     <content type="html">
 The Visual Framework uses [semantic versioning](https://docs.npmjs.com/about-semantic-versioning) across all projects and packages. Here are some highlights of what this means:
@@ -1001,7 +1001,7 @@ Testing releases will be identified in their tag, a la: `v2.0-alpha.1`, where `-
   <entry>
     <title>I&#39;m an update</title>
     <link href="https://visual-framework.github.io/vf-welcome/posts/sample-post/"/>
-    <updated>2019-04-09T12:24:50+00:00</updated>
+    <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/posts/sample-post/</id>
     <content type="html">&lt;p&gt;I&#39;m some content.&lt;/p&gt;
 </content>
