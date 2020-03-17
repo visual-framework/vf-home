@@ -1,8 +1,8 @@
 ---
-title: What's a component
-subtitle: Components are a modular set of extendable Sass/CSS styling, JavaScript and templating (Nunjucks). 
-intro: Think of components as lego blocks you can use to build the look, behaviour and content of your sites.
-date: 2019-04-09 12:24:49
+title: What is a component
+subtitle: Think of components as lego blocks you can use to build the look, behaviour and content of your sites.
+intro: Components are a modular set of extendable Sass/CSS styling, JavaScript and [Nunjucks templating](https://mozilla.github.io/nunjucks/). 
+date: 2020-01-13 12:24:50
 layout: layouts/developing.njk
 templateEngineOverride: njk, md
 order: 1
@@ -12,24 +12,26 @@ order: 1
 
 A component is made up of these files:
 
-- CHANGELOG.md
+- [CHANGELOG.md](https://github.com/visual-framework/vf-core/tree/develop/tools/component-generator/templates)
   - Notable changes
-- index.scss
+- [index.scss](https://github.com/visual-framework/vf-core/tree/develop/tools/component-generator/templates)
   - Used to generate a standalone version of the component's CSS
-- package.json
+- [package.json](https://github.com/visual-framework/vf-core/tree/develop/tools/component-generator/templates)
   - Version information and any npm required dependencies; you should avoid npm-requiring other VF components
-- README.md
+- [README.md](https://github.com/visual-framework/vf-core/tree/develop/tools/component-generator/templates)
   - Information on the role and how to use a component
-- vf-sample.config.yml
+- [vf-sample.config.yml](https://github.com/visual-framework/vf-core/tree/develop/tools/component-generator/templates)
   - Configuration information about the compont, release status, type of component, variants
-- vf-sample.njk
+- [vf-sample.njk](https://github.com/visual-framework/vf-core/tree/develop/tools/component-generator/templates)
   - A Nunjuck-based template
-- vf-sample.scss
+- [vf-sample.scss](https://github.com/visual-framework/vf-core/tree/develop/tools/component-generator/templates)
   - Styling
-- vf-sample.js
+- [vf-sample.js](https://github.com/visual-framework/vf-core/tree/develop/tools/component-generator/templates)
   - JavaScript
 
-## Some files will also be dynamically made at build time
+### Dynamic files
+
+Some files will also be dynamically made at build time:
 
 - _package.variables.scss_
   - Varaibles extratcted from pacakge.json that can be used in the Sass, such as a version number
@@ -37,4 +39,14 @@ A component is made up of these files:
   - A compiled version of the Nunjucks template
 - _vf-sample.css_
   - Standoline CSS made from the index.scss
+
+<div class="vf-box vf-box--inlay">
+{% markdown %}
+
+## What goes in `vf-core`?
+
+Components can be made and used for local projects or [contribute it back to `vf-core`]({{ '/developing/guidelines/governance/' | url }}). 
+
+{% endmarkdown %}
+</div>
 
