@@ -6,11 +6,11 @@
     
     <link rel="stylesheet" media="all" href="/vf-welcome/css/styles.css" />
     <title>Problems 🏚 😭</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="https://dev.assets.emblstatic.net/vf/assets/vf-favicon/assets/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://dev.assets.emblstatic.net/vf/assets/vf-favicon/assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://dev.assets.emblstatic.net/vf/assets/vf-favicon/assets/favicon-16x16.png">
-<link rel="manifest" href="https://dev.assets.emblstatic.net/vf/assets/vf-favicon/assets/site.webmanifest">
-<link rel="mask-icon" href="https://dev.assets.emblstatic.net/vf/assets/vf-favicon/assets/safari-pinned-tab.svg" color="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://dev.assets.emblstatic.net/vf/develop/assets/vf-favicon/assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dev.assets.emblstatic.net/vf/develop/assets/vf-favicon/assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dev.assets.emblstatic.net/vf/develop/assets/vf-favicon/assets/favicon-16x16.png">
+<link rel="manifest" href="https://dev.assets.emblstatic.net/vf/develop/assets/vf-favicon/assets/site.webmanifest">
+<link rel="mask-icon" href="https://dev.assets.emblstatic.net/vf/develop/assets/vf-favicon/assets/safari-pinned-tab.svg" color="#ffffff">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 
@@ -20,11 +20,11 @@
 
       <div class="vf-global-header__inner">
 
-        <a href=""
+        <a href="http://www.embl.de"
 
 class="vf-logo">
-  <img class="vf-logo__image" src="https://visual-framework.github.io/vf-welcome/assets/vf-logo/assets/logo.svg" alt="">
-  <span class="vf-logo__text"></span>
+  <img class="vf-logo__image" src="https://visual-framework.github.io/vf-welcome/assets/vf-logo/assets/logo.svg" alt="Visual Framework 2.0">
+  <span class="vf-logo__text">Visual Framework 2.0</span>
 </a>
 
 
@@ -80,27 +80,45 @@ class="vf-logo">
 <div>
 <p>Before filing a ticket or tossing your machine out the window, we've found most
 issues can be sorted by one of these.</p>
+<hr/>
+<h3>Run <code>yarn install</code></h3>
+<p>Your <code>node_modules</code> folder might not be up to date.</p>
+<hr/>
+<h3>Reset your project's build</h3>
+<p>Sometimes a project's <code>node_modules</code> directory can become contaminated or out of sync:</p>
+<ul>
+<li>remove the local build: <code>rm -rf node_modules</code></li>
+<li>reinstall: <code>yarn install</code></li>
+</ul>
+<hr/>
+<h3>Don't <code>npm install</code></h3>
+<p>Visual Framework systems work faster and are tested using <code>yarn install</code>. If you run
+<code>npm install</code> you may encounter unexpected issues or node may become confused if you're
+switching between <code>npm install</code> and <code>yarn install</code>.</p>
+<hr/>
 <h3>Use <code>gulp dev</code> and not <code>gulp vf-dev</code></h3>
 <p>If you're getting an error building your CSS or JS, make sure you're running the
 correct command. <code>gulp vf-dev</code> should only be invoked from the command line when
-developing <code>vf-core</code>, for other projects run <code>gulp dev</code></p>
-<h3>Run <code>yarn install</code></h3>
-<p>Your <code>node_modules</code> folder might not be up to date.</p>
+developing <code>vf-core</code>, for other projects run <code>gulp dev</code>.</p>
+<hr/>
 <h3>Rollback your components or <code>vf-core</code> version</h3>
 <p>You might have an incombatibility between component versions or <code>vf-core</code>. If
 you've recently updated, rollback version and re-run <code>gulp dev</code>. If that fixes
 issues, consult the component <code>CHANGELOG.md</code> files or read up on the <a href="https://github.com/visual-framework/vf-core/releases"><code>vf-core</code>
 release notes</a>.</p>
+<hr/>
 <h3>Make sure there are symlinks inside your component directory</h3>
 <p>In your local component directory, you should have symlinks to where you keep
 your Yarn-installed components, such as <code>./src/components/vf-core-components</code> which
 points to <code>../../node_modules/@visual-framework/</code>. Sometimes these folders are manually
 deleted and not replaced by <code>git origin pull</code>, but <code>git reset --hard</code> will --
 you’ll want to save any local changes first.</p>
+<hr/>
 <h3>Git reset, hard</h3>
 <p>Your local files might be out of sync, stash your local changes elsewhere and
-run <code>git reset --hard</code></p>
-<h2>Using Windows?</h2>
+run <code>git reset --hard</code>.</p>
+<hr/>
+<h2><a id="windows" href="#windows">Using Windows?</a></h2>
 <p>Windows has its own section of tips.</p>
 <h3>Use Windows Terminal Preview</h3>
 <p>And within that we recommend using PowerShell. <a href="https://github.com/microsoft/terminal#microsoft-store">Here's how to install Terminal</a>.</p>
