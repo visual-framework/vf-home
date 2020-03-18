@@ -957,7 +957,8 @@ Testing releases will be identified in their tag, a la: `v2.0-alpha.1`, where `-
 
 First, see if you have the needed tools installed.
 
-1. Open a command line/terminal
+1. Open a command line/terminal 
+    - how? [Mac](https://www.wikihow.com/Open-a-Terminal-Window-in-Mac), [Linux/Ubuntu](https://www.wikihow.com/Open-a-Terminal-Window-in-Ubuntu), [Windows 10](https://www.howtogeek.com/235101/10-ways-to-open-the-command-prompt-in-windows-10/)
 1. Enter `node -v`
 1. Enter `yarn -v`
 
@@ -979,6 +980,11 @@ We have a recommended development environment for new developers:
     - Fix spelling in your HTML, CSS and JS: [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
     - Get code highlight for `.njk` files: [Nunjucks syntax definition](https://marketplace.visualstudio.com/items?itemName=ronnidc.nunjucks)
     - Get autocompletion for your CSS tags: [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+
+&lt;div class=&quot;vf-box vf-box-theme-- vf-box- vf-box-theme--quinary&quot;&gt;
+&lt;h4 class=&quot; vf-box__heading&quot;&gt;Problems?&lt;/h4&gt;
+&lt;p class=&quot;vf-box__text&quot;&gt;See the &lt;a href=&quot;https://visual-framework.github.io/vf-welcome/developing/getting-started/setting-up/(/vf-welcome/troubleshooting)&quot; class=&quot;vf-link&quot;&gt;troubleshooting guide&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
 
 ## Developing the VF Core
 
