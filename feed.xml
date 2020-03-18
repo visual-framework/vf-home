@@ -481,8 +481,6 @@ We are making use of [Percy](https://percy.io/EMBL/EMBL-Visual-Framework) to do 
     <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/developing/getting-started/setting-up/</id>
     <content type="html">
-To develop the Visual Framework your will need some software.
-
 ## Development environment
 
 If you don&#39;t already have a code editor and are new to git, a good starting point is to:
