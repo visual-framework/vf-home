@@ -80,28 +80,34 @@ class="vf-logo">
 <main class="vf-content | embl-grid embl-grid--has-centered-content">
 <div></div>
 <div>
-<h2>Development environment</h2>
-<p>If you don't already have a code editor and are new to git, a good starting point is to:</p>
-<ol>
-<li><a href="https://github.com/join">Setup a GitHub.com account</a></li>
-<li>Install the <a href="https://desktop.github.com/">GitHub Desktop git client</a></li>
-<li>For editing code, <a href="https://code.visualstudio.com/#alt-downloads">install Visual Studio Code</a></li>
-</ol>
 <h2>Development tools</h2>
 <p>First, see if you have the needed tools installed.</p>
 <ol>
 <li>Open a command line/terminal</li>
 <li>Enter <code>node -v</code></li>
-<li>Enter <code>gulp -v</code></li>
 <li>Enter <code>yarn -v</code></li>
 </ol>
 <p>If any of those steps return an error you need to install the corresponding
 software.</p>
 <ul>
 <li>To install Node: go to the official <a href="https://nodejs.org/download/">downloads page</a></li>
-<li>To install Gulp: Gulp requires Node and can be installed by: <code>yarn global add gulpjs/gulp-cli</code></li>
 <li>To install Yarn: Yarn require Node, <a href="https://yarnpkg.com/lang/en/docs/install/">follow the install guide</a></li>
 </ul>
+<h2>Development environment</h2>
+<p>We have a recommended development environment for new developers:</p>
+<ol>
+<li><a href="https://github.com/join">Setup a GitHub.com account</a></li>
+<li>Install the <a href="https://desktop.github.com/">GitHub Desktop git client</a></li>
+<li>For editing code, <a href="https://code.visualstudio.com/#alt-downloads">install Visual Studio Code</a>
+<br/>We also recommended some extensions to improve you editing experience and speed:
+<ul>
+<li>Tidy up your code: <a href="https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify">Beautify</a></li>
+<li>Fix spelling in your HTML, CSS and JS: <a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">Code Spell Checker</a></li>
+<li>Get code highlight for <code>.njk</code> files: <a href="https://marketplace.visualstudio.com/items?itemName=ronnidc.nunjucks">Nunjucks syntax definition</a></li>
+<li>Get autocompletion for your CSS tags: <a href="https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css">HTML CSS Support</a></li>
+</ul>
+</li>
+</ol>
 <h2>Developing the VF Core</h2>
 <p>You only need to clone <a href="https://github.com/visual-framework/vf-core"><code>vf-core</code></a> if you wish to make a pull request to create, amend or delete core components, or modify the way Sass, JS or other assets are compiled.</p>
 <p>Here's how:</p>
@@ -139,11 +145,21 @@ software.</p>
 </ol>
 <h3>Developing on Windows?</h3>
 <p>The Visual Framework is primairly developed on Mac and Linux environments, but it is
-also intended to be Windows compatible.</p>
-<p>We test and support Windows 10 using <a href="https://scoop.sh/"><code>scoop</code></a>.</p>
-  <cite class="vf-cite">
-    Last updated on <time datetime="Tue Apr 09 2019 12:24:50 GMT+0000 (Coordinated Universal Time)">Apr 9, 2019</time>
-  </cite>
+also intended to be Windows 10 compatible.</p>
+<ul>
+<li>
+<p>We test and support Windows 10 using <a href="https://scoop.sh/"><code>scoop</code></a></p>
+</li>
+<li>
+<p>We don't test using Windows Subsytem for Linux, thought it should work fine or better than native Windows</p>
+</li>
+<li>
+<p>Windows users will also want to consult the <a href="/vf-welcome/troubleshooting#windows">troubleshooting on Windows</a></p>
+<cite class="vf-cite">
+  Last updated on <time datetime="Wed Mar 18 2020 12:24:50 GMT+0000 (Coordinated Universal Time)">Mar 18, 2020</time>
+</cite>
+</li>
+</ul>
 </div>
 </main>
 <!-- layout: layouts/developing.njk -->

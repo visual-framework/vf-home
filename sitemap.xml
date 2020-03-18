@@ -40,9 +40,6 @@
     <loc>/developing/getting-started/pull-requests/</loc>
   </url>
   <url>
-    <loc>/developing/getting-started/setting-up/</loc>
-  </url>
-  <url>
     <loc>/developing/getting-started/structure/</loc>
   </url>
   <url>
@@ -68,5 +65,8 @@
   </url>
   <url>
     <loc>/troubleshooting/</loc>
+  </url>
+  <url>
+    <loc>/developing/getting-started/setting-up/</loc>
   </url>
 </urlset>

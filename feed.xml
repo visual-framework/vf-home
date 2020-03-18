@@ -5,7 +5,7 @@
   <subtitle>A front-end toolkit to quickly build better life science websites</subtitle>
   <link href="https://visual-framework.github.io/vf-welcome/feed.xml" rel="self"/>
   <link href="https://visual-framework.github.io/vf-welcome/"/>
-  <updated>2019-04-09T12:24:50-00:00</updated>
+  <updated>2020-03-18T12:24:50-00:00</updated>
   <id>https://visual-framework.github.io/vf-welcome</id>
   <author>
     <name>Visual Framework system</name>
@@ -472,64 +472,6 @@ builds.
 To be confident that we can ammend components code if needed without breaking anything we need to test against the agreed look and interaction(s) of a component.
 
 We are making use of [Percy](https://percy.io/EMBL/EMBL-Visual-Framework) to do this, comparisons will be automatically generated before a pull request for a component is accepted.
-</content>
-  </entry>
-  
-  <entry>
-    <title>Setting up your development environment</title>
-    <link href="https://visual-framework.github.io/vf-welcome/developing/getting-started/setting-up/"/>
-    <updated>2019-04-09T12:24:50-00:00</updated>
-    <id>https://visual-framework.github.io/vf-welcome/developing/getting-started/setting-up/</id>
-    <content type="html">
-## Development environment
-
-If you don&#39;t already have a code editor and are new to git, a good starting point is to:
-
-1. [Setup a GitHub.com account](https://github.com/join)
-1. Install the [GitHub Desktop git client](https://desktop.github.com/)
-1. For editing code, [install Visual Studio Code](https://code.visualstudio.com/#alt-downloads)
-
-## Development tools
-
-First, see if you have the needed tools installed.
-
-1. Open a command line/terminal
-1. Enter `node -v`
-1. Enter `gulp -v`
-1. Enter `yarn -v`
-
-If any of those steps return an error you need to install the corresponding
-software.
-
-- To install Node: go to the official [downloads page](https://nodejs.org/download/)
-- To install Gulp: Gulp requires Node and can be installed by: `yarn global add gulpjs/gulp-cli`
-- To install Yarn: Yarn require Node, [follow the install guide](https://yarnpkg.com/lang/en/docs/install/)
-
-## Developing the VF Core
-
-You only need to clone [`vf-core`](https://github.com/visual-framework/vf-core) if you wish to make a pull request to create, amend or delete core components, or modify the way Sass, JS or other assets are compiled.
-
-Here&#39;s how:
-
-1. Clone `vf-core`
-    - `git clone https://github.com/visual-framework/vf-core.git`
-1. Move to the directory
-    - `cd vf-core`
-1. You probably want the develop branch (or [your new feature branch](/vf-welcome/developing/getting-started/naming))
-    - `git checkout develop`
-1. Install [fractal](https://github.com/frctl/fractal) You might need to use `sudo`.
-    - `yarn global add @frctl/fractal`
-1. Download all the things
-    - `yarn install`
-1. Run a dev build and open in your browser
-    - `gulp vf-dev`
-
-### Developing on Windows?
-
-The Visual Framework is primairly developed on Mac and Linux environments, but it is
-also intended to be Windows compatible.
-
-We test and support Windows 10 using [`scoop`](https://scoop.sh/).
 </content>
   </entry>
   
@@ -1002,6 +944,69 @@ Testing releases will be identified in their tag, a la: `v2.0-alpha.1`, where `-
     <updated>2019-04-09T12:24:50-00:00</updated>
     <id>https://visual-framework.github.io/vf-welcome/posts/sample-post/</id>
     <content type="html">&lt;p&gt;I&#39;m some content.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Setting up your development environment</title>
+    <link href="https://visual-framework.github.io/vf-welcome/developing/getting-started/setting-up/"/>
+    <updated>2020-03-18T12:24:50-00:00</updated>
+    <id>https://visual-framework.github.io/vf-welcome/developing/getting-started/setting-up/</id>
+    <content type="html">
+## Development tools
+
+First, see if you have the needed tools installed.
+
+1. Open a command line/terminal
+1. Enter `node -v`
+1. Enter `yarn -v`
+
+If any of those steps return an error you need to install the corresponding
+software.
+
+- To install Node: go to the official [downloads page](https://nodejs.org/download/)
+- To install Yarn: Yarn require Node, [follow the install guide](https://yarnpkg.com/lang/en/docs/install/)
+
+## Development environment
+
+We have a recommended development environment for new developers:
+
+1. [Setup a GitHub.com account](https://github.com/join)
+1. Install the [GitHub Desktop git client](https://desktop.github.com/)
+1. For editing code, [install Visual Studio Code](https://code.visualstudio.com/#alt-downloads)
+    &lt;br&gt;We also recommended some extensions to improve you editing experience and speed:
+    - Tidy up your code: [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
+    - Fix spelling in your HTML, CSS and JS: [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+    - Get code highlight for `.njk` files: [Nunjucks syntax definition](https://marketplace.visualstudio.com/items?itemName=ronnidc.nunjucks)
+    - Get autocompletion for your CSS tags: [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+
+## Developing the VF Core
+
+You only need to clone [`vf-core`](https://github.com/visual-framework/vf-core) if you wish to make a pull request to create, amend or delete core components, or modify the way Sass, JS or other assets are compiled.
+
+Here&#39;s how:
+
+1. Clone `vf-core`
+    - `git clone https://github.com/visual-framework/vf-core.git`
+1. Move to the directory
+    - `cd vf-core`
+1. You probably want the develop branch (or [your new feature branch](/vf-welcome/developing/getting-started/naming))
+    - `git checkout develop`
+1. Install [fractal](https://github.com/frctl/fractal) You might need to use `sudo`.
+    - `yarn global add @frctl/fractal`
+1. Download all the things
+    - `yarn install`
+1. Run a dev build and open in your browser
+    - `gulp vf-dev`
+
+### Developing on Windows?
+
+The Visual Framework is primairly developed on Mac and Linux environments, but it is
+also intended to be Windows 10 compatible.
+
+- We test and support Windows 10 using [`scoop`](https://scoop.sh/)
+- We don&#39;t test using Windows Subsytem for Linux, thought it should work fine or better than native Windows
+- Windows users will also want to consult the [troubleshooting on Windows](/vf-welcome/troubleshooting#windows)
 </content>
   </entry>
 </feed>
