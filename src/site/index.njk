@@ -19,9 +19,13 @@ layout: layouts/base.njk
 <section class="vf-content | embl-grid embl-grid--has-centered-content">
 <div><!-- empty --></div><div class="vf-box vf-box--inlay">
 
+{% markdown %}
+
 ## Guide: [Building a VF-powered system]({{ '/building' | url }})
 
 The when and how to making a project powered with Visual Framework components. [See the building guide]({{ '/building' | url }}).
+
+{% endmarkdown %}
 
 </div>
 </section>
@@ -29,6 +33,8 @@ The when and how to making a project powered with Visual Framework components. [
 <section class="vf-content | embl-grid embl-grid--has-centered-content">
 <div></div>
 <div>
+
+{% markdown %}
 
 ## {{ subtitle }}
 
@@ -57,16 +63,20 @@ the VF won't break your other framework's CSS or JS, so bring Bootstrap, Foundat
 
     Use `vf-core` to build your CSS, JS dynamically based on the components you need, or bring your own build system.
 
+{% endmarkdown %}
+
 </div>
 </section>
 
-<section class="vf-content | embl-grid embl-grid--has-centered-content">
-<div></div>
-<div>
+<section class="embl-grid embl-grid--has-centered-content">
+<div class="vf-section-header">
+  <h2 class="vf-section-header__heading">FAQ</h2>
+</div>
+<div class="vf-content">
 
 <a name="faq"></a>
 
-## FAQ
+{% markdown %}
 
 ### Is VF Core just a Bootstrap with a different theme?
 
@@ -100,6 +110,8 @@ Many common component for tabs, boxes, links and so on are available [as compone
 
 Have a problem? See the [Troubleshooting guide]({{ '/troubleshooting' | url }}) or [chat the community on Slack](https://join.slack.com/t/visual-framework/shared_invite/enQtNDAxNzY0NDg4NTY0LWFhMjEwNGY3ZTk3NWYxNWVjOWQ1ZWE4YjViZmY1YjBkMDQxMTNlNjQ0N2ZiMTQ1ZTZiMGM4NjU5Y2E0MjM3ZGQ).
 
+{% endmarkdown %}
+
 </div>
 </section>
 
@@ -108,6 +120,8 @@ Have a problem? See the [Troubleshooting guide]({{ '/troubleshooting' | url }}) 
 <div><!-- empty --></div>
 <div class="vf-box vf-box--inlay">
 
+{% markdown %}
+
 ## Guide: [Developing, contributing]({{ '/developing' | url }})
 
 Want to make your own design system or component?
@@ -115,6 +129,8 @@ Want to make your own design system or component?
 - <a id="developing"></a> [Getting started]({{ '/developing#getting-started' | url }})
 - [Contributing components]({{ '/developing#components' | url }})
 - [General guidelines, best practice]({{ '/developing#guidelines' | url }})
+
+{% endmarkdown %}
 
 </div>
 </section>
