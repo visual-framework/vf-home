@@ -958,7 +958,7 @@ Testing releases will be identified in their tag, a la: `v2.0-alpha.1`, where `-
 First, see if you have the needed tools installed.
 
 1. Open a command line/terminal 
-    - how? [Mac](https://www.wikihow.com/Open-a-Terminal-Window-in-Mac), [Linux/Ubuntu](https://www.wikihow.com/Open-a-Terminal-Window-in-Ubuntu), [Windows 10](https://www.howtogeek.com/235101/10-ways-to-open-the-command-prompt-in-windows-10/)
+    - how? [Mac](https://www.wikihow.com/Open-a-Terminal-Window-in-Mac), [Linux/Ubuntu](https://www.wikihow.com/Open-a-Terminal-Window-in-Ubuntu), [Windows 10](https://www.howtogeek.com/235101/10-ways-to-open-the-command-prompt-in-windows-10/), [VS Code integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal)
 1. Enter `node -v`
 1. Enter `yarn -v`
 
